@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="ins_car_disc_size">160dp</dimen>
-    <dimen name="ins_car_im_size">180dp</dimen>
-    <dimen name="tw__login_btn_text_size">18sp</dimen>
-</resources>
