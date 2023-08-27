@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="90dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/deliveryAddressView"
+                style="@style/CheckoutBlockStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spaces_delimiter_checkout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_delivery_address_title"
+                    style="@style/customFont_gotham_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/delivery_address_title"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_delivery_address_title_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:text="@string/delivered_address"
+                    android:textSize="@dimen/_10sdp"
+                    android:theme="@style/textDirectionStyle" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/cityTextView"
+                            style="@style/customFont"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_24sdp"
+                            android:ellipsize="end"
+                            android:padding="@dimen/_2sdp"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="@dimen/_9sdp"
+                            android:theme="@style/textDirectionStyle"
+                            tools:text="الكويت، \ شارع المرسل افندي، المهندسين" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/areaTextView"
+                            style="@style/customFont"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_marginEnd="@dimen/_24sdp"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:padding="@dimen/_2sdp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_9sdp"
+                            android:theme="@style/textDirectionStyle"
+                            tools:text="Street-7, Building-29, Floor-1, Flat-3" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/editAddressButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edit_text_bg"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/edit"
+                        android:textAllCaps="true"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="@dimen/_9sdp"
+                        android:theme="@style/textFontMeduimStyle" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/address_separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/spaces_delimiter_checkout"
+                android:background="@color/original_gray" />
+
+            <LinearLayout
+                android:id="@+id/paymentView"
+                style="@style/CheckoutBlockStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spaces_delimiter_checkout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_select_method"
+                    style="@style/customFont_gotham_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_payment_method"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="@dimen/larg_text"
+                    android:theme="@style/textFontMeduimStyle" />
+
+                <TextView
+                    android:id="@+id/tv_select_method_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="@string/selet_payment_description"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/normal_text"
+                    android:theme="@style/textFontbookStyle" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/paymentRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintVertical_chainStyle="spread"
+                    tools:itemCount="3"
+                    tools:listitem="@layout/item_payment" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/pay_separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/spaces_delimiter_checkout"
+                android:background="@color/original_gray" />
+
+            <LinearLayout
+                android:id="@+id/couponView"
+                style="@style/CheckoutBlockStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spaces_delimiter_checkout"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.tatayab.tatayab.customview.ClearableEditText
+                        android:id="@+id/couponEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_checkout_free_delivery"
+                        android:gravity="center_vertical"
+                        android:hint="@string/pay_hint_coupon"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:paddingEnd="@dimen/_8sdp"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/couponApplyButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/round_checkout_free_delivery"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_24sdp"
+                        android:paddingEnd="@dimen/_24sdp"
+                        android:text="@string/apply"
+                        android:textAllCaps="true"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="@dimen/normal_text"
+                        android:theme="@style/textFontBoldStyle"
+                        app:layout_constraintEnd_toEndOf="@id/pay_first_separator"
+                        app:layout_constraintTop_toTopOf="@id/edit_coupon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/currentCouponApplayedView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edit_coupon"
+                    tools:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/coupon"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/couponValueTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:textSize="@dimen/_10sdp"
+                        tools:text="yyyyy" />
+
+                    <TextView
+                        android:id="@+id/removeCouponButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:padding="5dp"
+                        android:text="@string/remove"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/_10sdp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/gift_separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/spaces_delimiter_checkout"
+                android:background="@color/original_gray" />
+
+
+            <LinearLayout
+                android:id="@+id/giftVeiw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/deliverAsGiftView"
+                    style="@style/CheckoutBlockStyle"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spaces_delimiter_checkout">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="start|center_vertical"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toStartOf="@+id/deliveryAsGiftToggle"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            style="@style/customFont_gotham_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/deliver_as_gift"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="@dimen/larg_text"
+                            android:theme="@style/textFontMeduimStyle" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="@string/gift_desc"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/deliveryAsGiftToggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/giftValueView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sender_name"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/senderNameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rounded_edit_text_bg"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        tools:text="@string/sender_name" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="@string/receiver_name"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/receiverNameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/rounded_edit_text_bg"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        tools:text="@string/receiver_name" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="@string/message"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/giftMessageEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:background="@drawable/rounded_edit_text_bg"
+                        android:gravity="top"
+                        android:minLines="3"
+                        android:padding="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        tools:text="@string/message" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/subTotalsView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/subTotalForCountriesRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spaces_delimiter_checkout"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintVertical_chainStyle="spread"
+                    tools:itemCount="1"
+                    tools:listitem="@layout/item_subtotal_per_country" />
+
+                <LinearLayout
+                    android:id="@+id/subTotalView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:background="@color/gray_dark"
+                        android:visibility="gone" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/subTotalRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/original_gray"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:itemCount="2"
+                        tools:listitem="@layout/item_label" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/gray_dark" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/totalRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/original_gray"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="1"
+                    tools:listitem="@layout/item_bold_label" />
+
+                <TextView
+                    android:id="@+id/shipmentMsgTestView"
+                    style="@style/customFont_gotham_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:visibility="gone"
+                    android:lineSpacingExtra="@dimen/_3sdp"
+                    android:background="@color/original_gray_bold"
+                    android:padding="@dimen/_10sdp"
+                     android:text="@string/shipping_message"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_7sdp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/original_gray" />
+
+            <LinearLayout
+                android:id="@+id/reviewOrderView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/reviewOrderTitleTextView"
+                    style="@style/customFont_gotham_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/review_your_order"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="@dimen/larg_text"
+                    android:theme="@style/textFontMeduimStyle" />
+
+                <TextView
+                    android:id="@+id/reviewOrderDescTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:text="@string/delivered_address"
+                    android:textSize="@dimen/_10sdp"
+                    android:theme="@style/textDirectionStyle"
+                    android:visibility="gone" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/productsRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/white"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintVertical_chainStyle="spread"
+                    tools:itemCount="2"
+                    tools:listitem="@layout/item_checkout_product_per_country" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/checkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/original_gray"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_dark" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/checkoutButton"
+            style="@style/SubmitButton"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:text="@string/continue_to_payment"
+            android:textSize="@dimen/larg_text"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/input_password" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

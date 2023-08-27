@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/countryView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C0C0C0"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:padding="@dimen/_7sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_country_logo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:src="@drawable/flag_bh"
+            app:civ_border_overlay="true" />
+
+        <TextView
+            android:id="@+id/tv_country_name"
+            style="@style/customFont"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:iconifiedByDefault="true"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:theme="@style/textDirectionStyle"
+            tools:text="Ship from Kuwait" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_gift_options"
+            android:background="@drawable/giftbtnstyle"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="@dimen/_35sdp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="#FFFFFF"
+
+            android:text="@string/gift_options"
+            android:textSize="@dimen/_11sdp"
+            android:visibility="visible"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/deliveryDateView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/focia_light"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:padding="@dimen/_7sdp">
+
+        <ImageView
+            android:id="@+id/deliveryImageView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:src="@drawable/ic_fast_delivery_truck" />
+
+        <TextView
+            android:id="@+id/deliveryTextView"
+            style="@style/customFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:iconifiedByDefault="true"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/_9sdp"
+            android:theme="@style/textDirectionStyle"
+            tools:text="@string/shipping_from" />
+
+    </LinearLayout>
+    <com.tatayab.tatayab.ext.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swip_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+
+        android:layout_marginTop="@dimen/_5sdp"
+        app:dragFromEdge="left">
+
+
+        <FrameLayout
+            android:id="@+id/delete"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/cart_content_height"
+            android:background="@color/red"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/delete_layer"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cart_content_height"
+            android:background="@color/white"
+            android:clickable="true"
+            android:visibility="visible">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_2sdp"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_product_img"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@tools:sample/avatars" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_view_options"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_circle_options"
+                    android:padding="@dimen/_4sdp"
+                    android:text="@string/options"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_product_img"
+                    app:layout_constraintEnd_toEndOf="@id/iv_product_img"
+                    app:layout_constraintStart_toStartOf="@id/iv_product_img"
+                    app:layout_constraintTop_toTopOf="@id/iv_product_img" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_supplier_name"
+                    style="@style/textFontbookStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/cart_item_height"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="@dimen/small_text"
+                    android:theme="@style/textDirectionStyle"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_favorite"
+                    app:layout_constraintStart_toEndOf="@+id/iv_product_img"
+                    app:layout_constraintTop_toTopOf="@id/iv_product_img"
+                    tools:text="budddd" />
+
+
+                <androidx.appcompat.widget.AppCompatToggleButton
+                    android:id="@+id/btn_favorite"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/favorite_toggle_selector"
+                    android:checked="false"
+                    android:textOff=""
+                    android:textOn=""
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_supplier_name" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_product_name"
+                    style="@style/textDirectionStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/cart_item_height"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:singleLine="false"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="@dimen/normal_text"
+                    android:theme="@style/textFontbookStyle"
+                    app:layout_constraintEnd_toEndOf="@+id/btn_favorite"
+                    app:layout_constraintStart_toStartOf="@+id/tv_supplier_name"
+                    app:layout_constraintTop_toBottomOf="@id/tv_supplier_name"
+                    tools:text="product hfkhfgdjjjjjjjjjjjjjjjjjjjjj hjjjjjj " />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_product_price"
+                    style="@style/textFontBoldStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/normal_text"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_product_actual_price"
+                    app:layout_constraintStart_toStartOf="@+id/tv_supplier_name"
+                    app:layout_constraintTop_toBottomOf="@id/tv_product_name"
+                    app:layout_constraintWidth_percent="0.3"
+                    tools:text="52.000 KWD" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_product_actual_price"
+                    style="@style/textFontbookStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="@dimen/_10sdp"
+                    android:theme="@style/textDirectionStyle"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_product_price"
+                    app:layout_constraintEnd_toEndOf="@+id/btn_favorite"
+                    app:layout_constraintStart_toEndOf="@+id/tv_product_price"
+                    app:layout_constraintTop_toTopOf="@+id/tv_product_price"
+                    tools:text="55.000 KWD" />
+
+
+                <com.tatayab.tatayab.main.ValueCounterView
+                    android:id="@+id/tv_quantity_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    app:addButtonColor="@color/colorPrimary"
+                    app:defaultValue="1"
+                    app:layout_constraintEnd_toEndOf="@+id/btn_favorite"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_product_price"
+                    app:maxValue="200"
+                    app:minValue="1"
+                    app:stepValue="1"
+                    app:subButtonColor="@color/colorPrimary"
+                    app:valueColor="@color/black"
+                    android:visibility="gone"
+                    app:valueTextSize="@dimen/_12sdp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/editGiftEnable"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/btn_favorite"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_product_price"
+                    android:background="@drawable/add_to_cart_selector"
+                    android:text="@string/edit"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_light"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+
+    </com.tatayab.tatayab.ext.SwipeRevealLayout>
+</LinearLayout>

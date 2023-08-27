@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="block_title">16dp</dimen>
+    <dimen name="block_description">12dp</dimen>
+    <dimen name="block_see_more">10dp</dimen>
+    <dimen name="small_text">10dp</dimen>
+    <dimen name="normal_text">12dp</dimen>
+    <dimen name="bootom_text">12dp</dimen>
+    <dimen name="larg_text">16dp</dimen>
+    <dimen name="account_margin">1dp</dimen>
+    <dimen name="mini_larg_text">14dp</dimen>
+    <dimen name="order_details_mrgin">14dp</dimen>
+    <dimen name="input_height">55dp</dimen>
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">8dp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">8dp</dimen>
+    <dimen name="product_details_margin" >16dp</dimen>
+    <dimen name="product_details_delimiter_height" >4dp</dimen>
+    <dimen name="cart_content_height" >150dp</dimen>
+
+    <dimen name="mini_normal_text">10dp</dimen>
+    <dimen name="mini_large_text">12dp</dimen>
+    <dimen name="cart_item_height">20dp</dimen>
+    <dimen name="discount_height">20dp</dimen>
+
+</resources>

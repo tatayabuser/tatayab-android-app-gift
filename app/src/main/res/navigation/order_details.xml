@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/order_details"
+    app:startDestination="@id/destination_order_details">
+
+    <fragment
+        android:id="@+id/destination_order_details"
+        android:name="com.tatayab.tatayab.orderdetails.OrderDetailsFragment"
+        android:label="@string/fragment_order_details_title"
+        tools:layout="@layout/fragment_order_details">
+        <deepLink
+            android:id="@+id/deepLinkDetails"
+            android:autoVerify="false"
+            app:uri="android-app://www.tatayab.com/order_details/{orderId}" />
+
+        <argument
+            android:name="orderId"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
+
+        <action
+            android:id="@+id/action_products_list"
+            app:destination="@id/products_list">
+            <argument
+                android:name="categoryType"
+                app:argType="string"
+                android:defaultValue="@null"
+                app:nullable="true" />
+            <argument
+                android:name="categoryId"
+                app:argType="string"
+                app:nullable="true" />
+            <argument
+                android:name="categoryName"
+                app:argType="string"
+                app:nullable="true" />
+        </action>
+
+
+        <action
+            android:id="@+id/next_product_details"
+            app:destination="@+id/product_details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+            <argument
+                android:name="productId"
+                android:defaultValue="@null"
+                app:argType="string"
+                app:nullable="true" />
+
+        </action>
+
+        <action
+            android:id="@+id/destination_order_tracking"
+            app:destination="@+id/order_tracking"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+            <argument
+                android:name="orderId"
+                app:argType="string"
+                app:nullable="true" />
+
+            <argument
+                android:name="orderDate"
+                app:argType="string"
+                app:nullable="true" />
+
+        </action>
+
+
+        <action
+            android:id="@+id/destination_track_ext_order"
+            app:destination="@+id/track_external_order"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+            <argument
+                android:name="url"
+                app:argType="string"
+                app:nullable="true" />
+
+        </action>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/track_external_order"
+        android:name="com.tatayab.tatayab.ordertracking.TrackExternalOrderFragment"
+        tools:layout="@layout/fragment_track_external_order">
+
+        <argument
+            android:name="url"
+            app:argType="string"
+            app:nullable="true" />
+
+    </fragment>
+
+    <include app:graph="@navigation/products_list" />
+    <include app:graph="@navigation/product_details" />
+    <include app:graph="@navigation/order_tracking" />
+
+</navigation>

@@ -1,0 +1,14 @@
+package com.tatayab.model.responses.graph_responses
+
+import com.google.gson.annotations.SerializedName
+import com.tatayab.model.responses.CityModel
+
+class GraphRegionByCityIDResponse(@SerializedName("data") val data: DataModel) {
+}
+class DataModel(@SerializedName("getCities") val mCitiesModel:CitiesModel)
+class CityItemModel(@SerializedName("city_id") val city_id:Int?= 0 ,
+                    @SerializedName("default_name") val default_name:String?= "" ,
+                    @SerializedName("locale_name") val locale_name:String?= "")
+class CitiesModel(@SerializedName("cities") val citiesList:List<CityItemModel>)
+/*{"data":{"getCities":{"cities":[{"city_id":13077,"default_name":"Al Andalus","locale_name":"الاندلس"},{"city_id":13078,"default_name":"Al Badi & Al Qarafi","locale_name":"البديع والقرفي"},{"city_id":13079,"default_name":"Al Khaldiyah","locale_name":"الخالدية"},{"city_id":13080,"default_name":"Al Mesaidah","locale_name":"المصايدة"},{"city_id":13081,"default_name":"Al Muhdaj","locale_name":"المهدج"},{"city_id":13082,"default_name":"Al Murikhiyah","locale_name":"المريخية"},{"city_id":13083,"default_name":"Al Nahdah","locale_name":"النهضة"},{"city_id":13084,"default_name":"Al Quds","locale_name":"القدس"},{"city_id":13085,"default_name":"Al Shabitah","locale_name":"الشابطة"},{"city_id":13086,"default_name":"Al Uqdah","locale_name":"العقدة"},{"city_id":13087,"default_name":"Al Wurud","locale_name":"الورود"},{"city_id":13088,"default_name":"Al-Muatan","locale_name":"آل مطاعن"},{"city_id":13089,"default_name":"An Nasim","locale_name":"النسيم"},{"city_id":13090,"default_name":"An Nuzhah","locale_name":"النزهة"},{"city_id":13091,"default_name":"Ar Rabi","locale_name":"الربيع"},{"city_id":13092,"default_name":"Ar Rawdhah","locale_name":"الروضة"},{"city_id":13093,"default_name":"As Sadiliyah","locale_name":"السادلية"},{"city_id":13094,"default_name":"As Safa","locale_name":"الصفا"},{"city_id":13095,"default_name":"As Salam","locale_name":"السلام"},{"city_id":13096,"default_name":"As Sinaiyah","locale_name":"الصناعية"},{"city_id":13097,"default_name":"Az Zuhur","locale_name":"الزهور"},{"city_id":13098,"default_name":"Bhakla","locale_name":"البهاكلة"},{"city_id":13099,"default_name":"Hakimat Abi Arish","locale_name":"حاكمة ابي عريش"},{"city_id":13100,"default_name":"Hakimat Abu Arish","locale_name":"حاكمة أبو عريش"},{"city_id":13101,"default_name":"Kamirah","locale_name":"قامرة"},{"city_id":13102,"default_name":"King Fahd","locale_name":"الملك فهد"},{"city_id":13103,"default_name":"qnbwrh","locale_name":"قنبوره"},{"city_id":13104,"default_name":"Quwaiyyah","locale_name":"قويعية"},{"city_id":13105,"default_name":"Rah Saeb","locale_name":"رح صعبة"},{"city_id":13106,"default_name":"Siri Village","locale_name":"قرية السر"}]}}}
+*/

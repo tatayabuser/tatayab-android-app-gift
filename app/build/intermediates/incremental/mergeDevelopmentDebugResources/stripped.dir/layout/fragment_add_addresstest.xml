@@ -1,0 +1,1225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+<!--    <include-->
+<!--        android:id="@+id/appbar"-->
+<!--        layout="@layout/toolbar_with_back" />-->
+
+<!--    <ScrollView-->
+<!--        android:id="@+id/scrollView1"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/btn_add"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/appbar"-->
+<!--        app:layout_goneMarginBottom="@dimen/_10sdp">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/page_title"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/add_address_title"-->
+<!--                android:textColor="@color/dark_blue"-->
+<!--                android:textSize="@dimen/larg_text"-->
+<!--                android:theme="@style/textFontMeduimStyle" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/page_description"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:text="@string/add_address_description"-->
+<!--                android:textColor="@color/gray"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textFontMeduimStyle" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_user_name_title"-->
+<!--                style="@style/textFontbookStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="40dp"-->
+<!--                android:text="@string/hint_name_title"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textFontbookStyle" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/tv_user_name_value"-->
+<!--                style="@style/editDirectionStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/input_height"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:background="@drawable/round_adress_input"-->
+<!--                android:focusable="true"-->
+<!--                android:hint="@string/hint_name"-->
+<!--                android:inputType="textEmailAddress"-->
+<!--                android:maxLines="1"-->
+<!--                android:paddingStart="@dimen/_3sdp"-->
+<!--                android:scrollHorizontally="true"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/mini_larg_text" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_address_name_title"-->
+<!--                style="@style/textFontbookStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_20sdp"-->
+<!--                android:text="@string/address_name"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textFontbookStyle" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/tv_address_name_value"-->
+<!--                style="@style/editDirectionStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/input_height"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:background="@drawable/round_adress_input"-->
+<!--                android:focusable="true"-->
+<!--                android:hint="@string/address_name_hint"-->
+<!--                android:maxLines="1"-->
+<!--                android:paddingStart="@dimen/_3sdp"-->
+<!--                android:scrollHorizontally="true"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/mini_larg_text" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_phone_title"-->
+<!--                style="@style/textFontbookStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:text="@string/hint_phone"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textDirectionStyle" />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/phone_code"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@drawable/round_phone_number"-->
+<!--                    android:gravity="center"-->
+<!--                    android:paddingStart="5dp"-->
+<!--                    android:paddingEnd="5dp"-->
+<!--                    tools:text="+556"-->
+
+<!--                    />-->
+
+<!--                <androidx.appcompat.widget.AppCompatEditText-->
+<!--                    android:id="@+id/tv_phone_value"-->
+<!--                    style="@style/editDirectionStyle"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/input_height"-->
+<!--                    android:layout_marginStart="8dp"-->
+<!--                    android:layout_marginTop="@dimen/_5sdp"-->
+<!--                    android:background="@drawable/round_adress_input"-->
+<!--                    android:digits="0123456789"-->
+<!--                    android:hint="@string/hint_phone_number"-->
+<!--                    android:inputType="phone"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:paddingStart="@dimen/_3sdp"-->
+<!--                    android:scrollHorizontally="true"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:textColor="@color/colorPrimary"-->
+<!--                    android:textSize="@dimen/mini_larg_text"-->
+<!--                    android:theme="@style/textFontbookStyle" />-->
+<!--            </LinearLayout>-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_mail_title"-->
+<!--                style="@style/textFontbookStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="24dp"-->
+<!--                android:text="@string/hint_email_address"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textDirectionStyle" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatEditText-->
+<!--                android:id="@+id/tv_mail_value"-->
+<!--                style="@style/editDirectionStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/input_height"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:background="@drawable/round_adress_input"-->
+<!--                android:hint="@string/hint_add_email"-->
+<!--                android:inputType="textEmailAddress"-->
+<!--                android:maxLines="1"-->
+<!--                android:paddingStart="@dimen/_3sdp"-->
+<!--                android:scrollHorizontally="true"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/mini_larg_text"-->
+<!--                android:theme="@style/textFontbookStyle" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_country_title"-->
+<!--                style="@style/textFontbookStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:text="@string/country_text"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textFontbookStyle" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/tv_country_value"-->
+<!--                style="@style/editDirectionStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/input_height"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:background="@drawable/country_box_bg"-->
+<!--                android:enabled="false"-->
+<!--                android:maxLines="1"-->
+<!--                android:paddingStart="@dimen/_3sdp"-->
+<!--                android:scrollHorizontally="true"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/mini_larg_text"-->
+<!--                tools:ignore="SpeakableTextPresentCheck" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_city_title"-->
+<!--                style="@style/textFontbookStyle"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:text="@string/hint_cityy"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textFontbookStyle"></TextView>-->
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/city_view"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_5sdp">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_city_value"-->
+<!--                    style="@style/editDirectionStyle"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/input_height"-->
+<!--                    android:background="@drawable/round_adress_input"-->
+<!--                    android:clickable="true"-->
+<!--                    android:descendantFocusability="blocksDescendants"-->
+<!--                    android:drawableEnd="@drawable/arrow_down_layer"-->
+<!--                    android:focusableInTouchMode="false"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:paddingStart="@dimen/_3sdp"-->
+<!--                    android:text="@string/choose_city"-->
+<!--                    android:textColor="@color/colorPrimary"-->
+<!--                    android:textSize="@dimen/mini_larg_text"-->
+<!--                    tools:ignore="DuplicateClickableBoundsCheck" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/cityValueEditText"-->
+<!--                    style="@style/editDirectionStyle"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/input_height"-->
+<!--                    android:background="@drawable/round_adress_input"-->
+<!--                    android:hint="@string/enter_city"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:paddingStart="@dimen/_3sdp"-->
+<!--                    android:scrollHorizontally="true"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:textColor="@color/colorPrimary"-->
+<!--                    android:textSize="@dimen/mini_larg_text"-->
+<!--                    android:visibility="visible" />-->
+<!--            </RelativeLayout>-->
+<!--            <TextView-->
+<!--                android:id="@+id/tv_area_title"-->
+<!--                style="@style/textFontbookStyle"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:text="@string/hint_area"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textFontbookStyle"-->
+<!-- />-->
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/areaView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/city_view"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_area_title">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_area_value"-->
+<!--                    style="@style/editDirectionStyle"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/_30sdp"-->
+<!--                    android:layout_marginTop="@dimen/_5sdp"-->
+<!--                    android:background="@drawable/round_adress_input"-->
+<!--                    android:clickable="true"-->
+<!--                    android:descendantFocusability="blocksDescendants"-->
+<!--                    android:focusableInTouchMode="false"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:paddingStart="@dimen/_3sdp"-->
+<!--                    android:text="@string/choose_area"-->
+<!--                    android:textColor="@color/colorPrimary"-->
+<!--                    android:textSize="@dimen/mini_larg_text" />-->
+
+
+<!--                <EditText-->
+<!--                    android:id="@+id/areaValueEditText"-->
+<!--                    style="@style/editDirectionStyle"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/input_height"-->
+<!--                    android:background="@drawable/round_adress_input"-->
+<!--                    android:hint="@string/enter_state"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:paddingStart="@dimen/_3sdp"-->
+<!--                    android:scrollHorizontally="true"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:textColor="@color/colorPrimary"-->
+<!--                    android:textSize="@dimen/mini_larg_text"-->
+<!--                    android:visibility="visible" />-->
+<!--            </RelativeLayout>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_block_title"-->
+<!--                style="@style/textFontbookStyle"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:text="@string/hint_blockid"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textFontbookStyle"-->
+<!--              />-->
+<!--            <EditText-->
+<!--                android:id="@+id/tv_block_value"-->
+<!--                style="@style/editDirectionStyle"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="@dimen/input_height"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:background="@drawable/round_adress_input"-->
+<!--                android:hint="@string/hint_block"-->
+<!--                android:inputType="textEmailAddress"-->
+<!--                android:maxLines="1"-->
+<!--                android:paddingStart="@dimen/_3sdp"-->
+<!--                android:scrollHorizontally="true"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/mini_larg_text"-->
+<!--               />-->
+<!--            <EditText-->
+<!--                android:id="@+id/tv_name_value"-->
+<!--                style="@style/editDirectionStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/input_height"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:background="@drawable/round_adress_input"-->
+<!--                android:hint="@string/hint_address_title"-->
+<!--                android:inputType="textEmailAddress"-->
+<!--                android:maxLines="1"-->
+<!--                android:visibility="invisible"-->
+<!--                android:paddingStart="10dp"-->
+<!--                android:scrollHorizontally="true"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/mini_larg_text"-->
+<!--               />-->
+
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/addressTypeView"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/input_height"-->
+<!--                android:padding="5dp"-->
+<!--                android:background="@drawable/unselected_button_bg"-->
+<!--                android:orientation="horizontal">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/homeButton"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    style="@style/textFontBoldStyle"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:text="@string/house"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:theme="@style/textFontBoldStyle"-->
+<!--                    android:gravity="center"-->
+<!--                    android:background="@drawable/selected_button_bg"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="@dimen/_12sdp"-->
+<!--                    />-->
+<!--                <TextView-->
+<!--                    android:id="@+id/partmentButton"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    style="@style/textFontBoldStyle"-->
+<!--                    android:theme="@style/textFontBoldStyle"-->
+<!--                    android:text="@string/apartment"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="@dimen/_12sdp"-->
+<!--                    android:background="@drawable/unselected_button_bg"-->
+<!--                    />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_address_title"-->
+<!--                style="@style/textFontbookStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:text="@string/hint_address_name"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textFontbookStyle"-->
+<!--              />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/tv_address_value"-->
+<!--                style="@style/editDirectionStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/input_height"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:background="@drawable/round_adress_input"-->
+<!--                android:hint="@string/hint_add_address"-->
+<!--                android:inputType="textEmailAddress"-->
+<!--                android:maxLines="1"-->
+<!--                android:paddingStart="@dimen/_3sdp"-->
+<!--                android:scrollHorizontally="true"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/mini_larg_text"-->
+<!--               />-->
+<!--            <TextView-->
+<!--                android:id="@+id/tv_zip_title"-->
+<!--                style="@style/textFontbookStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:text="@string/hint_zipcode"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textFontbookStyle"-->
+<!--                />-->
+<!--            <EditText-->
+<!--                android:id="@+id/tv_zip_value"-->
+<!--                style="@style/editDirectionStyle"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="@dimen/input_height"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:background="@drawable/round_adress_input"-->
+<!--                android:hint="@string/hint_add_zipcode"-->
+<!--                android:maxLines="1"-->
+<!--                android:paddingStart="@dimen/_3sdp"-->
+<!--                android:scrollHorizontally="true"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/mini_larg_text"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_paci_title"-->
+<!--                style="@style/textFontbookStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:text="@string/hint_paci"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textDirectionStyle"-->
+<!--                android:visibility="gone"-->
+<!--              />-->
+<!--            <EditText-->
+<!--                android:id="@+id/tv_paci_value"-->
+<!--                style="@style/editDirectionStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/input_height"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:background="@drawable/round_adress_input"-->
+<!--                android:inputType="textEmailAddress"-->
+<!--                android:maxLines="1"-->
+<!--                android:paddingStart="@dimen/_3sdp"-->
+<!--                android:scrollHorizontally="true"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/mini_larg_text"-->
+<!--                android:visibility="gone"-->
+<!--              />-->
+<!--            <TextView-->
+<!--                android:id="@+id/tv_additional_direction_title"-->
+<!--                style="@style/textFontbookStyle"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:text="@string/hint_title_additional_direction"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textFontbookStyle"-->
+<!--               />-->
+<!--            <EditText-->
+<!--                android:id="@+id/tv_additional_direction_value"-->
+<!--                style="@style/editDirectionStyle"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="@dimen/input_height"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:background="@drawable/round_adress_input"-->
+<!--                android:hint="@string/hint_enter_additional_direction"-->
+<!--                android:inputType="text"-->
+<!--                android:maxLines="1"-->
+<!--                android:paddingStart="@dimen/_3sdp"-->
+<!--                android:scrollHorizontally="true"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/mini_larg_text"-->
+<!--              />-->
+
+
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+<!--    <ScrollView-->
+<!--        android:id="@+id/scrollView22"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/btn_add"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/appbar"-->
+<!--        app:layout_goneMarginBottom="@dimen/_10sdp">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="@dimen/_10sdp"-->
+<!--            android:layout_marginTop="@dimen/_10sdp"-->
+<!--            android:layout_marginEnd="@dimen/_10sdp">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/page_title"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/add_address_title"-->
+<!--                android:textColor="@color/dark_blue"-->
+<!--                android:textSize="@dimen/larg_text"-->
+<!--                android:theme="@style/textFontMeduimStyle"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/page_description"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:text="@string/add_address_description"-->
+<!--                android:textColor="@color/gray"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textFontMeduimStyle"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/page_title" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_user_name_title"-->
+<!--                style="@style/textFontbookStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="40dp"-->
+<!--                android:text="@string/hint_name_title"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textFontbookStyle"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/page_description" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/tv_user_name_value"-->
+<!--                style="@style/editDirectionStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/input_height"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:background="@drawable/round_adress_input"-->
+<!--                android:focusable="true"-->
+<!--                android:hint="@string/hint_name"-->
+<!--                android:inputType="textEmailAddress"-->
+<!--                android:maxLines="1"-->
+<!--                android:paddingStart="@dimen/_3sdp"-->
+<!--                android:scrollHorizontally="true"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/mini_larg_text"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_user_name_title"/>-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_address_name_title"-->
+<!--                style="@style/textFontbookStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_20sdp"-->
+<!--                android:text="@string/address_name"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textFontbookStyle"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_user_name_value" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/tv_address_name_value"-->
+<!--                style="@style/editDirectionStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/input_height"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:background="@drawable/round_adress_input"-->
+<!--                android:focusable="true"-->
+<!--                android:hint="@string/address_name_hint"-->
+<!--                android:maxLines="1"-->
+<!--                android:paddingStart="@dimen/_3sdp"-->
+<!--                android:scrollHorizontally="true"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/mini_larg_text"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_address_name_title">-->
+
+
+<!--                &lt;!&ndash;                <requestFocus />&ndash;&gt;-->
+<!--            </EditText>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_name_title"-->
+<!--                style="@style/textFontbookStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:text="@string/hint_address_title"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textFontbookStyle"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_address_name_value" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/tv_name_value"-->
+<!--                style="@style/editDirectionStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/input_height"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:background="@drawable/round_adress_input"-->
+<!--                android:hint="@string/hint_address_title"-->
+<!--                android:inputType="textEmailAddress"-->
+<!--                android:maxLines="1"-->
+<!--                android:visibility="invisible"-->
+<!--                android:paddingStart="10dp"-->
+<!--                android:scrollHorizontally="true"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/mini_larg_text"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_name_title">-->
+
+<!--                &lt;!&ndash;                <requestFocus />&ndash;&gt;-->
+<!--            </EditText>-->
+
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/addressTypeView"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_name_title"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/input_height"-->
+<!--                android:padding="5dp"-->
+<!--                android:background="@drawable/unselected_button_bg"-->
+<!--                android:orientation="horizontal">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/homeButton"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    style="@style/textFontBoldStyle"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:text="@string/house"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:theme="@style/textFontBoldStyle"-->
+<!--                    android:gravity="center"-->
+<!--                    android:background="@drawable/selected_button_bg"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="@dimen/_12sdp"-->
+<!--                    />-->
+<!--                <TextView-->
+<!--                    android:id="@+id/partmentButton"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    style="@style/textFontBoldStyle"-->
+<!--                    android:theme="@style/textFontBoldStyle"-->
+<!--                    android:text="@string/apartment"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="@dimen/_12sdp"-->
+<!--                    android:background="@drawable/unselected_button_bg"-->
+<!--                    />-->
+
+<!--            </LinearLayout>-->
+<!--            <androidx.appcompat.widget.AppCompatSpinner-->
+<!--                android:id="@+id/spinner_address_types"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/input_height"-->
+<!--                android:visibility="gone"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:background="@drawable/round_adress_input"-->
+<!--                android:dropDownWidth="wrap_content"-->
+<!--                android:dropDownSelector="@color/colorPrimary"-->
+<!--                android:spinnerMode="dropdown"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_name_title"-->
+<!--                tools:ignore="SpeakableTextPresentCheck" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_phone_title"-->
+<!--                style="@style/textFontbookStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:text="@string/hint_phone"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textDirectionStyle"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/addressTypeView" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/phone_code"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:background="@drawable/round_phone_number"-->
+<!--                android:gravity="center"-->
+<!--                android:paddingStart="5dp"-->
+<!--                android:paddingEnd="5dp"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/tv_phone_value"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/tv_phone_value"-->
+<!--                app:layout_constraintWidth_percent="0.2"-->
+<!--                tools:text="+556"-->
+
+<!--                />-->
+
+<!--            <androidx.appcompat.widget.AppCompatEditText-->
+<!--                android:id="@+id/tv_phone_value"-->
+<!--                style="@style/editDirectionStyle"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="@dimen/input_height"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:background="@drawable/round_adress_input"-->
+<!--                android:hint="@string/hint_phone_number"-->
+<!--                android:inputType="phone"-->
+<!--                android:digits="0123456789"-->
+<!--                android:maxLines="1"-->
+<!--                android:paddingStart="@dimen/_3sdp"-->
+<!--                android:scrollHorizontally="true"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/mini_larg_text"-->
+<!--                android:theme="@style/textFontbookStyle"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/phone_code"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_phone_title" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_mail_title"-->
+<!--                style="@style/textFontbookStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="24dp"-->
+<!--                android:text="@string/hint_email_address"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textDirectionStyle"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_phone_value" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatEditText-->
+<!--                android:id="@+id/tv_mail_value"-->
+<!--                style="@style/editDirectionStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/input_height"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:background="@drawable/round_adress_input"-->
+<!--                android:hint="@string/hint_add_email"-->
+<!--                android:inputType="textEmailAddress"-->
+<!--                android:maxLines="1"-->
+<!--                android:paddingStart="@dimen/_3sdp"-->
+<!--                android:scrollHorizontally="true"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/mini_larg_text"-->
+<!--                android:theme="@style/textFontbookStyle"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_mail_title" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_address_title"-->
+<!--                style="@style/textFontbookStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:text="@string/hint_address_name"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textFontbookStyle"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_block_value" />-->
+
+
+<!--            <EditText-->
+<!--                android:id="@+id/tv_address_value"-->
+<!--                style="@style/editDirectionStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/input_height"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:background="@drawable/round_adress_input"-->
+<!--                android:hint="@string/hint_add_address"-->
+<!--                android:inputType="textEmailAddress"-->
+<!--                android:maxLines="1"-->
+<!--                android:paddingStart="@dimen/_3sdp"-->
+<!--                android:scrollHorizontally="true"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/mini_larg_text"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_address_title" />-->
+<!--            <TextView-->
+<!--                android:id="@+id/tv_country_title"-->
+<!--                style="@style/textFontbookStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:text="@string/country_text"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textFontbookStyle"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_mail_value" />-->
+
+
+<!--            <EditText-->
+<!--                android:id="@+id/tv_country_value"-->
+<!--                style="@style/editDirectionStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/input_height"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:background="@drawable/country_box_bg"-->
+<!--                android:enabled="false"-->
+<!--                android:maxLines="1"-->
+<!--                android:paddingStart="@dimen/_3sdp"-->
+<!--                android:scrollHorizontally="true"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/mini_larg_text"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_country_title"-->
+<!--                tools:ignore="SpeakableTextPresentCheck" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_city_title"-->
+<!--                style="@style/textFontbookStyle"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:text="@string/hint_cityy"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textFontbookStyle"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_country_value" />-->
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/city_view"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/tv_city_title"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_city_title">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_city_value"-->
+<!--                    style="@style/editDirectionStyle"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/input_height"-->
+<!--                    android:background="@drawable/round_adress_input"-->
+<!--                    android:clickable="true"-->
+<!--                    android:descendantFocusability="blocksDescendants"-->
+<!--                    android:drawableEnd="@drawable/arrow_down_layer"-->
+<!--                    android:focusableInTouchMode="false"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:paddingStart="@dimen/_3sdp"-->
+<!--                    android:text="@string/choose_city"-->
+<!--                    android:textColor="@color/colorPrimary"-->
+<!--                    android:textSize="@dimen/mini_larg_text"-->
+<!--                    tools:ignore="DuplicateClickableBoundsCheck" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/cityValueEditText"-->
+<!--                    style="@style/editDirectionStyle"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/input_height"-->
+<!--                    android:background="@drawable/round_adress_input"-->
+<!--                    android:hint="@string/enter_city"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:paddingStart="@dimen/_3sdp"-->
+<!--                    android:scrollHorizontally="true"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:textColor="@color/colorPrimary"-->
+<!--                    android:textSize="@dimen/mini_larg_text"-->
+<!--                    android:visibility="visible" />-->
+<!--            </RelativeLayout>-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_area_title"-->
+<!--                style="@style/textFontbookStyle"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:text="@string/hint_area"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textFontbookStyle"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/city_view"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/city_view" />-->
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/areaView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/city_view"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_area_title">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_area_value"-->
+<!--                    style="@style/editDirectionStyle"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/_30sdp"-->
+<!--                    android:layout_marginTop="@dimen/_5sdp"-->
+<!--                    android:background="@drawable/round_adress_input"-->
+<!--                    android:clickable="true"-->
+<!--                    android:descendantFocusability="blocksDescendants"-->
+<!--                    android:focusableInTouchMode="false"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:paddingStart="@dimen/_3sdp"-->
+<!--                    android:text="@string/choose_area"-->
+<!--                    android:textColor="@color/colorPrimary"-->
+<!--                    android:textSize="@dimen/mini_larg_text" />-->
+
+
+<!--                <EditText-->
+<!--                    android:id="@+id/areaValueEditText"-->
+<!--                    style="@style/editDirectionStyle"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/input_height"-->
+<!--                    android:background="@drawable/round_adress_input"-->
+<!--                    android:hint="@string/enter_state"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:paddingStart="@dimen/_3sdp"-->
+<!--                    android:scrollHorizontally="true"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:textColor="@color/colorPrimary"-->
+<!--                    android:textSize="@dimen/mini_larg_text"-->
+<!--                    android:visibility="visible" />-->
+<!--            </RelativeLayout>-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_block_title"-->
+<!--                style="@style/textFontbookStyle"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:text="@string/hint_blockid"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textFontbookStyle"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/tv_city_title"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/city_view"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/areaView" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/tv_block_value"-->
+<!--                style="@style/editDirectionStyle"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="@dimen/input_height"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:background="@drawable/round_adress_input"-->
+<!--                android:hint="@string/hint_block"-->
+<!--                android:inputType="textEmailAddress"-->
+<!--                android:maxLines="1"-->
+<!--                android:paddingStart="@dimen/_3sdp"-->
+<!--                android:scrollHorizontally="true"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/mini_larg_text"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/tv_block_title"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_block_title" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_street_title"-->
+<!--                style="@style/textFontbookStyle"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:text="@string/hint_title_street"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textFontbookStyle"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/tv_address_value"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/tv_address_value"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_address_value" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/tv_street_value"-->
+<!--                style="@style/editDirectionStyle"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="@dimen/input_height"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:background="@drawable/round_adress_input"-->
+<!--                android:hint="@string/hint_enter_street"-->
+<!--                android:inputType="text"-->
+<!--                android:maxLines="1"-->
+<!--                android:paddingStart="@dimen/_3sdp"-->
+<!--                android:scrollHorizontally="true"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/mini_larg_text"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/tv_street_title"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_street_title" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_additional_direction_title"-->
+<!--                style="@style/textFontbookStyle"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:text="@string/hint_title_additional_direction"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textFontbookStyle"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/tv_city_title"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/city_view"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_street_value" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/tv_additional_direction_value"-->
+<!--                style="@style/editDirectionStyle"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="@dimen/input_height"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:background="@drawable/round_adress_input"-->
+<!--                android:hint="@string/hint_enter_additional_direction"-->
+<!--                android:inputType="text"-->
+<!--                android:maxLines="1"-->
+<!--                android:paddingStart="@dimen/_3sdp"-->
+<!--                android:scrollHorizontally="true"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/mini_larg_text"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/tv_additional_direction_title"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_additional_direction_title" />-->
+
+<!--            <androidx.constraintlayout.widget.Group-->
+<!--                android:id="@+id/area_components"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:visibility="gone"-->
+<!--                app:constraint_referenced_ids="tv_area_title,areaView" />-->
+
+<!--            <androidx.constraintlayout.widget.Group-->
+<!--                android:id="@+id/block_components"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:constraint_referenced_ids="tv_block_title,tv_block_value" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_zip_title"-->
+<!--                style="@style/textFontbookStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:text="@string/hint_zipcode"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textFontbookStyle"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/tv_additional_direction_value"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_additional_direction_value" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/tv_zip_value"-->
+<!--                style="@style/editDirectionStyle"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="@dimen/input_height"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:background="@drawable/round_adress_input"-->
+<!--                android:hint="@string/hint_add_zipcode"-->
+<!--                android:maxLines="1"-->
+<!--                android:paddingStart="@dimen/_3sdp"-->
+<!--                android:scrollHorizontally="true"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/mini_larg_text"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/tv_zip_title"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_zip_title" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_paci_title"-->
+<!--                style="@style/textFontbookStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:text="@string/hint_paci"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/normal_text"-->
+<!--                android:theme="@style/textDirectionStyle"-->
+<!--                android:visibility="gone"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_zip_value" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/tv_paci_value"-->
+<!--                style="@style/editDirectionStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/input_height"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:background="@drawable/round_adress_input"-->
+<!--                android:inputType="textEmailAddress"-->
+<!--                android:maxLines="1"-->
+<!--                android:paddingStart="@dimen/_3sdp"-->
+<!--                android:scrollHorizontally="true"-->
+<!--                android:singleLine="true"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:textSize="@dimen/mini_larg_text"-->
+<!--                android:visibility="gone"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_paci_title" />-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/isprimary"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/_8sdp"-->
+<!--                android:layout_marginTop="@dimen/_8sdp"-->
+<!--                android:text="@string/hint_isdefault"-->
+<!--                android:textSize="@dimen/_10sdp"-->
+<!--                android:visibility="invisible"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_paci_value" />-->
+
+
+<!--            <androidx.constraintlayout.widget.Group-->
+<!--                android:id="@+id/guest_group"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:visibility="gone"-->
+<!--                app:constraint_referenced_ids="tv_user_name_title,tv_user_name_value,tv_mail_title,tv_mail_value" />-->
+
+<!--            <androidx.constraintlayout.widget.Group-->
+<!--                android:id="@+id/street_group"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:constraint_referenced_ids="tv_street_title,tv_street_value" />-->
+
+<!--            <androidx.constraintlayout.widget.Group-->
+<!--                android:id="@+id/extra_info_group"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:constraint_referenced_ids="tv_additional_direction_title,tv_additional_direction_value" />-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    </ScrollView>-->
+
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/btn_add"-->
+<!--        style="@style/SubmitButton"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_marginTop="@dimen/_35sdp"-->
+<!--        android:layout_marginBottom="@dimen/_15sdp"-->
+<!--        android:text="@string/continue_str"-->
+<!--        android:textSize="@dimen/_11sdp"-->
+<!--        android:visibility="visible"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/scrollView1" />-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/animationView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="#BECDC9C9"-->
+<!--        android:clickable="true"-->
+<!--        tools:ignore="SpeakableTextPresentCheck"-->
+<!--        tools:visibility="gone">-->
+
+<!--        <com.airbnb.lottie.LottieAnimationView-->
+<!--            android:layout_width="@dimen/animation_loader_size"-->
+<!--            android:layout_height="@dimen/animation_loader_size"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            app:lottie_autoPlay="true"-->
+<!--            app:lottie_loop="true"-->
+<!--            app:lottie_rawRes="@raw/loading_ani" />-->
+<!--    </RelativeLayout>-->
+
+<!--    <ProgressBar-->
+<!--        android:id="@+id/progress"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:visibility="gone"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_free_delivery"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="300dp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:background="@color/gray_light"
+   >
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:textColor="@color/colorPrimary"
+        style="@style/textFontMeduimStyle"
+        android:textSize="@dimen/block_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Arabian perfume" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        style="@style/textFontbookStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        android:text="@string/checkout_amazing"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:textColor="@color/description_color"
+        android:textSize="@dimen/block_description"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_see_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        android:gravity="center"
+        style="@style/textFontbookStyle"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_title"
+        app:layout_constraintBottom_toBottomOf="@id/tv_title"
+        app:layout_constraintTop_toTopOf="@id/tv_title"
+        android:text="@string/see_more_brands"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:drawableEnd="@drawable/arrow_right_icon_layer"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/block_see_more"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_slide_two"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:nestedScrollingEnabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_description"
+        tools:itemCount="2"
+        tools:listitem="@layout/list_item_product"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

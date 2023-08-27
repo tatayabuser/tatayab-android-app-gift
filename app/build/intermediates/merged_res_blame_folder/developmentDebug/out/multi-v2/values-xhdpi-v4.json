@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\latest tatayab 3\\tatayab-androiddd\\app\\build\\intermediates\\incremental\\mergeDevelopmentDebugResources\\merged.dir\\values-xhdpi-v4\\values-xhdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\amrra\\.gradle\\caches\\transforms-3\\3d7baaedfdcd9918be7f8c5162a6b0f2\\transformed\\jetified-insider-13.4.1-nh\\res\\values-xhdpi-v4\\values-xhdpi-v4.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,105",
+                        "endColumns": "49,47",
+                        "endOffsets": "100,148"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\amrra\\.gradle\\caches\\transforms-3\\bc869240fe72943ef85ca66a6e165750\\transformed\\jetified-twitter-core-3.1.1\\res\\values-xhdpi-v4\\values-xhdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "54",
+                        "endOffsets": "105"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "153",
+                        "endColumns": "54",
+                        "endOffsets": "203"
+                    }
+                }
+            ]
+        }
+    ]
+}

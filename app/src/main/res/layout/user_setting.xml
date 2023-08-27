@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/_9sdp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/language1"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="@dimen/_40sdp"-->
+<!--            android:background="@color/white"-->
+<!--            android:drawableEnd="@drawable/ic_arrow_right"-->
+<!--            android:gravity="start|center_vertical"-->
+<!--            android:text="@string/language"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/_13sdp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintWidth_percent="0.9" />-->
+<!--        <View-->
+<!--            android:id="@+id/view_after_language"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="@dimen/_1sdp"-->
+<!--            android:background="@color/gray"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/language1"-->
+<!--            app:layout_constraintWidth_percent="0.9" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/countries"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="@dimen/_40sdp"-->
+<!--            android:background="@color/white"-->
+<!--            android:drawableEnd="@drawable/ic_arrow_right"-->
+<!--            android:gravity="start|center_vertical"-->
+<!--            android:text="@string/countries"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/_13sdp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/view_after_language"-->
+<!--            app:layout_constraintWidth_percent="0.9" />-->
+
+<!--        <View-->
+<!--            android:id="@+id/view_after_countries"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="@dimen/_1sdp"-->
+<!--            android:background="@color/gray"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/countries"-->
+<!--            app:layout_constraintWidth_percent="0.9" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/currencies"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="@dimen/_40sdp"-->
+<!--            android:background="@color/white"-->
+<!--            android:drawableEnd="@drawable/ic_arrow_right"-->
+<!--            android:gravity="start|center_vertical"-->
+<!--            android:text="@string/currencies"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/_13sdp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/view_after_countries"-->
+<!--            app:layout_constraintWidth_percent="0.9" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

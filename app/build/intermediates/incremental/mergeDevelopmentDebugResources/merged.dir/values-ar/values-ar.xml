@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools" xmlns:ns2="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="sort_array">
+        <item>الاكثر رواجا"</item>
+        <item>السعر: من الاعلي الي الاقل</item>
+        <item>السعر من الاقل الي الاعلي</item>
+    </string-array>
+    <dimen name="account_margin">1dp</dimen>
+    <dimen name="block_description">12dp</dimen>
+    <dimen name="block_see_more">10dp</dimen>
+    <dimen name="block_title">16dp</dimen>
+    <dimen name="bootom_text">12dp</dimen>
+    <dimen name="cart_content_height">150dp</dimen>
+    <dimen name="cart_item_height">20dp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" ns1:override="true">8dp</dimen>
+    <dimen name="design_bottom_navigation_text_size" ns1:override="true">8dp</dimen>
+    <dimen name="discount_height">20dp</dimen>
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="input_height">55dp</dimen>
+    <dimen name="larg_text">16dp</dimen>
+    <dimen name="mini_larg_text">14dp</dimen>
+    <dimen name="mini_large_text">12dp</dimen>
+    <dimen name="mini_normal_text">10dp</dimen>
+    <dimen name="normal_text">12dp</dimen>
+    <dimen name="order_details_mrgin">14dp</dimen>
+    <dimen name="product_details_delimiter_height">4dp</dimen>
+    <dimen name="product_details_margin">16dp</dimen>
+    <dimen name="small_text">10dp</dimen>
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="zero">%d إشعار جديد</item>
+    <item quantity="one">إشعار جديد واحد (%d)</item>
+    <item quantity="two">إشعاران جديدان (%d)</item>
+    <item quantity="few">%d إشعارات جديدة</item>
+    <item quantity="many">%d إشعارًا جديدًا</item>
+    <item quantity="other">%d إشعار جديد</item>
+  </plurals>
+    <plurals name="number_of_items">
+        <item quantity="one">  المجموع الكلي  (%d صنف) </item>
+        <item quantity="few"> المجموع الكلي (%d صنف)</item>
+        <item quantity="zero">0</item>
+        <item quantity="two"> المجموع الكلي (%d صنف)</item>
+        <item quantity="many"> المجموع الكلي (%d صنف)</item>
+    </plurals>
+    <string name="C">تم توصيل طلبك لشركة الشحن</string>
+    <string name="C_name">تم الشحن</string>
+    <string name="E">طلبك اكتمل بنجاح .. شكرا لاستخدامكم تطيب</string>
+    <string name="E_name">مكتملة</string>
+    <string name="F">نأسف .. حدثت مشكلة في الطلب الخاص بك</string>
+    <string name="F_name">فشلت</string>
+    <string name="G">نأسف !! تم ارجاع الطلب الخاص بك</string>
+    <string name="G_name"> مرتجعة</string>
+    <string name="I">نأسف !! تم الغء الطلب</string>
+    <string name="I_name">ملغية</string>
+    <string name="Login">الدخول</string>
+    <string name="Login_text">تسجيل الدخول</string>
+    <string name="ORDER_DATE">تاريخ الطلب</string>
+    <string name="ORDER_ID">رقم الطلب</string>
+    <string name="Overview">نظرة عامة</string>
+    <string name="P">تم استلام طلبك و هو تحت المراجعة الان.</string>
+    <string name="P_name">تحت المعالجة</string>
+    <string name="Pl">"تم اتمام الطلب … في انتظار رد الادارة "</string>
+    <string name="Pl_name">تم الطلب</string>
+    <string name="R">"طلبك تحت التعبئة "</string>
+    <string name="R_name">تحت التعبئة</string>
+    <string name="Reviewers"> التقييمات </string>
+    <string name="S">تم قبول طلبك وهو قيد التحضير .</string>
+    <string name="S_name">تحت التحضير </string>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"التوجه إلى المنزل"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"التنقل إلى أعلى"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"خيارات أكثر"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"تم"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"عرض الكل"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"اختيار تطبيق"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"إيقاف"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"مفعّلة"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"حذف"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"فضاء"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"القائمة+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"بحث…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"محو طلب البحث"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"طلب بحث"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"البحث"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"إرسال طلب البحث"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"بحث صوتي"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"مشاركة مع"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"مشاركة مع <ns2:g id="APPLICATION_NAME">%s</ns2:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"تصغير"</string>
+    <string name="aboutus">من نحن</string>
+    <string name="add">اضافة</string>
+    <string name="add_address">اضافة اول عنوان</string>
+    <string name="add_address_description">نحتاج بعض المعلومات لاكمال الطلب</string>
+    <string name="add_address_title">الرجاء ادخل تفاصيل العنوان</string>
+    <string name="add_first_Address">"أضف عنوانك الاول "</string>
+    <string name="add_gift">أرسلها كهدية</string>
+    <string name="add_gift_button">أضف</string>
+    <string name="add_gift_info">معلومات الهدية:</string>
+    <string name="add_img">صورة العطر</string>
+    <string name="add_last_touch">أضف اللمسة الاخيرة</string>
+    <string name="add_new_address">اضافة عنوان جديد</string>
+    <string name="add_rate">"أضف تقييمك من النجوم "</string>
+    <string name="add_review">اضافة تقييم</string>
+    <string name="add_to_cart">أضف إلى السلة</string>
+    <string name="add_wishlist_success">تم اضافة المنتج للمفضلة بنجاح</string>
+    <string name="addaddress_success">تم اضافة العنوان بنجاح</string>
+    <string name="added_to_cart">في سلة التسوق</string>
+    <string name="address">العناوين</string>
+    <string name="address_name">اسم العنوان</string>
+    <string name="address_name_hint">(مثلا عنوان العمل عنوان المنزل الخ ...)</string>
+    <string name="addreviewsuccess">سيتم فحص تقيمك قبل نشره.</string>
+    <string name="agree_to_terms">اوافق علي الشروط والاحكام</string>
+    <string name="agree_to_terms_with_links">باستخدام تطيب فإنك توافق على <![CDATA[<a href = "https://tatayab.com/%1$s-%2$s/terms">الشروط </a >و <a href = "https://tatayab.com/%1$s-%2$s/privacy">سياسة الخصوصية </a > ]]>الخاصة بنا</string>
+    <string formatted="false" name="all">%%2d %d d</string>
+    <string name="all_options">الكل</string>
+    <string name="all_rights_reserved">
+        Tatayab \u00A9 2019.All Rights Reserved
+    </string>
+    <string name="all_trnsactions">مشاهدة كافة المعاملات ></string>
+    <string name="already_in_wishlist">المنتج موجود بالفعل في المفضلة</string>
+    <string name="amount">الكمية : </string>
+    <string name="apartment">شقة</string>
+    <string name="app_name">تطيب</string>
+    <string name="app_version">نسخة التطبيق </string>
+    <string name="apply">تطبيق</string>
+    <string name="apply_conditions">بالاستمرار الي وضع طلبي %1s</string>
+    <string name="area">منطقة</string>
+    <string name="ask_recipient_for_address">اسال المرسل اليه عن العنوان</string>
+    <string name="automatic_coupon">تم تطبيق  %1s علي طلبك</string>
+    <string name="back">رجوع</string>
+    <string name="based_on">حسب</string>
+    <string name="be_first_comment">اضف اول تعليق</string>
+    <string name="belong_to">موجود في : </string>
+    <string name="belvedere_dialog_camera">الكاميرا</string>
+    <string name="belvedere_dialog_gallery">المعرض</string>
+    <string name="belvedere_fam_desc_collapse_fam">طيّ قائمة إجراءات عائمة</string>
+    <string name="belvedere_fam_desc_expand_fam">توسيع قائمة إجراءات عائمة</string>
+    <string name="belvedere_fam_desc_open_gallery">استيراد ملف من المعرض</string>
+    <string name="belvedere_fam_desc_open_google_photos">استيراد صورة من صور Google</string>
+    <string name="belvedere_image_stream_file_too_large">الملف أكبر مما ينبغي</string>
+    <string name="belvedere_image_stream_title">مكتبة الصور</string>
+    <string name="belvedere_image_stream_unknown_app">غير معروف</string>
+    <string name="belvedere_permissions_denied">رُفِضت الأذونات</string>
+    <string name="belvedere_stream_item_camera_tile_desc">استيراد صورة من الكاميرا</string>
+    <string name="belvedere_stream_item_select_file_desc">تحديد الملف %s</string>
+    <string name="belvedere_stream_item_select_image_desc">تحديد الصورة %s</string>
+    <string name="belvedere_stream_item_unselect_file_desc">إلغاء تحديد الملف %s</string>
+    <string name="belvedere_stream_item_unselect_image_desc">إلغاء تحديد الصورة %s</string>
+    <string name="belvedere_toolbar_desc_collapse">إغلاق منتقي الصورة</string>
+    <string name="block">"حي "</string>
+    <string name="bottomsheet_action_expand_halfway">توسيع البطاقة السفلية</string>
+    <string name="brand_title">الماركة التجارية</string>
+    <string name="brands">الموزعين</string>
+    <string name="bringing_to_you_special_tatayab_services">نقدم لكم خدمات تطيب مميزة</string>
+    <string name="bukhar">البخور</string>
+    <string name="by">بواسطة</string>
+    <string name="call_to_action">لتحصل عليه</string>
+    <string name="call_us">"اتصل بنا "</string>
+    <string name="camera_permission">يجب السماح للتطبيق باستخدام الكاميرا.</string>
+    <string name="cancel">الغاء</string>
+    <string name="cannot_Add">الكمية غير كافية لاضافة المنتج للسلة مرة اخري</string>
+    <string name="cant_access_location">تعذر الوصول لصلاحيات الموقع</string>
+    <string name="cart">عربة التسوق</string>
+    <string name="cart_clear_error">هناك مشكلة اثناء حذف المنتجات من السلة.</string>
+    <string name="cart_is_empty">سلة المشتريات فارغة</string>
+    <string name="cart_items">محتويات السلة</string>
+    <string name="cart_merging_error">هناك مشكله اثناء دمج المنتجات للسلة.</string>
+    <string name="cart_total">مجموع السلة</string>
+    <string name="category">الفئات</string>
+    <string name="change">تغيير</string>
+    <string name="change_password">تغيير كلمة المرور</string>
+    <string name="character_counter_content_description">تمّ إدخال %1$d حرف من إجمالي %2$d.</string>
+    <string name="character_counter_overflowed_content_description">تجاوز عدد الأحرف المسموح به %1$d من %2$d.</string>
+    <string name="chat_activity_title">تحدث معانا</string>
+    <string name="check_ballance">استعرض الرصيد</string>
+    <string name="checkout">إتمام الطلب</string>
+    <string name="checkout_amazing">تصفح من مجموعتنا المذهلة</string>
+    <string name="checkout_now">الشراء الان</string>
+    <string name="checkout_total">السعر النهائي</string>
+    <string name="checkout_txt">الدفع لدينا آمن. لا نقوم بتخزين اي معلومات بطاقة دفع على نظامنا.</string>
+    <string name="choice_address">أدخل العنوان </string>
+    <string name="choose">أختر</string>
+    <string name="choose_area">اختار منطقة </string>
+    <string name="choose_area_first">يجب اختيار المنطقة!</string>
+    <string name="choose_city">اختار مدينة</string>
+    <string name="choose_city_first">يجب اختيار المدينة اولا!</string>
+    <string name="choose_tabby_at_the_payment_page">Choose Tabby at the payment page</string>
+    <string name="clear_list"> مسح </string>
+    <string name="clear_text_end_icon_content_description">محو النص</string>
+    <string name="clear_the_cart_first">حذف السلة الحالية ثم الدمج</string>
+    <string name="close">اغلاق</string>
+    <string name="collect_address_recipient">سنتلقى العنوان من المرسل اليه</string>
+    <string gender="unknown" name="com_facebook_device_auth_instructions">تفضل بزيارة &lt;b>facebook.com/device&lt;/b> وإدخال الرمز الموضح أعلاه.</string>
+    <string gender="unknown" name="com_facebook_image_download_unknown_error">حدث خطأ غير متوقع أثناء تنزيل صورة.</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_message">يتطلب تسجيل دخول WebView الحصول إلى إذن INTERNET</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_title">خطأ AndroidManifest</string>
+    <string gender="unknown" name="com_facebook_like_button_liked">أعجبك</string>
+    <string gender="unknown" name="com_facebook_like_button_not_liked">أعجبني</string>
+    <string gender="unknown" name="com_facebook_loading">جارٍ التحميل…</string>
+    <string gender="unknown" name="com_facebook_loginview_cancel_action">إلغاء</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button">تسجيل الدخول</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_continue">متابعة بحساب فيسبوك</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_long">تسجيل الدخول بحساب فيسبوك</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_action">تسجيل الخروج</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_button">تسجيل الخروج</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_as">تم تسجيل الدخول باسم: %1$s</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_using_facebook">تم تسجيل الدخول باستخدام حساب فيسبوك</string>
+    <string gender="unknown" name="com_facebook_send_button_text">إرسال</string>
+    <string gender="unknown" name="com_facebook_share_button_text">مشاركة</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions">لربط حسابك، افتح تطبيق فيسبوك على جهازك المحمول وراجع الإشعارات.</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions_or">- أو -</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_cancel">لست أنت؟</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_continue_as">متابعة باسم %1$s</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_title">تأكيد تسجيل الدخول</string>
+    <string gender="unknown" name="com_facebook_tooltip_default">أنت المتحكم في الأمر - يمكنك اختيار المعلومات التي تود مشاركتها مع التطبيقات.</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">تفعيل</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">‏لن يعمل %1$s ما لم يتم تفعيل خدمات Google Play.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">‏تفعيل خدمات Google Play</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">تثبيت</string>
+    <string name="common_google_play_services_install_text">‏لن يتم تشغيل %1$s بدون خدمات Google Play، والتي لا تتوفر على جهازك.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">‏الحصول على خدمات Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">‏مدى توفّر خدمات Google Play</string>
+    <string name="common_google_play_services_notification_ticker">‏خطأ في خدمات Google Play</string>
+    <string name="common_google_play_services_unknown_issue">‏لدى %1$s مشكلة في خدمات Google Play. يُرجى إعادة المحاولة.</string>
+    <string name="common_google_play_services_unsupported_text">‏لن يتم تشغيل %1$s بدون خدمات Google Play التي لا يوفرها جهازك.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">تحديث</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">‏لن يتم تشغيل %1$s ما لم يتم تحديث خدمات Google Play.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">‏تحديث خدمات Google Play</string>
+    <string name="common_google_play_services_updating_text">‏لن يتم تشغيل %1$s بدون خدمات Google Play، والتي يتم تحديثها حاليًا.</string>
+    <string name="common_google_play_services_wear_update_text">‏يجب توفر إصدار جديد من خدمات Google Play. سيتم تحديثها تلقائيًا قريبًا.</string>
+    <string name="common_open_on_phone">فتح على الهاتف</string>
+    <string name="common_signin_button_text">تسجل الدخول</string>
+    <string name="common_signin_button_text_long">‏تسجيل الدخول عبر Google</string>
+    <string name="completedata">اكمل البيانات</string>
+    <string name="completedata_profile">استكمال بيناتك </string>
+    <string name="concierge">كونسيرج</string>
+    <string name="concierge_delivery_des">تصل إلى لمنزلك</string>
+    <string name="concierge_description">لا يمكنك العثور على عطرك؟\n دعنا نساعدك في العثور على مفضلاتك</string>
+    <string name="concierge_description2">هل تبحث عن عطر معين أو مكياج أو احد منتجات العناية  بالبشرة والتي ويصعب العثور عليه؟ المساعد الشخصي في تطيب سيحصل عليه من أجلك.</string>
+    <string name="concierge_free_des">يتم تطبيق رسوم خدمة إضافية</string>
+    <string name="concierge_process">احد ممثلي خدمة العملاء لدينا تلقلي طلبك, انتظر منا مكالمة في خلال 24 ساعة</string>
+    <string name="concierge_search_desc">نجد لك المنتج في أي مكان وزمان</string>
+    <string name="concierge_steps">اتبع هذه الخطوات البسيطة للحصول على النتج الذي تبحث عنه</string>
+    <string name="concierge_title">مرحبا بكم في تطيب كونسيرج \n اول كونسيرج في العالم متخصص في العطور \n الان يمكنك الحصول علي اي عطر في العالم خلال خطوات بسيطه</string>
+    <string name="confirm">تأكيد</string>
+    <string name="congratulate">تهنئة</string>
+    <string name="congratulation">مبروك</string>
+    <string name="contactus">اتصل بنا</string>
+    <string name="contine">استمرار</string>
+    <string name="continue_as_guest">الدخول كزائر</string>
+    <string name="continue_shopping">تابع الشراء</string>
+    <string name="continue_shopping_capitals">متابعة التسوق</string>
+    <string name="continue_str">متابعة</string>
+    <string name="continue_to_payment">إتمام الطلب</string>
+    <string name="continue_to_proceed">أكمل عملية الشراء</string>
+    <string name="continue_with_email">أكمل بإستخدام البريد الإلكترونى</string>
+    <string name="continue_with_facebook">الاستمرار بالفيس بوك</string>
+    <string name="continue_with_google">الاستمرار بجوجل</string>
+    <string name="countires_response_error">هناك خطأ في جلب بيانات الدول!</string>
+    <string name="countries">البلدان</string>
+    <string name="country_not_supported">الدولة غير مدعومة</string>
+    <string name="country_text">الدولة</string>
+    <string name="coupon">كود الخصم:</string>
+    <string name="coupon_applied">الخصم</string>
+    <string name="coupon_code">كود الخصم</string>
+    <string name="coupon_success">تم تطبيق الخصم بنجاح</string>
+    <string name="credit">رصيدي</string>
+    <string name="credit_checkout">رصيدي</string>
+    <string name="credit_is_valid_for_30_days">الرصيد صالح لغاية 30 يوم.</string>
+    <string name="currencies">العملات</string>
+    <string name="currency">%1$s %2$s</string>
+    <string name="currency_text">العملة</string>
+    <string name="current_password">كلمة المرور الحالية</string>
+    <string name="custom_duties">رسوم جمركية</string>
+    <string name="customer_also_bought">قائمة المشتريات المشابهة</string>
+    <string name="customer_reviws">تقييمات العملاء</string>
+    <string name="default_address">الاساسية</string>
+    <string name="delete">حذف</string>
+    <string name="deliver_as_gift">ارسلها كهديه</string>
+    <string name="delivered_address">العنوان الذي سيتم التوصيل اليه</string>
+    <string name="delivery_address">عنوان مكان التوصيل</string>
+    <string name="delivery_address_title">عنوان التوصيل</string>
+    <string name="delivery_and_return_policy">سياسات المرتجعات والتوصيل</string>
+    <string name="delivery_billing_address">عنوان التوصيل :</string>
+    <string name="delivery_charge">قيمة الشحن :</string>
+    <string name="delivery_part_1"> تاريخ التوصيل المتوقع:</string>
+    <string name="delivery_part_3">أيام</string>
+    <string name="delivery_time">توصيل الطلب</string>
+    <string name="delivery_time_impacted">وقت التوصيل ربما يتاثر بعدم الوصول للمستلم </string>
+    <string name="detect_my_location">حدد مكانى</string>
+    <string name="dimiss">تخطي</string>
+    <string name="discount">الخصم</string>
+    <string name="discounts">خصومات </string>
+    <string name="do_lat_action_again">يمكنك الان تنفيذ اخر عمليه لك!</string>
+    <string name="do_you_want_to_trun_on_gps">هل تريد تفعيل ال GPS?</string>
+    <string name="dont_have_account"><![CDATA[
+لا تمتلك حساب ? <font color="#A67C52">سجل الان</font>
+]]></string>
+    <string name="earn_5_kd_to_use_on_your_next_orders">اكسب %1$s لاستخدامها في طلبك القادم</string>
+    <string name="edit">تعديل</string>
+    <string name="edit_address">تعديل العنوان</string>
+    <string name="edit_as_gift">تعديل الهدية</string>
+    <string name="edit_gift">تعديل الهدية</string>
+    <string name="edit_or_remove_gift">تعديل او حذف الهدية</string>
+    <string name="edit_success">تم تعديل بياناتك بنجاح</string>
+    <string name="editaddress_success">تم تحديث العنوان بنجاح</string>
+    <string name="email">ارسل بريد الكتروني</string>
+    <string name="empty_cart_description">"يمكنك اضافة منتجات للسلة بالضغط علي رمز السلة "</string>
+    <string name="empty_search">خانة البحث فارغة</string>
+    <string name="enter_are">ادخل المنطقة</string>
+    <string name="enter_area_first">يجب ادخال المنطقة!</string>
+    <string name="enter_city">ادخل المدينة</string>
+    <string name="enter_city_first">يجب ادخال المدينة اولا!</string>
+    <string name="enter_code">ادخل الرمز</string>
+    <string name="enter_coupon_code">ادخل رمز او كوبون الهديه</string>
+    <string name="enter_hint_Neighborhood"> ادخل رقم الحي</string>
+    <string name="enter_product_name_and_brand">أدخل اسم المنتج والعلامة التجارية</string>
+    <string name="enter_receiver_name">ادخل اسم المستلم</string>
+    <string name="enter_sender_name">من فضلك ادخل اسمك</string>
+    <string name="enter_small_details_about_product_brand_size_etc">أدخل تفاصيل صغيرة حول المنتج والعلامة التجارية والحجم وما إلى ذلك</string>
+    <string name="enter_state">ادخل الولاية/المقاطعة</string>
+    <string name="enter_user_name">من فضلك ادخل الاسم!</string>
+    <string name="enter_your_full_name">أدخل الاسم الكامل</string>
+    <string name="enter_your_mobile_number">أدخل رقم هاتفك المحمول</string>
+    <string name="error_icon_content_description">خطأ</string>
+    <string name="error_message_no_payment_method">انت لم تقع باختيار طريقة الدفع!</string>
+    <string name="error_occure">حدث خطأ حاول مرة أخري</string>
+    <string name="error_phone_number">خطا في رقم التلفون</string>
+    <string name="error_with_account_login_again">انت بحاجة إلي تسجيل الدخول مرة اخري بسبب انتهاء صلاحية الجلسة,الرجاء التسجيل ومتابة التسوق</string>
+    <string name="error_with_swip">"حدث خطأ . اسحب للمحاولة مرة أخري "</string>
+    <string name="expected_delivery_time">التوصيل المتوقع</string>
+    <string name="exposed_dropdown_menu_content_description">عرض القائمة المنسدلة</string>
+    <string name="facebook_app_id">2459794954232593</string>
+    <string name="failed_to_deauth">"حدث خطأ في اعتماد التطبيق %1s"</string>
+    <string name="faq">FAQ</string>
+    <string name="fb_login_protocol_scheme">fb2459794954232593</string>
+    <string name="feature_products">المنتجات المميزة</string>
+    <string name="featured">Featured</string>
+    <string name="featured_products">"منتجات مميزة "</string>
+    <string name="female">أنثي</string>
+    <string name="filed_required">هذا الحقل مطلوب</string>
+    <string name="filter">تصنيف حسب</string>
+    <string name="first_name">الاسم الاول</string>
+    <string name="forget_password">نسيت كلمة السر ؟</string>
+    <string name="forgetten_password">كلمة المرور مفقودة</string>
+    <string name="fragment_add_address_title">عنوان جديد</string>
+    <string name="fragment_add_review_title">اضافة تقييم</string>
+    <string name="fragment_addresses_title">العناوين</string>
+    <string name="fragment_cart_title">عربة التسوق</string>
+    <string name="fragment_categories_title">الفئات</string>
+    <string name="fragment_checkout_title">الدفع</string>
+    <string name="fragment_countries_title">البلدان</string>
+    <string name="fragment_currencies_title">العملات</string>
+    <string name="fragment_edit_profile_title">تعديل الملف الشخصي</string>
+    <string name="fragment_filter_title">تخصيص</string>
+    <string name="fragment_order_details_title">تفاصيل الطلب</string>
+    <string name="fragment_order_tracking_title">تتبع حالة الطلب</string>
+    <string name="fragment_orders_title">طلباتي</string>
+    <string name="fragment_payment_title">الدفع</string>
+    <string name="fragment_privacy_title">الخصوصية</string>
+    <string name="fragment_product_details_title">تفاصيل المنتج</string>
+    <string name="fragment_product_reviews_title">التقييمات</string>
+    <string name="fragment_products_list_title">المنتجات</string>
+    <string name="fragment_sort_title">ترتيب</string>
+    <string name="fragment_suppliers_title">العلامات التجارية</string>
+    <string name="fragment_wishlist_title">المفضلة</string>
+    <string name="free">مجانا</string>
+    <string name="free_delivery">توصيل مجاني</string>
+    <string name="free_delivery_and_return">توصيل مجاني وإرجاع لجميع الطلبات</string>
+    <string name="french_perfum">عطر فرنسي</string>
+    <string name="friends_get_5_kd_off_when_they_register_and_place_first_order">  <![CDATA["<b>سيحصل اصدقائك على رصيد %1$s </b>"  في المحفظة. ]]></string>
+    <string name="from">"من "</string>
+    <string name="full_name">"الاسم بالكامل "</string>
+    <string name="fullname_with_chars">الاسم يجب ان يحتوي علي حروف فقط</string>
+    <string name="gender">النوع</string>
+    <string name="general_info">معلومات عامة</string>
+    <string name="gift_desc">سنقوم بتغليف الهدية الخاصة بك في صندوق هدايا مميز مع رسالة تهنئة مخصصة حسب اختيارك</string>
+    <string name="gift_message">اكتب رسالة الترحيب الخاصة بك وسنطبعها في بطاقة</string>
+    <string name="gift_options">خيارات الهدية</string>
+    <string name="gift_product_required">يجب اختيار منتج كهدية</string>
+    <string name="gift_removed">تم حذف هديتك بنجاح</string>
+    <string name="gift_sefty_desc">سيتم تحضير الهدية الخاص بك بعناية لضمان وصوله بأفضل حالة.</string>
+    <string name="got_a_promo_code">هل حصلت على كود الهدية؟</string>
+    <string name="gps_not_enabled">خدمة الGPS غير مفعلة!</string>
+    <string name="have_account_singin"><![CDATA[
+لديك حساب  ? <font color="#A67C52">سجل الدخول</font>
+]]></string>
+    <string name="help">المساعدة</string>
+    <string name="high_review">اعلي تقيمات اولا"</string>
+    <string name="high_to_low_price">السعر : من الأعلي الي الأقل </string>
+    <string name="hint_Neighborhood">الحي </string>
+    <string name="hint_Perfume_Name">اسم المنتج</string>
+    <string name="hint_add_address">الرجاء ادخل العنوان (شارع/منزل/المبني)</string>
+    <string name="hint_add_email">الرجاء ادخل البريد الالكتروني</string>
+    <string name="hint_add_zipcode">"أدخل الرمز البريدي "</string>
+    <string name="hint_address">العنوان : </string>
+    <string name="hint_address_name"> العنوان </string>
+    <string name="hint_address_title">  نوع العنوان   </string>
+    <string name="hint_area">المنطقة</string>
+    <string name="hint_billing_address">عنوان استلام الفواتير</string>
+    <string name="hint_block">"أدخل رقم البلوك "</string>
+    <string name="hint_blockid">القطعة </string>
+    <string name="hint_building">المبني / الدور</string>
+    <string name="hint_city">المدينة : </string>
+    <string name="hint_cityy">المدينة</string>
+    <string name="hint_comment">التعليق</string>
+    <string name="hint_country">البلد</string>
+    <string name="hint_email">البريد الالكتروني </string>
+    <string name="hint_email_address">البريد الالكتروني </string>
+    <string name="hint_enter_additional_direction">اختياري: أدخل معلومات إضافية</string>
+    <string name="hint_enter_street">أدخل الشارع الخاص بك</string>
+    <string name="hint_fullname">الاسم بالكامل</string>
+    <string name="hint_isdefault">اختيار كعنوان عنوان اساسي</string>
+    <string name="hint_name">الرجاء ادخل الاسم الشخصي</string>
+    <string name="hint_name_title">الاسم</string>
+    <string name="hint_paci">PACI No.(فقط متوفر في السعودية, قطر وخدمة الدفع عند الاستلام)</string>
+    <string name="hint_password">كلمة السر</string>
+    <string name="hint_phone">رقم الهاتف</string>
+    <string name="hint_phone_number">الرجاء ادخل رقم الهاتف</string>
+    <string name="hint_product_options">تصنيفات المنتج</string>
+    <string name="hint_province">المدينة/المحافظة</string>
+    <string name="hint_province_only">المحافظة : </string>
+    <string name="hint_select_perfum">اختر العطر</string>
+    <string name="hint_shipping_address">عنوان الشحن</string>
+    <string name="hint_street">الشارع / العلامة</string>
+    <string name="hint_title_additional_direction">معلومات إضافية</string>
+    <string name="hint_title_street">الشارع</string>
+    <string name="hint_upload_perfum_img">رفع صورة العصر(اختياري)</string>
+    <string name="hint_zipcode">الرمز البريدي</string>
+    <string name="hms_update"> تحديث</string>
+    <string name="home">الرئيسية</string>
+    <string name="home_blocks_error">هناك خطأ في جلب بيانات الشاشة الرئيسية!</string>
+    <string name="home_fragrances">العطور الرئيسية</string>
+    <string name="house">منزل</string>
+    <string name="icon_content_description">رمز مربع الحوار</string>
+    <string name="insider_notification_circle_color">"@color/my_push_notification_color"</string>
+    <string name="insider_notification_icon">"@drawable/logo"</string>
+    <string name="insider_notification_large_icon">"@drawable/logomy_push_notification_color"</string>
+    <string name="instagram">Instagram</string>
+    <string name="invalid_address_name">اسم عنوان غير صحيح </string>
+    <string name="invalid_address_title">اسم العنوان   </string>
+    <string name="invalid_cityy">اسم مدينة غير صحيح  </string>
+    <string name="invalid_comment">تعليق غير صحيح</string>
+    <string name="invalid_coupon">كود غير صحيح</string>
+    <string name="invalid_input">invalid input</string>
+    <string name="invalid_lat_long_used">خارج مكان التغطية</string>
+    <string name="invalid_phone_number"> رقم هاتف غير صحيح</string>
+    <string name="invite_friend"> <b>"ارسل</b> رابط لاصدقائك"</string>
+    <string name="invite_friend_message">دعاك إلى استخدام تطبيق تطيب ، وسوف تحصل على   %1$s كهدية في طلبك الأول</string>
+    <string name="item_checkout">"%1dx %2s"</string>
+    <string name="item_view_role_description">علامة تبويب</string>
+    <string name="items_ordered">"المنتجات المطلوبة : "</string>
+    <string name="keep_identity_secret">اجعل الهواية سرية</string>
+    <string name="kuwait">الكويت</string>
+    <string name="kwd">%1$s دينار كويتي</string>
+    <string name="language">اللغة</string>
+    <string name="language_text">English</string>
+    <string name="last_name">اسم العائلة</string>
+    <string name="last_review">اخر التقييمات</string>
+    <string name="last_step">انت علي بعد خطوات من تنفيذ الطلب</string>
+    <string name="livechat">دردشة مباشرة</string>
+    <string name="location_found">تم تحديد الدولة</string>
+    <string name="login_description">سجل دخولك لتسهيل الشراء</string>
+    <string name="login_in_app">التسجيل في التطبيق</string>
+    <string name="login_to_wishlist">يجب تسجيل الدخول لرؤية المنتجات المفضلة</string>
+    <string name="login_txt">تسجيل الدخول</string>
+    <string name="loginfirst">يجب تسجيل الدخول اولا"</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="logout_message">هل أنت متأكد أنك تريد تسجيل الخروج؟</string>
+    <string name="low_review">اقل تقييمات اولا"</string>
+    <string name="low_to_high_price">السعر : امن الأقل الي الأعلي </string>
+    <string name="male">ذكر</string>
+    <string name="marge_the_cart">دمجهم مع السلة</string>
+    <string name="material_clock_toggle_content_description">يُرجى اختيار صباحًا أو مساءً.</string>
+    <string name="material_hour_selection">تحديد الساعة</string>
+    <string name="material_hour_suffix">الساعة %1$s</string>
+    <string name="material_minute_selection">تحديد الدقائق</string>
+    <string name="material_minute_suffix">%1$s دقيقة</string>
+    <string name="material_timepicker_am">صباحًا</string>
+    <string name="material_timepicker_clock_mode_description">يُرجى التبديل إلى وضع الساعة لإدخال الوقت.</string>
+    <string name="material_timepicker_hour">الساعة</string>
+    <string name="material_timepicker_minute">دقيقة</string>
+    <string name="material_timepicker_pm">مساءً</string>
+    <string name="material_timepicker_select_time">اختيار الوقت</string>
+    <string name="material_timepicker_text_input_mode_description">يُرجى التبديل إلى وضع إدخال النص لإدخال الوقت.</string>
+    <string name="max_price">الحد الاقصى</string>
+    <string name="merged">تم الدمج</string>
+    <string name="message">الرسالة</string>
+    <string name="min_price">الحد الادني</string>
+    <string name="mini_world">العروض الصغيرة</string>
+    <string name="move_items_to_cart">نقل المنتجات إلي السلة </string>
+    <string name="move_to_cart">اضافة الي السلة</string>
+    <string name="moved_tocart_success">تم نقل المنتج من المفضلة الي السلة</string>
+    <string name="mtrl_badge_numberless_content_description">إشعار جديد</string>
+    <string name="mtrl_chip_close_icon_content_description">إزالة %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description">يبلغ عدد الإشعارات الجديدة أكثر من %1$d.</string>
+    <string name="mtrl_picker_a11y_next_month">التغيير إلى الشهر التالي</string>
+    <string name="mtrl_picker_a11y_prev_month">التغيير إلى الشهر السابق</string>
+    <string name="mtrl_picker_announce_current_selection">الاختيار الحالي: %1$s</string>
+    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">يُرجى اختيار تاريخ.</string>
+    <string name="mtrl_picker_date_header_unselected">التاريخ المحدَّد</string>
+    <string name="mtrl_picker_day_of_week_column_header">عمود الأيام: %1$s</string>
+    <string name="mtrl_picker_invalid_format">التنسيق غير صالح</string>
+    <string name="mtrl_picker_invalid_format_example">مثال: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">استخدام: %1$s</string>
+    <string name="mtrl_picker_invalid_range">النطاق غير صالح</string>
+    <string name="mtrl_picker_navigate_to_year_description">التنقل إلى العام %1$s</string>
+    <string name="mtrl_picker_out_of_range">خارج النطاق: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">تاريخ البدء – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – تاريخ الانتهاء</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">يُرجى اختيار نطاق زمني.</string>
+    <string name="mtrl_picker_range_header_unselected">تاريخ البدء - تاريخ الانتهاء</string>
+    <string name="mtrl_picker_save">حفظ</string>
+    <string name="mtrl_picker_text_input_date_hint">التاريخ</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">تاريخ الانتهاء</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">تاريخ البدء</string>
+    <string name="mtrl_picker_text_input_day_abbr">ي</string>
+    <string name="mtrl_picker_text_input_month_abbr">ش</string>
+    <string name="mtrl_picker_text_input_year_abbr">س</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">التبديل إلى وضع \"الإدخال في التقويم\"</string>
+    <string name="mtrl_picker_toggle_to_day_selection">انقر للتبديل إلى اختيار يوم</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">التبديل إلى وضع \"إدخال النص\"</string>
+    <string name="mtrl_picker_toggle_to_year_selection">انقر للتبديل إلى اختيار عام</string>
+    <string name="mubkhars">البخور</string>
+    <string name="my_account">حسابى</string>
+    <string name="my_orders">قائمة طلباتي</string>
+    <string name="my_profile">حسابي</string>
+    <string name="my_wishlist">قائمتي المفضلة</string>
+    <string name="name">الاسم</string>
+    <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"التنقل إلى أعلى"</string>
+    <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"فتح لائحة التنقل"</string>
+    <string name="navigate_to_cart">افحص السلة</string>
+    <string name="need_email_good_service">من اجل خدمه ممتازه، يرجي اضافة البريد الالكتروني</string>
+    <string name="new_password">كلمة المرور الجديدة</string>
+    <string name="next">التالى</string>
+    <string name="no">لا</string>
+    <string name="no_address">لا يوجد عنوان</string>
+    <string name="no_addresses">عفوا" لا يوجد عناوين مسجلة </string>
+    <string name="no_cart_items">لا يوجد منتجات بالكارت برجاء اضافة منتجات لمشاركتهم مع الاصدقاء.</string>
+    <string name="no_connection">"لا يوجد اتصال بالانترنت . اسحب للمحاولة مرة أخري  "</string>
+    <string name="no_geocoder_available">لا يتوفر امكانية تحديد المكان </string>
+    <string name="no_gift_found">لا يوجد هدية لتيم حذفها</string>
+    <string name="no_items">"لا يوجد اي بيانات "</string>
+    <string name="no_location_data_provided">لم يتم تحديد المكان</string>
+    <string name="no_location_found">لم نتمكن من تحديد الدولة</string>
+    <string name="no_orders">ليس لديك اي طلبات مع تطيب حتى الان </string>
+    <string name="no_overview">لا يوجد وصف حاليا" لهذا المنتج</string>
+    <string name="no_product_for_this_filter">لا يوجد منتجات متاحه لهذه التصفية الرجاء الاعاده لاخر تصفيه</string>
+    <string name="no_product_result">لا توجد نتائج  </string>
+    <string name="no_result">لا توجد منتجات تطابق بحثك</string>
+    <string name="no_reviwers">لا يوجد تقييمات لهذا المنتج</string>
+    <string name="no_store_browser">No play store or browser app</string>
+    <string name="no_transactions_yet">لا توجد معاملات حتى الآن!</string>
+    <string name="not_cities">لا يوجة مدن!</string>
+    <string name="not_filter_empty_list">لا يمكن التصنيف . لا يوجد بيانات</string>
+    <string name="not_merged">لم يتم الدمج</string>
+    <string name="not_send_invoice">* لن يتم إرسال الفاتورة مع الهدية.</string>
+    <string name="not_sort_empty_list">لا يمكن الترتيب . لا يوجد بيانات</string>
+    <string name="not_supported_version">هذه النسخة غير متوفرة الان, يجب التحديث من المتجر .</string>
+    <string name="notfy_me">أعلمني عندما يكون متاح </string>
+    <string name="notification_permission_dialog_message">يرجى تفعيل إذن التنبيهات لمتابعة طلبك</string>
+    <string name="notification_permission_dialog_title">إذن التنبيهات</string>
+    <string name="nowishlist">نأسف !!! لا يوجد منتجات مفضلة لديك</string>
+    <string name="numbers_and_start">" أرقام ويبدأ ب "</string>
+    <string formatted="false" name="off"> خصم</string>
+    <string name="ok">حسنا"</string>
+    <string name="oneDayMessage">   سيتم توصيل الطلب في او قبل  </string>
+    <string name="one_click_pay">شراء\nبكبسة\nذر</string>
+    <string name="one_click_pay_plain">شراء بكبسة ذر</string>
+    <string name="open_settings">الاعدادات</string>
+    <string name="operation_dailed">العمليه فشلت</string>
+    <string name="opps">انتبه !!</string>
+    <string name="option">الاختيار</string>
+    <string name="options">المجموعة</string>
+    <string name="or">او</string>
+    <string name="or_before"> أو قبله </string>
+    <string name="order_ID">رقم الطلب #:</string>
+    <string name="order_amount">الاجمالي :</string>
+    <string name="order_cost">تكلفة الطلب</string>
+    <string name="order_date">تاريخ الطلب</string>
+    <string name="order_delivered">Delivered</string>
+    <string name="order_id"> رقم الطلب # : </string>
+    <string name="order_note">اضافة ملاحظة</string>
+    <string name="order_now_n_t_amp_cs_apply">! تطبق الشروط والأحكام </string>
+    <string name="order_on">تاريخ الطلب  :</string>
+    <string name="order_onway">"On it`s way "</string>
+    <string name="order_process">Processing your order</string>
+    <string name="order_process_description">We are carefully packing your products</string>
+    <string name="order_products">منتجات الطلب</string>
+    <string name="order_statues"> حالة الطلب :</string>
+    <string name="order_total">اجمالي الطلب</string>
+    <string name="order_value">"قيمة الطلب : "</string>
+    <string name="other">أخرى</string>
+    <string name="our_services">خدماتنا</string>
+    <string name="out_of_stock">نفذت</string>
+    <string name="overview">نظرة عامة</string>
+    <string name="password_toggle_content_description">عرض كلمة المرور</string>
+    <string name="pay_hint_coupon">ادخل رمز او كوبون الهديه</string>
+    <string name="pay_with">الدفع من خلال</string>
+    <string name="pay_within_30_days_no_fees">Pay within 30 days, No fees!</string>
+    <string name="payment">الدفع</string>
+    <string name="payment_facilities">Payment Facilities</string>
+    <string name="payment_method">طريقة الدفع :</string>
+    <string name="pending">معلق</string>
+    <string name="pending_credit">الرصيد المعلق</string>
+    <string name="personal_care">العناية الشخصية</string>
+    <string name="phone">رقم الهاتف : </string>
+    <string name="phone_length">"رقم الهاتف يجب أن يكون  "</string>
+    <string name="phone_number">رقم التليفون</string>
+    <string name="photo_permission_deny">يجب الموافقة علي الصلاحيات اولا"</string>
+    <string name="placed_success">"Order Successfully placed "</string>
+    <string name="places_autocomplete_clear_button">محو البحث</string>
+    <string name="places_autocomplete_label">اختيار مكان</string>
+    <string name="places_autocomplete_no_results_for_query">لم يتم العثور على نتائج عن %1$s</string>
+    <string name="places_autocomplete_search_hint">بحث</string>
+    <string name="places_cancel">إلغاء</string>
+    <string name="places_powered_by_google">‏بواسطة Google‏</string>
+    <string name="places_search_error">يتعذر تحميل نتائج البحث.</string>
+    <string name="places_try_again">إعادة المحاولة</string>
+    <string name="please_add_redeem_code">يرجي كتابة كود الهدية.</string>
+    <string name="please_enter_fullname">الرجاء ادخل اسم المستخدم الكامل- الاسم الاول واسم العائلة</string>
+    <string name="please_enter_password">عفوا" قم بادخال كلمة سر</string>
+    <string name="please_enter_phone">عفوا" قم بادخال رقم التلفون</string>
+    <string name="please_enter_redeem_code">الرجاء ادخال رمز الهدية الخاص بك</string>
+    <string name="please_enter_valid_email">عفوا" قم بادخال البريد </string>
+    <string name="please_enter_valid_password">كلمة المرور يجب ان تكون بين 6–20 حرف من غير مسافات</string>
+    <string name="please_enter_valid_phone">الهاتف يجب ان الا يقل عن 6 ارقام(فقط) </string>
+    <string name="please_select_country">من فضلك قم باختيار الدولة</string>
+    <string name="please_select_supported_country">من فضلك قم باختيار دولة اخرية</string>
+    <string name="popularity">الاكثر انتشارا</string>
+    <string name="price_range">نطاق السعر</string>
+    <string name="primary_address">لا يمكن حذف العنوان الاساسي , بامكانك ان تجعل عنوان اخر هو الاساسي والمحاولة مرة اخري</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="privacy_policy_text"><![CDATA[
+ <font color="#A67C52"><b>PRIVACY POLICY</b></font> <br/><br/><br/>
+1. The user must provide the required personal information to make a purchase. Tatayab has the right to securely store all the data provided by the user <br/> <br/>2. Tatayab may collect and share user’s information and activities, provided that the user’s identity is not disclosed. These data may include the history of purchases, social networking preferences, age, gender, nationality, and country of residency <br/><br/>3. Tatayab will only disclose the user’s identity in the event to comply with an obligation under the law, or to obey an order from competent authorities. <br/><br/>4. International shipment may be subject to inspection and may require revealing the identity of the buyer, price and shipment to the relevant authorities, clearance agent, shipping company, in which case, the carrier may act as an agent of the buyer.]]>
+    </string>
+    <string name="proceed_to_checkout">ادفع حالا </string>
+    <string name="processed_process">تنفيذ العملية</string>
+    <string name="product">منتج</string>
+    <string name="product_color">"اللون "</string>
+    <string name="product_description">وصف المنتج</string>
+    <string name="product_gender">الجنس</string>
+    <string name="product_list">قائمة المنتحات</string>
+    <string name="product_review">تقييمات المنتج</string>
+    <string name="product_reviewers_title"><![CDATA[تقييم المنتج و التعليقات ]]></string>
+    <string name="product_size">الحجم</string>
+    <string name="product_specifications">"مواصفات المنتج "</string>
+    <string name="products">منتجات</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="profile_nav">حسابي</string>
+    <string name="qatar">قطر</string>
+    <string name="quantity">الكمية</string>
+    <string name="rangDaysMessage">سيتم توصيل الطلب خلال الفترة</string>
+    <string name="rate">التقييم</string>
+    <string name="rate_app">تقييم التطبيق</string>
+    <string name="rate_app_message"> إذا كنت تستمتع بتطبيقنا ، فالرجاء تخصيص بعض الوقت لتقييمه على PlayStore. شكرا لدعمكم! </string>
+    <string name="rate_app_title"> تقييم التطبيق </string>
+    <string name="rate_btn_neg"> ذكرني لاحقًا </string>
+    <string name="rate_btn_nut"> لا ، شكرًا </string>
+    <string name="rate_btn_pos"> التقييم الآن </string>
+    <string name="rating"> التقييم </string>
+    <string name="re_login">تجديد تسجيل الحساب</string>
+    <string name="reachout">تواصل معنا</string>
+    <string name="receiver_name">اسم المستلم </string>
+    <string name="recent_searches">عمليات البحث الأخيرة</string>
+    <string name="recipeint_name">اسم المستلم</string>
+    <string name="recommended_products">المنتجات الموصى بها</string>
+    <string name="redeem_code">بطاقة الهدية</string>
+    <string name="redeem_description">سيتم حفظ الرصيد في حسابك بشكل آمن.</string>
+    <string name="redeem_your_promo_code">استخدم بطاقة الهدية الخاص بك</string>
+    <string name="refer">ادع صديق</string>
+    <string name="refer_a_friend_amp_earn_5_kd">ادع صديق واحصل على %1$s رصيد   </string>
+    <string name="refer_friend">ادع صديق</string>
+    <string name="refer_friend_data">"صلاحية الرصيد %1$s" </string>
+    <string name="refer_friend_description">ارسل رابط تطيب الى اصدقائك ليحصلو على رصيد %1$s عند التسجيل وإتمام الطلب الاول (الحد الادنى للطلب  %3$s)، لتحصل بالمقابل على رصيد %2$s.</string>
+    <string name="refer_friend_message">لقد تلقيت رصيد بقيمة %1$s على طلبك الأول بحد أدنى %2$s كهدية ترحيب.</string>
+    <string name="reference_number">"الرقم المرجعي# %1s"</string>
+    <string name="register">التسجيل</string>
+    <string name="register_success">تم التسجيل بنجاح</string>
+    <string name="reload">إعادة تحميل البيانات</string>
+    <string name="remove">حذف</string>
+    <string name="remove_cart_alarm_message">إذا قمت بتغيير البلد، فستفقد منتجاتك في سلة التسوق. هل توافق؟</string>
+    <string name="remove_gift">حذف الهدية</string>
+    <string name="remove_wishlist_success">تم حذف المنتج من المفضلة</string>
+    <string name="rencent_view_description">يمكنك الاطلاع علي اخر المنتجات مشاهدة </string>
+    <string name="rencent_view_title">الاكثر مشاهدة </string>
+    <string name="reset">الافتراضية</string>
+    <string name="reset_password">اعادة كلمة السر</string>
+    <string name="reset_password_message">يرجى التحقق من صندوق الوارد الخاص بك واتباع الخطوات لإعادة تعيين كلمة المرور.</string>
+    <string name="reset_password_text">اعادة تعيين كلمة المرور</string>
+    <string name="return_privacy_policy_text"><![CDATA[ <font color="#A67C52"><b>DELIVERY AND RETURN POLICY</b></font><br/><br/><br/>1. Local orders Kuwait will be delivered with in 1 to 2 days.<br/><br/>International orders will be delivered with in 4 to 5 days <br/><br/>2. You can always contact us through our customer service phone number or by chat,call us now toll-free inside Kuwait Call: +96522250074 9 a.m - 6 p.m +3GMT.]]></string>
+    <string name="review"> تقييم </string>
+    <string name="review_card_after_login">تحتاج إلى مراجعة سلة التسوق الخاصة بك مرة أخرى ، لأن هناك بعض المنتجات المحفوظة على حسابك من قبل.</string>
+    <string name="review_order_des">قائمة اختياراتك المفضلة لدي تطيب</string>
+    <string name="review_pay_delivery_date">من المتوقع أن يصل طلبك</string>
+    <string name="review_pay_title"><![CDATA[راجع وادفع]]></string>
+    <string name="review_your_order"> مراجعه الطلب</string>
+    <string name="reviewers">التعليقات</string>
+    <string name="saudi_arabia">السعودية</string>
+    <string name="save">حفـــظ</string>
+    <string name="save_gift">حفظ الهدية</string>
+    <string name="save_profile">حفظ التغييرات</string>
+    <string name="saved_address">العناوين المحفوظة</string>
+    <string name="search">بحث في </string>
+    <string name="search_about">ابحث عن منتجاتك المفضلة </string>
+    <string name="search_by_country_name">بحث من خلال اسم الدولة</string>
+    <string name="search_country">بحث…</string>
+    <string name="search_for_a_country">أكتب اسم الدولة</string>
+    <string name="search_hint">ابحث عن عطرك المفضل</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"البحث"</string>
+    <string name="search_on_area">ابحث عن منطقة</string>
+    <string name="search_on_city">ابحث عن مدينة</string>
+    <string name="see_all">"كل التقييمات "</string>
+    <string name="see_more">المزيد</string>
+    <string name="see_more_brands">المزيد..</string>
+    <string name="select">اختر</string>
+    <string name="select_address_type">اختر نوع العنوان</string>
+    <string name="select_all"> تحديد الكل</string>
+    <string name="select_country">اختر الدولة </string>
+    <string name="select_currency">اختر عملة</string>
+    <string name="select_from_camera">قم بالتقاط صورة بواسطة الكاميرا</string>
+    <string name="select_from_galery">قم باختيار صورة من المعرض</string>
+    <string name="select_language">إختر اللغة</string>
+    <string name="select_option">اختر التصنيف</string>
+    <string name="select_payment_method">اختر طريقة دفع</string>
+    <string name="select_perfum_img">اختر صورة العطر</string>
+    <string name="select_your_country">اختر الدولة</string>
+    <string name="selet_payment_description">الرجاء اختيار طريقة الدفع المناسبة</string>
+    <string name="send_as_gift">ارسلها كهدية</string>
+    <string name="sender_name">اسم المرسل</string>
+    <string name="service_not_available">الخدمة غير متوفرة</string>
+    <string name="settings">الاعدادات</string>
+    <string name="share_app">مشاركة التطبيق</string>
+    <string name="share_cart">شارك منتجاتك</string>
+    <string name="share_cart_description">يريد مشاركتك منتجاته المفضلة.</string>
+    <string name="share_cart_receiver_message">شارك معك عربة التسوق لتسهيل وتسريع انشاء الطلب.</string>
+    <string name="share_cart_with_different_country_error">دولتك الحالي مختلف عن دولة مشاركة السلة ، لاستخدام المشاركة يرجى تغيير دولتلك إلى</string>
+    <string name="share_des">انا ارشح لك هذا التطبيق لشراء افضل انواع العطور</string>
+    <string name="share_using">انشر بستخدام</string>
+    <string name="share_your_cart">شارك عربة التسوق الخاصة بك!</string>
+    <string name="share_your_cart_desc">" أسهل طريقة لمشاركة سلة التسوق الخاصة بك مع أصدقائك بنقرة واحدة.ليقومو بإتمام عملية الشراء في صفحة الدفع وبنفس المنتجات التي اخترتها من تطيب"</string>
+    <string name="sharing_subject">Tatayab.com</string>
+    <string name="shipping">الشحن</string>
+    <string name="shipping_cost">تكلفة الشحن</string>
+    <string name="shipping_from">"الشحن من "</string>
+    <string name="shipping_message">تطبق جميع الضرائب والرسوم الجمركية وأي رسوم اخرى على حسب قوانين كل بلد</string>
+    <string name="shop_brand">تسوق المزيد من ماركة  %1s  </string>
+    <string name="shop_by_category">تسوق حسب الاقسام</string>
+    <string name="shop_now">تسوق الآن</string>
+    <string name="should_agree_on_permission">يجب الموافقه على جميل الاذونات</string>
+    <string name="should_edit_address">يجب تعديل عنوانك اولا!</string>
+    <string name="show"> عرض</string>
+    <string name="sign_description">بالضغط علي تسجيل الدخول والدخول الي حسابك يمكنك روية المنتجات المفضلة لديك.</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="sign_in_capitals"> تسجيل الدخول </string>
+    <string name="sign_out">تسجيل الخروج</string>
+    <string name="signin_app_with_secuitry_payment">سجل في التطبيق و احصل علي عمليات شراء امنه</string>
+    <string name="signin_checkout_desc">إلى حسابك للدفع بشكل أمن</string>
+    <string name="signup">إنشاء حساب</string>
+    <string name="signup_capital">إنشاء حساب</string>
+    <string name="signup_text">إنشاء حساب الان</string>
+    <string name="skip">تخطى</string>
+    <string name="solidby">الماركة: </string>
+    <string name="something_went_wrong">حدث خطا ما</string>
+    <string name="sort">ترتيب حسب</string>
+    <string name="sort_based">الترتيب حسب</string>
+    <string name="split_in_4_no_fees">Split in 4, no Fees!</string>
+    <string name="spread_the_joy">انشر الفرحة!</string>
+    <string name="start">ابدأ</string>
+    <string name="state">الولاية/المقاطعة</string>
+    <string name="state_empty">يجب أن يكون ل الولاية/المقاطعة قيمة!</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="submit">ارسال</string>
+    <string name="submit_request">تقديم الطلب</string>
+    <string name="subtotal">السعر</string>
+    <string name="subtotal_with_taxes">السعر شامل القيمة المضافة</string>
+    <string name="success_Concierince_title">شكرا" لاستخدامك خدمة الطلب عبر تطيب</string>
+    <string name="supplier_description">أكثر من 200 علامة تجارية للاختيار من بينها</string>
+    <string name="supplier_title">ماركات قد تعجبك</string>
+    <string name="surcharge">ضريبة الدفع</string>
+    <string name="tabby_error">عذرا ، المبلغ الإجمالي للطلب أعلى من الحد المسموح أو أقل   من الحد الأدني.</string>
+    <string name="tatayab">تطيب</string>
+    <string name="tatayab_app_name_dev">تطيب(تجريبي)</string>
+    <string name="tatayab_app_name_pro">تطيب</string>
+    <string name="tatayab_concierge"> تطيب كونسيرج</string>
+    <string name="tatayab_credit">رصيد تطيب</string>
+    <string name="tatayab_description">اكبر تطبيق لبيع العطور والبخور</string>
+    <string name="taxes">الضريبة</string>
+    <string name="termes_condition">الشروط  و الاحكام</string>
+    <string name="terms_url">https://tatayab.com/%1$s-%2$s/terms</string>
+    <string name="thank_you">شكرا" لك</string>
+    <string name="there_no_area_in_city">لا يوجة مناطق في هذه المدينة!</string>
+    <string name="this_permissions_are_mandatory">هذا الصلاحيات اساسية للمتابعة من فضلك قم بالسماح.</string>
+    <string name="title">العنوان</string>
+    <string name="to">" الي "</string>
+    <string name="total">المجموع</string>
+    <string name="total_delivery">سعر التوصيل</string>
+    <string name="total_shipping">مصاريف الشحن</string>
+    <string name="total_with_vat">السعر النهائي(شامل القيمة المضافة)</string>
+    <string name="track_order">متابعة الطلب</string>
+    <string name="track_order_txt">متابعة الطلب</string>
+    <string name="tracking_id">رقم الطلب  :</string>
+    <string name="transaction_id">"رقم العملية# %1s"</string>
+    <string name="trck_external_order">متابعة الطلب</string>
+    <string name="trends_in_tatybe">الاكثر طلبا" في تطيب</string>
+    <string name="try_concierge">جرب كونسيرج</string>
+    <string name="tw__login_btn_txt">سجّل الدخول بواسطة تويتر</string>
+    <string name="type">"النوع "</string>
+    <string name="un_select_all">عدم تحديد الكل</string>
+    <string name="update_profile">اضافة البريد الالكتروني</string>
+    <string name="update_version_error">هناك خطأ في تحديث ومراجعة النسخة!</string>
+    <string name="upgrade_now">التحديث الان</string>
+    <string name="upload_picture">ارفع صورة</string>
+    <string name="used_before">هذا الكود مستخدم من قبل!</string>
+    <string name="vat">ضريبة القيمة المضافة</string>
+    <string name="view_all"><![CDATA[شاهد الكل>]]></string>
+    <string name="view_invoice">تفاصيل الطلب </string>
+    <string name="view_more_reviws">المزيد</string>
+    <string name="view_order">تفاصيل الطلب</string>
+    <string name="view_products">تصفح المنتجات</string>
+    <string name="view_wishlist">الاطلاع علي المفضلة</string>
+    <string name="visa_payment_method">Visa or Master Card</string>
+    <string name="wait_loading">يرجى الانتظار أثناء التحميل …</string>
+    <string name="wallet_title">محفظتك</string>
+    <string name="wallet_tranactions">معاملات المحفظة</string>
+    <string name="warning">تنبية</string>
+    <string name="welcome"> أهلا </string>
+    <string name="welcome_chat">"أهلا", %1s"</string>
+    <string name="welcome_messege">مرحبا بكم في TATAYAB - حيث توجد رائحة لكل مود تطبيقك عبر الإنترنت للعطور ، منزل عطور بخور وأكثر.</string>
+    <string name="welcome_to">مرحبا بك</string>
+    <string name="welcome_to_tatayab">مرحبا بك في تطييب</string>
+    <string name="whatsapp">"مراسلة عبر الواتس "</string>
+    <string name="when_your_order_is_equal_to_or_greater_than">عندما يكون طلبك مساويا او أكبر من</string>
+    <string name="wishlist">المفضلة</string>
+    <string name="wishlist_count">"عدد العناصر "</string>
+    <string name="wishlist_description">يمكنك اضافة منتجات للمفضلة بالضغط علي صورة القلب</string>
+    <string name="wishlist_empty">لا يوجد منتجات في المفضلة</string>
+    <string name="wrap_cost">التغليف</string>
+    <string name="write_review">اكتب تقييمك</string>
+    <string name="writecomment">اكتب تعليقك</string>
+    <string name="wrong_email">البريد المستخدم غير صحيح</string>
+    <string name="wrong_email_or_password">البريد المستخدم او كلمة المرور غير صحيحة</string>
+    <string name="yes">نعم</string>
+    <string name="you_already_have_an_items_in_your_cart">لديك بالفعل عناصر في سلة التسوق</string>
+    <string name="you_cancel">قمت بالغاء تسجيل الدخول</string>
+    <string name="you_get_5_kwd_credit_when_they_order">    <![CDATA[" <b>ستحصل انت على رصيد بقيمة %1$s </b> "عندما يقوم اصدقائك باول طلب.   ]]></string>
+    <string name="you_have_earned">لديك رصيد</string>
+    <string name="you_have_got_an_invitation_from">تلقيت دعوة من</string>
+    <string name="you_have_two_options">لديك خياران</string>
+    <string name="your_gift_added">تم إضافة هديتك بنجاح</string>
+    <string name="your_order_has_placed_successfully">تم تلقي طلبك بنجاح \n يمكنك الاتصال بخدمة العملاء لدينا لمتابعة حالة طلبك</string>
+    <string name="zch_chat_comment_acknowledgement">شكرًا لك على رأيك. يمكنك الآن العودة إلى الدردشة.</string>
+    <string name="zch_chat_comment_composer_hint">اكتب تعليقك...</string>
+    <string name="zch_chat_ended">انتهت الدردشة</string>
+    <string name="zch_chat_handover_message_selection">دردش مع وكيل</string>
+    <string name="zch_chat_rating_comment_action_label">إضافة تعليق</string>
+    <string name="zch_chat_rating_comment_prompt_message">رأيك يهمنا. إذا رغبت في ذلك، يمكنك أيضًا إضافة تعليق أكثر تفصيلًا.</string>
+    <string name="zch_chat_rating_label_bad">سيئ 👎</string>
+    <string name="zch_chat_rating_label_good">جيد 👍</string>
+    <string name="zch_chat_rating_request_prompt">مرحبًا، هذه مجرد متابعة لنعرف كيف تسير دردشتك مع %s؟</string>
+    <string name="zch_chat_transcript_email_prompt">ما هو عنوان البريد الإلكتروني الذي سيُرسَل إليه النص؟</string>
+    <string name="zch_chat_transcript_prompt">هل تريد أن يُرسَل نص هذه الدردشة إلى بريدك الإلكتروني؟</string>
+    <string name="zch_chat_transcript_request_confirmation">سيُرسَل النص إلى %1$s بعد انتهاء الدردشة</string>
+    <string name="zch_chat_welcome_message_handover">موافق سأجد شخصًا يمكنه أن يساعدك بشأن استفسارك.</string>
+    <string name="zch_end_chat">إنهاء الدردشة</string>
+    <string name="zch_member_join">انضمَّ %1$s إلى الدردشة</string>
+    <string name="zch_member_leave">غادَر %1$s الدردشة</string>
+    <string name="zch_offline_form_completion_acknowledgement">وصلتنا رسالتك وسنرد عليك في أقرب وقت ممكن.</string>
+    <string name="zch_offline_form_introduction_message">ليتسنى لنا الاتصال بك عند توافر شخص يمكنه مساعدتك، أحتاج إلى بعض المعلومات.</string>
+    <string name="zch_offline_form_message_field_prompt">كيف يمكننا مساعدتك حين نعاود الاتصال؟</string>
+    <string name="zch_offline_form_welcome_message">مرحباً. للأسف لا يوجد أحد متصل حاليًا.</string>
+    <string name="zch_offline_message">للأسف، لا يوجد أحد متصل حاليًا. الرجاء العودة لاحقًا.</string>
+    <string name="zch_pre_chat_department_field_message">أي قسم سيكون الأنسب للإجابة عن سؤالك؟</string>
+    <string name="zch_pre_chat_email_field_hint">ما هو عنوان بريدك الإلكتروني؟</string>
+    <string name="zch_pre_chat_email_field_invalid_message">عنوان البريد الإلكتروني الذي أدخلته غير صحيح. أدخِل عنوان بريد إلكتروني صالحاً.</string>
+    <string name="zch_pre_chat_email_field_message">ما هو عنوان بريدك الإلكتروني؟</string>
+    <string name="zch_pre_chat_introduction_greeting">أهلاً!</string>
+    <string name="zch_pre_chat_introduction_message">دعني أجد من يساعدك. أحتاج أولًا لبضعة معلومات.</string>
+    <string name="zch_pre_chat_message_acknowledgement">دعني أجد من يساعدك. أحتاج أولًا لمعلومات إضافية.</string>
+    <string name="zch_pre_chat_name_field_hint">ما اسمك؟</string>
+    <string name="zch_pre_chat_name_field_message">ما اسمك؟</string>
+    <string name="zch_pre_chat_phone_field_hint">ما رقم هاتفك؟</string>
+    <string name="zch_pre_chat_phone_field_message">ما رقم هاتفك؟</string>
+    <string name="zch_pre_chat_response_accepted_message">شكرًا لك.</string>
+    <string name="zch_pre_chat_skip_button">تخطي</string>
+    <string name="zch_pre_chat_welcome_message">مرحباً. كيف يمكننا مساعدتك اليوم؟</string>
+    <string name="zch_queue_position">الترتيب في قائمة الانتظار: %1$d</string>
+    <string name="zch_request_transcript">اطلب نصًا</string>
+    <string name="zui_attachment_indicator_accessibility">تحديد مرفق</string>
+    <string name="zui_attachment_indicator_n_attachments_selected_accessibility">المرفقات المحددة: ‎%d</string>
+    <string name="zui_attachment_indicator_no_attachments_selected_accessibility">لا توجد مرفقات محددة</string>
+    <string name="zui_attachment_indicator_one_attachments_selected_accessibility">يوجد مرفق واحد محدد</string>
+    <string name="zui_bot_label">روبوت</string>
+    <string name="zui_button_label_no">لا</string>
+    <string name="zui_button_label_yes">نعم</string>
+    <string name="zui_cell_text_suggested_article_header">قد يكون المقال التالي مفيداً:</string>
+    <string name="zui_cell_text_suggested_articles_header">فيما يلي بعض المقالات التي قد تفيد:</string>
+    <string name="zui_default_bot_name">Answer Bot</string>
+    <string name="zui_dialog_email_error">بريد إلكتروني غير صالح</string>
+    <string name="zui_dialog_email_hint">عنوان البريد الإلكتروني</string>
+    <string name="zui_failed_message_copy">نسخ</string>
+    <string name="zui_failed_message_delete">حذف</string>
+    <string name="zui_failed_message_retry">إعادة المحاولة</string>
+    <string name="zui_hint_type_message">اكتب رسالة...</string>
+    <string name="zui_label_connecting">جارٍ الاتصال...</string>
+    <string name="zui_label_dialog_delete_btn">حذف الرسالة</string>
+    <string name="zui_label_dialog_retry_btn">إعادة محاولة الإرسال</string>
+    <string name="zui_label_failed">فشل</string>
+    <string name="zui_label_reconnecting">جارٍ إعادة الاتصال...</string>
+    <string name="zui_label_reconnecting_failed">فشل الاتصال.</string>
+    <string name="zui_label_send">إرسال</string>
+    <string name="zui_label_sent">تم الإرسال</string>
+    <string name="zui_label_tap_retry">اضغط لإعادة المحاولة</string>
+    <string name="zui_message_log_article_opened_formatter">%1$s فتح المقال \'%2$s\'</string>
+    <string name="zui_message_log_article_suggestion_message">وجدت المقالات التالية:</string>
+    <string name="zui_message_log_attachment_sending_failed">يتعذر إرسال المرفق</string>
+    <string name="zui_message_log_default_visitor_name">الزائر</string>
+    <string name="zui_message_log_message_attachment_type_not_supported">نوع المرفق غير مدعوم</string>
+    <string name="zui_message_log_message_attachments_not_supported">المرفقات غير مدعومة</string>
+    <string name="zui_message_log_message_failed_to_send">[فشل الإرسال]</string>
+    <string name="zui_message_log_message_file_exceeds_max_size">يتجاوز أقصى حجم للملف (%1$s)</string>
+    <string name="zui_message_log_transfer_option_selection_formatter">%1$s حدَّد %2$s</string>
+    <string name="zui_retry_button_label">إعادة المحاولة</string>
+    <string name="zui_toolbar_title">اتصل بنا</string>
+    <string name="zui_unable_open_file">تعذر فتح الملف.</string>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Status bar stuff. -->
+        <item name="android:fontFamily">@font/cairo_regular</item>
+    </style>
+    <style name="PricesTextStyleOutline" parent="Widget.AppCompat.TextView">
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+    <style name="SerachEditTextStyleOutline" parent="Widget.AppCompat.EditText">
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+    <style name="Theme.Transparent" parent="android:Theme">
+         <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="customFont" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:fontFamily"> @font/cairo_regular</item>
+    </style>
+    <style name="editDirectionStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textDirection">locale</item>
+        <item name="android:textAlignment">viewStart</item>
+
+    </style>
+    <style name="textDirectionStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+    <style name="textFontBoldStyle">
+        <item name="android:fontFamily">@font/gotham_htf_bold</item>
+    </style>
+    <style name="textFontMeduimStyle">
+        <item name="android:fontFamily">@font/cairo_semibold</item>
+    </style>
+    <style name="textFontbookStyle">
+        <item name="android:fontFamily">@font/cairo_regular</item>
+    </style>
+</resources>

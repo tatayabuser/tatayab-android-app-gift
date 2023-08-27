@@ -1,0 +1,122 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/_15sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.tatayab.tatayab.productdetails.review.ReviewsInDetailsFragment">
+
+    <include
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/review_info"
+        android:visibility="visible"
+        layout="@layout/product_review_info" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/gray"
+        android:id="@+id/view_delimeter"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@+id/review_info"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.9"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="@string/customer_reviws"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/round_add_to_cart"
+        app:layout_constraintTop_toBottomOf="@+id/view_delimeter"
+        android:id="@+id/reviews_rate"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="@dimen/_16sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_reviews"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@+id/reviews_rate"
+        tools:listitem="@layout/list_item_product_review"
+        tools:itemCount="3"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.4"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="@string/view_more_reviws"
+        android:textSize="@dimen/normal_text"
+        android:visibility="invisible"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:background="@drawable/round_view_more"
+        app:layout_constraintTop_toBottomOf="@+id/rv_reviews"
+        android:id="@+id/view_more_reviews_title"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_margin="@dimen/_16sdp"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintTop_toBottomOf="@+id/view_more_reviews_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/writecomment"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_5sdp"
+        android:textSize="@dimen/normal_text"
+        android:drawablePadding="@dimen/_5sdp"
+        android:drawableStart="@drawable/insert_comment_layer"
+        android:background="@drawable/round_for_writecomment"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/add_comment"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/reviews_rate"
+        app:layout_constraintBottom_toTopOf="@+id/add_comment"
+        android:text="@string/no_reviwers"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/no_reviwers"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/colorPrimary"
+        />
+
+
+    <ProgressBar
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

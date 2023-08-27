@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/account"
+    app:startDestination="@+id/destination_account">
+
+    <fragment
+        android:id="@+id/destination_account"
+        android:name="com.tatayab.tatayab.main.account.AccountFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_account">
+
+        <action
+            android:id="@+id/next_action_addresses"
+            app:destination="@id/addresses"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+
+            <argument
+                android:name="fromCheckOut"
+                android:defaultValue="false"
+                app:argType="boolean" />
+        </action>
+
+        <action
+            android:id="@+id/next_action_profile"
+            app:destination="@id/destination_edit_profile"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/next_action_orders"
+            app:destination="@id/orders"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/next_action_wallet"
+            app:destination="@id/wallet"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+
+        <action
+            android:id="@+id/next_action_wishlist"
+            app:destination="@id/wishlist"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+
+        <action
+            android:id="@+id/next_action_countries"
+            app:destination="@id/destination_countries"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/next_action_curriencies"
+            app:destination="@id/destination_currencies"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+
+        <action
+            android:id="@+id/next_action_about_us"
+            app:destination="@id/about_us"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+
+        <action
+            android:id="@+id/next_action_refer"
+            app:destination="@id/refer"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+
+        <action
+            android:id="@+id/next_action_contact_us"
+            app:destination="@id/contact_us"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+
+            <argument
+                android:name="url"
+                app:argType="string" />
+
+        </action>
+
+        <action
+            android:id="@+id/next_action_privacy"
+            app:destination="@id/privacy"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+
+            <argument
+                android:name="url"
+                app:argType="string" />
+
+        </action>
+
+        <action
+            android:id="@+id/next_login_options"
+            app:destination="@+id/signin_options"
+            app:enterAnim="@anim/pop_enter_slide_up"
+            app:exitAnim="@anim/pop_exit_slide_up"
+            app:popEnterAnim="@anim/enter_slide_down"
+            app:popExitAnim="@anim/exit_slide_down">
+
+            <argument
+                android:name="fromCheckout"
+                android:defaultValue="false"
+                app:argType="boolean" />
+
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/destination_countries"
+        android:name="com.tatayab.tatayab.countries.CountriesFragment"
+        android:label="@string/fragment_countries_title">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/destination_currencies"
+        android:name="com.tatayab.tatayab.currencies.CurrenciesFragment"
+        android:label="@string/fragment_currencies_title">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/destination_edit_profile"
+        android:name="com.tatayab.tatayab.profile.EditProfileFragment"
+        android:label="@string/fragment_edit_profile_title"
+        tools:layout="@layout/fragment_edit_profile">
+
+        <action
+            android:id="@+id/action_change_password"
+            app:destination="@+id/destination_change_password"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/destination_change_password"
+        android:name="com.tatayab.tatayab.profile.ChangePasswordFragment"
+        android:label="@string/change_password"
+        tools:layout="@layout/fragment_change_password" />
+
+    <include app:graph="@navigation/privacy" />
+    <include app:graph="@navigation/addresses_graph" />
+    <include app:graph="@navigation/wishlist" />
+    <include app:graph="@navigation/wallet" />
+    <include app:graph="@navigation/search" />
+    <include app:graph="@navigation/orders" />
+    <include app:graph="@navigation/about_us" />
+    <include app:graph="@navigation/contact_us" />
+    <include app:graph="@navigation/signin_options" />
+    <include app:graph="@navigation/refere" />
+
+
+</navigation>

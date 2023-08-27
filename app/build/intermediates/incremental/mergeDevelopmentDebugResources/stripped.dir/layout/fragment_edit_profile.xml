@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/toolbar_with_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/inputs_spaces"
+        android:layout_marginBottom="20dp"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btn_signup"
+        app:layout_constraintTop_toBottomOf="@+id/appbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="12dp">
+
+
+            <TextView
+                android:id="@+id/tv_name_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hint_fullname"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/input_fullname"
+                style="@style/editDirectionStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_adress_input"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name_title"
+                tools:text="adsfd" />
+
+
+            <TextView
+                android:id="@+id/tv_mail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inputs_spaces"
+                android:text="@string/hint_email_address"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_fullname" />
+
+            <TextView
+                android:id="@+id/input_email"
+                style="@style/textDirectionStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/round_phone_number"
+                android:maxLines="1"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_mail_title" />
+
+
+            <TextView
+                android:id="@+id/tv_phone_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inputs_spaces"
+                android:text="@string/hint_phone"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_email" />
+
+            <TextView
+                android:id="@+id/phone_code"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/round_phone_number"
+                android:gravity="center"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/input_phone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/input_phone"
+                app:layout_constraintWidth_percent="0.2"
+                tools:text="+556"
+
+                />
+
+            <TextView
+                android:id="@+id/input_phone"
+                style="@style/textDirectionStyle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/input_height"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/round_phone_number"
+                android:clickable="false"
+                android:enabled="false"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/phone_code"
+                app:layout_constraintTop_toBottomOf="@+id/tv_phone_title" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/gender_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inputs_spaces"
+                android:text="@string/gender"
+                android:textColor="@color/dark_blue"
+                android:textSize="@dimen/mini_larg_text"
+                app:layout_constraintTop_toBottomOf="@+id/input_phone" />
+
+
+            <RadioGroup
+                android:id="@+id/rg_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/gender_title">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rb_female"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/input_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/gender_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawableStart="@drawable/ic_female"
+                    android:drawablePadding="-30dp"
+                    android:gravity="center"
+                    android:paddingStart="50dp"
+                    android:text="@string/female" />
+
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rb_male"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/input_height"
+                    android:layout_marginStart="17dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gender_selector"
+                    android:button="@null"
+                    android:drawableStart="@drawable/ic_male"
+                    android:drawablePadding="-40dp"
+                    android:gravity="center"
+                    android:paddingStart="50dp"
+                    android:text="@string/male" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/tv_password_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inputs_spaces"
+                android:text="@string/hint_password"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rg_gender" />
+
+            <TextView
+                android:id="@+id/input_password"
+                style="@style/editDirectionStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/round_adress_input"
+                android:clickable="false"
+                android:cursorVisible="true"
+                android:enabled="false"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="12345678"
+                android:textColor="@color/colorPrimary"
+                android:textCursorDrawable="@color/dark_blue"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_password_title" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/change_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableEnd="@drawable/arrow_right_icon_layer"
+                android:text="@string/change_password"
+                android:textColor="@color/dark_blue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/input_password" />
+
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:theme="@style/AppTheme.WhiteAccent"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_save"
+        style="@style/SubmitButton"
+        android:layout_width="match_parent"
+        android:text="@string/save_profile"
+        android:textSize="@dimen/larg_text"
+        android:enabled="false"
+        android:theme="@style/textFontMeduimStyle"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

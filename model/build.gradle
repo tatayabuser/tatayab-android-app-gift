@@ -1,0 +1,55 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlinx-serialization'
+apply plugin: 'kotlin-android-extensions'
+android {
+
+    compileSdkVersion Versions.androidCompileSdkVersion
+    buildToolsVersion Versions.androidBuildToolsVersion
+
+
+    defaultConfig {
+        minSdkVersion Versions.androidMinSdkVersion
+        targetSdkVersion Versions.androidTargetSdkVersion
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+    // Add for using latest experimental build of Android Extensions
+    androidExtensions {
+        experimental = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            //proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation 'com.thoughtbot:expandablecheckrecyclerview:1.4'
+    implementation ModelDependencies.searchDailog
+    implementation ModelDependencies.gson
+    implementation ModelDependencies.kotlin
+    implementation ModelDependencies.kotlinSerialization
+    implementation  "javax.annotation:jsr250-api:1.0"
+    implementation  "androidx.annotation:annotation:1.0.0"
+    implementation 'androidx.room:room-runtime:2.2.5'
+    annotationProcessor 'androidx.room:room-compiler:2.2.5'
+}
+
+sourceCompatibility = "11"
+targetCompatibility = "11"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">398227463517-5soqnggbr0oga1qvfs7utl52b8k5klf4.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://tatayab-ios-application.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">398227463517</string>
+    <string name="google_api_key" translatable="false">AIzaSyCQaxCJ3t7INMhN3cUmBf9kdYzrC3udUs0</string>
+    <string name="google_app_id" translatable="false">1:398227463517:android:61f41500567216050a5cb4</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCQaxCJ3t7INMhN3cUmBf9kdYzrC3udUs0</string>
+    <string name="google_storage_bucket" translatable="false">tatayab-ios-application.appspot.com</string>
+    <string name="project_id" translatable="false">tatayab-ios-application</string>
+</resources>

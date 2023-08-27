@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "398227463517",
+    "firebase_url": "https://tatayab-ios-application.firebaseio.com",
+    "project_id": "tatayab-ios-application",
+    "storage_bucket": "tatayab-ios-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398227463517:android:50e44af6f7d3c96e0a5cb4",
+        "android_client_info": {
+          "package_name": "com.tatayab.tatayab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "398227463517-5soqnggbr0oga1qvfs7utl52b8k5klf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQaxCJ3t7INMhN3cUmBf9kdYzrC3udUs0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "398227463517-5soqnggbr0oga1qvfs7utl52b8k5klf4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "398227463517-gtsenmcrs25ggscc7jivh8pq5h58trds.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tatayab.tatayab"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398227463517:android:61f41500567216050a5cb4",
+        "android_client_info": {
+          "package_name": "com.tatayab.tatayab.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "398227463517-5soqnggbr0oga1qvfs7utl52b8k5klf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQaxCJ3t7INMhN3cUmBf9kdYzrC3udUs0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "398227463517-5soqnggbr0oga1qvfs7utl52b8k5klf4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "398227463517-gtsenmcrs25ggscc7jivh8pq5h58trds.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tatayab.tatayab"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

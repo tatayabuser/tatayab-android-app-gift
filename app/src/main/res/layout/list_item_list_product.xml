@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_162sdp"
+    android:layout_margin="@dimen/_4sdp"
+    android:background="@drawable/round_product">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_product_img"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/_2sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_add_to_cart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:lineSpacingExtra="3dp"
+        android:singleLine="false"
+        android:textSize="@dimen/_8sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_product_img"
+        app:layout_constraintTop_toBottomOf="@id/btn_favorite"
+        tools:text="Producffftcccccccccvvvvvvvvvvffgfg
+        fgfgfgf
+        fgfvvccccccccccccccccccccccccccccccc" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_supplier_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:singleLine="false"
+        android:textSize="@dimen/_8sdp"
+        app:layout_constraintEnd_toEndOf="@id/tv_product_name"
+        app:layout_constraintStart_toStartOf="@id/tv_product_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_product_name"
+        tools:text="Producffftcccccccccvvvvvvvvvvvvccccccccccccccccccccccccccccccc" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/tv_free_delivery"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:minWidth="@dimen/_8sdp"
+        android:scaleType="fitStart"
+        android:src="@drawable/free_delivery"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/btn_add_to_cart"
+        app:layout_constraintStart_toStartOf="@id/tv_product_price"
+        app:layout_constraintTop_toTopOf="@id/btn_add_to_cart" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:textColor="@color/red"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintStart_toEndOf="@id/iv_product_img"
+        app:layout_constraintTop_toBottomOf="@id/tv_supplier_name"
+        tools:text="52.000 KWD" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_product_actual_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:background="@drawable/strike"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/tv_product_price"
+        app:layout_constraintStart_toEndOf="@id/tv_product_price"
+        app:layout_constraintTop_toTopOf="@id/tv_product_price"
+        tools:text="55.00 KWD" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btn_add_to_cart"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_7sdp"
+        android:src="@drawable/add_to_cart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_price_off"
+        android:layout_width="@dimen/_86sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:background="@drawable/round_shap_off"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="125" />
+
+    <androidx.appcompat.widget.AppCompatToggleButton
+        android:id="@+id/btn_favorite"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_margin="@dimen/_2sdp"
+        android:background="@drawable/favorite_toggle_selector"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_out_of_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:background="@color/fouchia"
+        android:gravity="center"
+        android:padding="@dimen/_2sdp"
+        android:text="@string/out_of_stock"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/btn_add_to_cart"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

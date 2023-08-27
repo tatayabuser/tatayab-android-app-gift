@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/transaction"
+    app:startDestination="@+id/wallet_tranactions_destination">
+
+
+    <fragment
+        android:id="@+id/wallet_tranactions_destination"
+        android:name="com.tatayab.tatayab.wallet.TransactionFragment"
+        android:label="@string/wallet_tranactions"
+        tools:layout="@layout/fragment_transactions"/>
+
+</navigation>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_addresses"
+    app:startDestination="@id/destination_add_address">
+
+    <fragment
+        android:id="@+id/destination_add_address"
+        android:name="com.tatayab.tatayab.addresses.AddAddressFragment"
+        android:label="@string/fragment_add_address_title"
+        tools:layout="@layout/fragment_add_address">
+
+        <argument
+            android:name="address"
+            android:defaultValue="@null"
+            app:argType="com.tatayab.model.requests.AddressRequest"
+            app:nullable="true" />
+
+        <argument android:name="isgust"
+            android:defaultValue="false"
+            app:argType="boolean"
+            />
+
+        <argument android:name="fromcheckout"
+            android:defaultValue="false"
+            app:argType="boolean"
+            />
+
+
+    </fragment>
+
+</navigation>

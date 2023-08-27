@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/banner_see_more"
+    app:startDestination="@+id/wallet_destination">
+
+
+    <fragment
+        android:id="@+id/wallet_destination"
+        android:name="com.tatayab.tatayab.main.categories.BannerSeeMoreFragment"
+        android:label="banner"
+        tools:layout="@layout/fragment_banner_see_more">
+        <argument
+            android:name="screenType"
+            android:defaultValue="1"
+            app:argType="integer" />
+        <argument
+            android:name="screenTitle"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="bannerList"
+            android:defaultValue="@null"
+            app:argType="com.tatayab.tatayab.main.categories.response.ListOfBanner"
+            app:nullable="true" />
+    </fragment>
+
+
+</navigation>

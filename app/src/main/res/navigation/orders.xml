@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/orders"
+    app:startDestination="@id/destination_orders">
+
+    <fragment
+        android:id="@+id/destination_orders"
+        android:name="com.tatayab.tatayab.orders.OrdersFragment"
+        android:label="@string/fragment_orders_title"
+        tools:layout="@layout/fragment_orders">
+
+        <action
+            android:id="@+id/destination_order_details"
+            app:destination="@+id/order_details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+            <argument
+                android:name="orderId"
+                app:argType="string"
+                app:nullable="true" />
+
+        </action>
+
+        <action
+            android:id="@+id/destination_order_tracking"
+            app:destination="@+id/order_tracking"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+            <argument
+                android:name="orderId"
+                app:argType="string"
+                app:nullable="true" />
+
+            <argument
+                android:name="orderDate"
+                app:argType="string"
+                app:nullable="true" />
+        </action>
+
+    </fragment>
+
+    <include app:graph="@navigation/order_details" />
+    <include app:graph="@navigation/order_tracking" />
+
+</navigation>

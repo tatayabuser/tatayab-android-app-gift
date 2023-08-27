@@ -1,0 +1,22 @@
+<searchable xmlns:android="http://schemas.android.com/apk/res/android"
+    android:hint="string resource"
+    android:imeOptions="actionGo"
+    android:includeInGlobalSearch="false"
+    android:inputType="textMultiLine"
+    android:label="string resource"
+    android:queryAfterZeroResults="false"
+    android:searchButtonText="Search products"
+    android:searchMode="queryRewriteFromText"
+    android:searchSettingsDescription="string resource"
+    android:searchSuggestAuthority="string"
+    android:searchSuggestIntentAction="string"
+    android:searchSuggestIntentData="string"
+    android:searchSuggestPath="string"
+    android:searchSuggestSelection="string"
+    android:searchSuggestThreshold="6">
+    <actionkey
+        android:keycode="KEYCODE_ENTER"
+        android:queryActionMsg="string"
+        android:suggestActionMsg="string"
+        android:suggestActionMsgColumn="string" />
+</searchable>

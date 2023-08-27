@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/destination_search"
+    android:id="@+id/search">
+
+    <fragment
+        android:id="@+id/destination_search"
+        android:name="com.tatayab.tatayab.search.SearchFragment"
+        android:label="@string/search"
+        tools:layout="@layout/search_fragment">
+
+        <action
+            android:id="@+id/next_action_details"
+            app:destination="@id/product_details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+
+            <argument
+                android:name="productId"
+                android:defaultValue="@null"
+                app:argType="string"
+                app:nullable="true" />
+            <argument
+                android:name="isComeFromSearch"
+                android:defaultValue="false"
+                app:argType="boolean"
+                />
+
+        </action>
+
+        <action
+            android:id="@+id/next_product_list"
+            app:destination="@+id/products_list"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+            <argument
+                android:name="categoryType"
+                app:argType="string"
+                app:nullable="true" />
+            <argument
+                android:name="categoryId"
+                app:argType="string"
+                app:nullable="true" />
+            <argument
+                android:name="categoryName"
+                app:argType="string"
+                app:nullable="true" />
+        </action>
+
+        <action
+            android:id="@+id/open_concierge"
+            app:destination="@+id/concierge"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+
+    </fragment>
+
+    <include app:graph="@navigation/products_list" />
+    <include app:graph="@navigation/product_details" />
+
+</navigation>

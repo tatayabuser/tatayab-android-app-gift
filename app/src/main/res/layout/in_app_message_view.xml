@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/inAppMessageParent"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:background="#32000000"
+
+    android:clickable="true"
+
+    android:orientation="vertical"
+
+    android:visibility="gone"
+
+    tools:visibility="visible">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+
+        android:layout_marginStart="@dimen/_20sdp"
+
+        android:layout_marginEnd="@dimen/_20sdp">
+
+
+        <ImageView
+
+            android:id="@+id/promoCloseImageView"
+
+            android:layout_width="@dimen/_22sdp"
+
+            android:layout_height="@dimen/_22sdp"
+
+            android:layout_alignParentEnd="true"
+
+            android:tint="@color/white"
+
+            app:srcCompat="@drawable/ic_close" />
+
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/promoCloseImageView"
+
+            android:layout_marginTop="@dimen/_10sdp"
+
+            app:cardCornerRadius="10dp"
+
+            app:cardPreventCornerOverlap="false">
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+
+                    android:id="@+id/promoImageView"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="@dimen/_200sdp"
+
+                    android:background="@color/colorPrimary"
+
+                    android:scaleType="fitXY"
+
+                    android:src="@drawable/image_placeholder" />
+
+
+                <TextView
+
+                    android:id="@+id/PromoTitleTextView"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/promoImageView"
+
+                    android:layout_marginStart="@dimen/_10sdp"
+
+                    android:layout_marginTop="@dimen/_10sdp"
+
+                    android:layout_marginEnd="@dimen/_10sdp"
+
+                    android:fontFamily="@font/gothamhtf_book"
+
+                    android:gravity="center"
+
+                    android:textColor="@color/colorPrimary"
+
+                    android:textSize="@dimen/_22sdp"
+
+                    android:textStyle="bold"
+
+                    tools:text="Title" />
+
+
+                <TextView
+
+                    android:id="@+id/PromoDescTextView"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/PromoTitleTextView"
+
+                    android:layout_marginStart="@dimen/_10sdp"
+
+                    android:layout_marginTop="@dimen/_15sdp"
+
+                    android:layout_marginEnd="@dimen/_10sdp"
+
+                    android:fontFamily="@font/gothamhtf_book"
+
+                    android:gravity="center"
+
+                    android:textColor="@color/colorPrimary"
+
+                    android:textSize="@dimen/_15sdp"
+
+                    android:textStyle="bold"
+
+                    tools:text="DESC" />
+
+
+                <Button
+
+                    android:id="@+id/PromoActionButton"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="@dimen/_40sdp"
+
+                    android:layout_below="@+id/PromoDescTextView"
+
+                    android:layout_gravity="center"
+
+                    android:layout_marginStart="@dimen/_20sdp"
+
+                    android:layout_marginTop="@dimen/_25sdp"
+
+                    android:layout_marginEnd="@dimen/_20sdp"
+
+                    android:layout_marginBottom="@dimen/_20sdp"
+
+                    android:background="@drawable/round_view_products"
+
+                    android:fontFamily="@font/gothamhtf_book"
+
+                    android:text="@string/ok"
+
+                    android:textColor="@color/white"
+
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

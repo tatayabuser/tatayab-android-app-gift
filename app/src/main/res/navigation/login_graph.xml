@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_graph"
+    app:startDestination="@id/destination_login"
+    >
+
+    <fragment
+        android:id="@+id/destination_signin_select"
+        android:name="com.tatayab.tatayab.checkout.SignInOptionsFragment"
+        android:label="@string/sign_in"
+        tools:layout="@layout/fragment_signin_options">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/destination_login"
+        android:name="com.tatayab.tatayab.auth.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+
+        <argument
+            android:name="loginCode"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/destination_register"
+        android:name="com.tatayab.tatayab.auth.RegisterFragment"
+        android:label="@string/signup"
+        tools:layout="@layout/fragment_register">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/destination_forgetpassword"
+        android:name="com.tatayab.tatayab.auth.ForgetPasswordFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_forget_password">
+
+    </fragment>
+
+
+</navigation>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d yeni bildirim</item>
+    <item quantity="other">%d yeni bildirim</item>
+  </plurals>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Eve gidiş yolunu göster"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Yukarı git"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Diğer seçenekler"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Bitti"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Tümünü göster"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Bir uygulama seçin"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"KAPAT"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"AÇ"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"sil"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Üst Karakter+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"boşluk"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menü+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Ara…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Sorguyu temizle"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Arama sorgusu"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Ara"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Sorguyu gönder"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Sesli arama"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Şununla paylaş:"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> ile paylaş"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Daralt"</string>
+    <string name="belvedere_dialog_camera">Fotoğraf makinesi</string>
+    <string name="belvedere_dialog_gallery">Galeri</string>
+    <string name="belvedere_fam_desc_collapse_fam">Hareketli Eylem Menüsünü Daralt</string>
+    <string name="belvedere_fam_desc_expand_fam">Hareketli Eylem Menüsünü Genişlet</string>
+    <string name="belvedere_fam_desc_open_gallery">Galeriden içe dosya aktarın</string>
+    <string name="belvedere_fam_desc_open_google_photos">Google Fotoğraflar\'dan içe resim aktarın</string>
+    <string name="belvedere_image_stream_file_too_large">Dosya çok büyük</string>
+    <string name="belvedere_image_stream_title">Fotoğraf kitaplığı</string>
+    <string name="belvedere_image_stream_unknown_app">Bilinmiyor</string>
+    <string name="belvedere_permissions_denied">İzinler reddedildi</string>
+    <string name="belvedere_stream_item_camera_tile_desc">Fotoğraf makinesinden içe resim aktarın</string>
+    <string name="belvedere_stream_item_select_file_desc">%s adlı dosyayı seçin</string>
+    <string name="belvedere_stream_item_select_image_desc">%s adlı resmi seçin</string>
+    <string name="belvedere_stream_item_unselect_file_desc">%s adlı dosyanın seçimini kaldırın</string>
+    <string name="belvedere_stream_item_unselect_image_desc">%s adlı resmin seçimini kaldırın</string>
+    <string name="belvedere_toolbar_desc_collapse">Resim seçiciyi kapatın</string>
+    <string name="bottomsheet_action_expand_halfway">Yarım genişlet</string>
+    <string name="character_counter_content_description">Girilen karakter: %1$d / %2$d</string>
+    <string name="character_counter_overflowed_content_description">Karakter sınırı aşıldı %1$d / %2$d</string>
+    <string name="clear_text_end_icon_content_description">Metni temizle</string>
+    <string gender="unknown" name="com_facebook_device_auth_instructions">&lt;b>facebook.com/device&lt;/b> adresine git ve yukarıda gösterilen kodu gir.</string>
+    <string gender="unknown" name="com_facebook_image_download_unknown_error">Görüntü indirilirken beklenmedik bir hata oluştu.</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_message">WebView girişi için İNTERNET izni gerekiyor</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_title">AndroidManifest Hatası</string>
+    <string gender="unknown" name="com_facebook_like_button_liked">Beğendin</string>
+    <string gender="unknown" name="com_facebook_like_button_not_liked">Beğen</string>
+    <string gender="unknown" name="com_facebook_loading">Yükleniyor…</string>
+    <string gender="unknown" name="com_facebook_loginview_cancel_action">İptal</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button">Giriş yap</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_continue">Facebook ile Devam Et</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_long">Facebook ile Giriş Yap</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_action">Çıkış Yap</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_button">Çıkış Yap</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_as">%1$s olarak giriş yapıldı</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_using_facebook">Facebook ile giriş yapıldı</string>
+    <string gender="unknown" name="com_facebook_send_button_text">Gönder</string>
+    <string gender="unknown" name="com_facebook_share_button_text">Paylaş</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions">Hesabını bağlamak için, mobil cihazında Facebook uygulamasını aç ve bildirimleri kontrol et.</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions_or">- VEYA -</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_cancel">Siz değil misiniz?</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_continue_as">%1$s olarak devam et</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_title">Girişi Onayla</string>
+    <string gender="unknown" name="com_facebook_tooltip_default">Kontrol sende - uygulamalarla paylaşmak istediğin bilgileri seç.</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Etkinleştir</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">Google Play hizmetlerini etkinleştirmezseniz %1$s çalışmaz.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Google Play hizmetlerini etkinleştirin</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Yükle</string>
+    <string name="common_google_play_services_install_text">%1$s, şu anda cihazınızda bulunmayan Google Play hizmetleri olmadan çalışmaz.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Google Play hizmetlerini edinin</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play hizmetlerinin kullanılabilirliği</string>
+    <string name="common_google_play_services_notification_ticker">Google Play Hizmetleri hatası</string>
+    <string name="common_google_play_services_unknown_issue">%1$s, Google Play hizmetleriyle ilgili sorun yaşıyor. Lütfen tekrar deneyin.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s, Google Play hizmetleri olmadan çalışmaz ve bu hizmetler cihazınız tarafından desteklenmiyor.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Güncelle</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">Google Play hizmetlerini güncellemezseniz %1$s çalışmayacak.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Google Play hizmetlerini güncelleyin</string>
+    <string name="common_google_play_services_updating_text">%1$s, şu anda güncellenmekte olan Google Play hizmetleri olmadan çalışmaz.</string>
+    <string name="common_google_play_services_wear_update_text">Google Play hizmetlerinin yeni sürümü gerekiyor. Kendisini kısa süre içinde güncelleyecektir.</string>
+    <string name="common_open_on_phone">Telefonda aç</string>
+    <string name="common_signin_button_text">Oturum aç</string>
+    <string name="common_signin_button_text_long">Google\'da oturum aç</string>
+    <string name="error_icon_content_description">Hata</string>
+    <string name="exposed_dropdown_menu_content_description">Açılır menüyü göster</string>
+    <string name="icon_content_description">İletişim kutusu simgesi</string>
+    <string name="item_view_role_description">Sekme</string>
+    <string name="material_clock_toggle_content_description">ÖÖ veya ÖS\'yi seçin</string>
+    <string name="material_hour_selection">Saat seçin</string>
+    <string name="material_hour_suffix">Saat %1$s</string>
+    <string name="material_minute_selection">Dakikayı seçin</string>
+    <string name="material_minute_suffix">%1$s dakika</string>
+    <string name="material_timepicker_am">AM</string>
+    <string name="material_timepicker_clock_mode_description">Zaman girişi için saat moduna geçin.</string>
+    <string name="material_timepicker_hour">Saat</string>
+    <string name="material_timepicker_minute">Dakika</string>
+    <string name="material_timepicker_pm">PM</string>
+    <string name="material_timepicker_select_time">Zamanı seçin</string>
+    <string name="material_timepicker_text_input_mode_description">Zaman girişi için metin girişi moduna geçin.</string>
+    <string name="mtrl_badge_numberless_content_description">Yeni bildirim</string>
+    <string name="mtrl_chip_close_icon_content_description">%1$s içeriğini kaldır</string>
+    <string name="mtrl_exceed_max_badge_number_content_description">%1$d adetten fazla yeni bildirim</string>
+    <string name="mtrl_picker_a11y_next_month">Sonraki aya değiştir</string>
+    <string name="mtrl_picker_a11y_prev_month">Önceki aya değiştir</string>
+    <string name="mtrl_picker_announce_current_selection">Geçerli seçim: %1$s</string>
+    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Tarih Seçin</string>
+    <string name="mtrl_picker_date_header_unselected">Seçilen tarih</string>
+    <string name="mtrl_picker_day_of_week_column_header">Gün sütunu: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Geçersiz biçim.</string>
+    <string name="mtrl_picker_invalid_format_example">Örnek: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Tarih biçimi: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Geçersiz aralık.</string>
+    <string name="mtrl_picker_navigate_to_year_description">%1$s yılına git</string>
+    <string name="mtrl_picker_out_of_range">İzin verilen aralığın dışında: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Başlangıç tarihi – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – Bitiş tarihi</string>
+    <string name="mtrl_picker_range_header_selected">%1$s-%2$s</string>
+    <string name="mtrl_picker_range_header_title">Aralık Seçin</string>
+    <string name="mtrl_picker_range_header_unselected">Başlangıç tarihi - Bitiş tarihi</string>
+    <string name="mtrl_picker_save">Kaydet</string>
+    <string name="mtrl_picker_text_input_date_hint">Tarih</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Bitiş tarihi</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Başlangıç tarihi</string>
+    <string name="mtrl_picker_text_input_day_abbr">g</string>
+    <string name="mtrl_picker_text_input_month_abbr">a</string>
+    <string name="mtrl_picker_text_input_year_abbr">y</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Takvim giriş moduna geç</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Gün seçmeye geçmek için dokunun</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Metin giriş moduna geç</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Yıl seçmeye geçmek için dokunun</string>
+    <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"Yukarı git"</string>
+    <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"Gezinme çekmecesini aç"</string>
+    <string name="password_toggle_content_description">Şifreyi göster</string>
+    <string name="places_autocomplete_clear_button">Aramayı temizle</string>
+    <string name="places_autocomplete_label">Yer seçin</string>
+    <string name="places_autocomplete_no_results_for_query">%1$s için sonuç bulunamadı</string>
+    <string name="places_autocomplete_search_hint">Ara</string>
+    <string name="places_cancel">İptal</string>
+    <string name="places_powered_by_google">Google tarafından desteklenmektedir</string>
+    <string name="places_search_error">Arama sonuçları yüklenemiyor.</string>
+    <string name="places_try_again">Tekrar dene</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Ara"</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="tw__login_btn_txt">Twitter ile giriş yap</string>
+    <string name="zch_chat_comment_acknowledgement">Geri bildirim için teşekkür ederiz. Şimdi sohbetinize dönebilirsiniz.</string>
+    <string name="zch_chat_comment_composer_hint">Yorumunuzu yazın…</string>
+    <string name="zch_chat_ended">Sohbet sona erdi</string>
+    <string name="zch_chat_handover_message_selection">Bir temsilciyle sohbet edin</string>
+    <string name="zch_chat_rating_comment_action_label">Bir yorum ekleyin</string>
+    <string name="zch_chat_rating_comment_prompt_message">Geri bildiriminize değer veriyoruz. İsterseniz daha fazla ayrıntı içeren bir yorum da ekleyebilirsiniz.</string>
+    <string name="zch_chat_rating_label_bad">Kötü 👎</string>
+    <string name="zch_chat_rating_label_good">İyi 👍</string>
+    <string name="zch_chat_rating_request_prompt">Selam, %s ile sohbetiniz nasıl gidiyor diye bakmak istedim.</string>
+    <string name="zch_chat_transcript_email_prompt">Yazılı dökümün gönderileceği e-posta adresi nedir?</string>
+    <string name="zch_chat_transcript_prompt">Bu sohbetin yazılı dökümünün e-posta adresinize gönderilmesini ister misiniz?</string>
+    <string name="zch_chat_transcript_request_confirmation">Sohbet sona erince %1$s adresine yazılı döküm gönderilecek</string>
+    <string name="zch_chat_welcome_message_handover">Tamam. Sorgunuz için yardımcı olabilecek birini bulacağım.</string>
+    <string name="zch_end_chat">Sohbeti sonlandır</string>
+    <string name="zch_member_join">%1$s sohbete katıldı</string>
+    <string name="zch_member_leave">%1$s sohbetten ayrıldı</string>
+    <string name="zch_offline_form_completion_acknowledgement">Mesajınızı aldık ve size en kısa sürede döneceğiz.</string>
+    <string name="zch_offline_form_introduction_message">Müsait biri olduğu zaman sizinle iletişime geçmek için biraz bilgiye gereksinimim var.</string>
+    <string name="zch_offline_form_message_field_prompt">Yeniden çevrimiçi olduğumuzda size hangi konuda yardımcı olabilirim?</string>
+    <string name="zch_offline_form_welcome_message">Merhaba. Maalesef şu anda çevrimiçi kimse yok.</string>
+    <string name="zch_offline_message">Üzgünüz, şu anda çevrimiçi kimse yok. Daha sonra yeniden kontrol edin.</string>
+    <string name="zch_pre_chat_department_field_message">Sorunuzu en iyi şekilde yanıtlayabilecek departman hangisi?</string>
+    <string name="zch_pre_chat_email_field_hint">E-posta adresiniz?</string>
+    <string name="zch_pre_chat_email_field_invalid_message">Girdiğiniz e-posta adresi yanlış. Geçerli bir e-posta adresi girin.</string>
+    <string name="zch_pre_chat_email_field_message">E-posta adresiniz?</string>
+    <string name="zch_pre_chat_introduction_greeting">Merhaba!</string>
+    <string name="zch_pre_chat_introduction_message">Size yardımcı olacak birini bulacağım. Önce biraz bilgiye gereksinimim var.</string>
+    <string name="zch_pre_chat_message_acknowledgement">Size yardımcı olacak birini bulacağım. Önce biraz bilgi almam gerekiyor.</string>
+    <string name="zch_pre_chat_name_field_hint">Adınız?</string>
+    <string name="zch_pre_chat_name_field_message">Adınız?</string>
+    <string name="zch_pre_chat_phone_field_hint">Telefon numaranız?</string>
+    <string name="zch_pre_chat_phone_field_message">Telefon numaranız?</string>
+    <string name="zch_pre_chat_response_accepted_message">Teşekkürler.</string>
+    <string name="zch_pre_chat_skip_button">Atla</string>
+    <string name="zch_pre_chat_welcome_message">Merhaba. Bugün size nasıl yardımcı olabiliriz?</string>
+    <string name="zch_queue_position">Kuyruktaki yeri: %1$d</string>
+    <string name="zch_request_transcript">Yazılı döküm iste</string>
+    <string name="zui_attachment_indicator_accessibility">Bir ek seçin</string>
+    <string name="zui_attachment_indicator_n_attachments_selected_accessibility">%d ek seçildi</string>
+    <string name="zui_attachment_indicator_no_attachments_selected_accessibility">Ek seçilmedi</string>
+    <string name="zui_attachment_indicator_one_attachments_selected_accessibility">Bir ek seçildi</string>
+    <string name="zui_bot_label">BOT</string>
+    <string name="zui_button_label_no">Hayır</string>
+    <string name="zui_button_label_yes">Evet</string>
+    <string name="zui_cell_text_suggested_article_header">Yardımcı olabilecek bir makale:</string>
+    <string name="zui_cell_text_suggested_articles_header">Yardımcı olabilecek bazı makaleler:</string>
+    <string name="zui_default_bot_name">Answer Bot</string>
+    <string name="zui_dialog_email_error">Geçersiz e-posta</string>
+    <string name="zui_dialog_email_hint">E-posta adresi</string>
+    <string name="zui_failed_message_copy">Kopyala</string>
+    <string name="zui_failed_message_delete">Sil</string>
+    <string name="zui_failed_message_retry">Yeniden dene</string>
+    <string name="zui_hint_type_message">Mesaj yazın…</string>
+    <string name="zui_label_connecting">Bağlanıyor…</string>
+    <string name="zui_label_dialog_delete_btn">Mesajı sil</string>
+    <string name="zui_label_dialog_retry_btn">Yeniden göndermeyi dene</string>
+    <string name="zui_label_failed">Başarısız</string>
+    <string name="zui_label_reconnecting">Yeniden bağlanıyor…</string>
+    <string name="zui_label_reconnecting_failed">Bağlantı kurulamadı.</string>
+    <string name="zui_label_send">Gönder</string>
+    <string name="zui_label_sent">Gönderildi</string>
+    <string name="zui_label_tap_retry">Yeniden denemek için dokunun</string>
+    <string name="zui_message_log_article_opened_formatter">%1$s şu makaleyi açtı: \“%2$s\”</string>
+    <string name="zui_message_log_article_suggestion_message">Şu makaleleri buldum:</string>
+    <string name="zui_message_log_attachment_sending_failed">Ek gönderilemedi</string>
+    <string name="zui_message_log_default_visitor_name">Ziyaretçi</string>
+    <string name="zui_message_log_message_attachment_type_not_supported">Ek türü desteklenmiyor</string>
+    <string name="zui_message_log_message_attachments_not_supported">Ekler desteklenmiyor</string>
+    <string name="zui_message_log_message_failed_to_send">[Gönderilemedi]</string>
+    <string name="zui_message_log_message_file_exceeds_max_size">Maksimum dosya boyutundan (%1$s) büyük</string>
+    <string name="zui_message_log_transfer_option_selection_formatter">%1$s seçim yaptı: %2$s</string>
+    <string name="zui_retry_button_label">Yeniden dene</string>
+    <string name="zui_toolbar_title">Bizimle iletişim kurun</string>
+    <string name="zui_unable_open_file">Dosya açılamıyor.</string>
+</resources>

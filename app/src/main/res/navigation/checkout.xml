@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/checkout"
+    app:startDestination="@id/checkout_fragment">
+
+    <fragment
+        android:id="@+id/checkout_fragment"
+        android:name="com.tatayab.tatayab.checkout.CheckoutFragment"
+        android:label="@string/fragment_checkout_title"
+        tools:layout="@layout/fragment_checkout">
+
+
+        <action
+            android:id="@+id/next_login_options"
+            app:destination="@+id/signin_options"
+            app:enterAnim="@anim/pop_enter_slide_up"
+            app:exitAnim="@anim/pop_exit_slide_up"
+            app:popEnterAnim="@anim/enter_slide_down"
+            app:popExitAnim="@anim/exit_slide_down">
+            <argument
+                android:name="fromCheckout"
+                android:defaultValue="false"
+                app:argType="boolean" />
+        </action>
+
+        <action
+            android:id="@+id/next_change_Adress"
+            app:destination="@+id/addresses"
+            app:enterAnim="@anim/pop_enter_slide_up"
+            app:exitAnim="@anim/pop_exit_slide_up"
+            app:popEnterAnim="@anim/enter_slide_down"
+            app:popExitAnim="@anim/exit_slide_down">
+
+            <argument
+                android:name="fromCheckOut"
+                android:defaultValue="true"
+                app:argType="boolean" />
+
+        </action>
+
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/add_addresses"
+            app:enterAnim="@anim/pop_enter_slide_up"
+            app:exitAnim="@anim/pop_exit_slide_up"
+            app:popEnterAnim="@anim/enter_slide_down"
+            app:popExitAnim="@anim/exit_slide_down">
+
+            <argument
+                android:name="address"
+                android:defaultValue="@null"
+                app:argType="com.tatayab.model.requests.AddressRequest"
+                app:nullable="true" />
+
+            <argument
+                android:name="isgust"
+                android:defaultValue="false"
+                app:argType="boolean" />
+
+            <argument
+                android:name="fromcheckout"
+                android:defaultValue="false"
+                app:argType="boolean" />
+        </action>
+
+        <action
+            android:id="@+id/order_success_action"
+            app:destination="@id/cart"
+            app:popUpTo="@+id/cart"
+            app:popUpToInclusive="true">
+            <argument
+                android:name="orderId"
+                app:argType="string"
+                app:nullable="true" />
+
+            <argument
+                android:name="deliveryTime"
+                android:defaultValue="@null"
+                app:argType="string"
+                app:nullable="true" />
+
+            <argument
+                android:name="amount"
+                android:defaultValue="@null"
+                app:argType="string"
+                app:nullable="true" />
+
+            <argument
+                android:name="totalUserOrders"
+                android:defaultValue="0"
+                app:argType="string"
+                app:nullable="true" />
+
+            <argument
+                android:name="paymentStatus"
+                android:defaultValue="false"
+                app:argType="boolean" />
+
+        </action>
+
+        <action
+            android:id="@+id/order_payment"
+            app:destination="@id/payment_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/payment_fragment"
+        android:name="com.tatayab.tatayab.checkout.PaymentFragment"
+        android:label="@string/fragment_payment_title"
+        tools:layout="@layout/fragment_payment">
+        <argument
+            android:name="orderData"
+            app:argType="com.tatayab.model.responses.CreateOrderResponse" />
+
+        <action
+            android:id="@+id/order_success_action"
+            app:destination="@id/cart"
+            app:popUpTo="@+id/cart"
+            app:popUpToInclusive="true">
+
+            <argument
+                android:name="orderId"
+                app:argType="string"
+                app:nullable="true" />
+
+
+            <argument
+                android:name="knetData"
+                app:argType="com.tatayab.model.KnetData"
+                app:nullable="true" />
+
+            <argument
+                android:name="amount"
+                android:defaultValue="@null"
+                app:argType="string"
+                app:nullable="true" />
+
+            <argument
+                android:name="paymentStatus"
+                android:defaultValue="false"
+                app:argType="boolean" />
+
+        </action>
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/checkout_addresses_fragment"
+        android:name="com.tatayab.tatayab.checkout.CheckoutAddressFragment"
+        android:label="@string/fragment_addresses_title"
+        tools:layout="@layout/fragment_checkout_addresses"/>
+    <include app:graph="@navigation/addresses_graph" />
+    <include app:graph="@navigation/add_addresses" />
+    <include app:graph="@navigation/signin_options" />
+
+
+</navigation>

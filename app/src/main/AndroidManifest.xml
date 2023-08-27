@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tatayab.tatayab">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED"
+        tools:node="remove" />
+
+    <!--    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"-->
+    <!--        tools:ignore="ScopedStorage" />-->
+    <!--    <uses-permission android:name="android.permission.CAMERA"-->
+    <!--        android:required="true"-->
+    <!--        android:requiredFeature="true"/>-->
+    <application
+        android:name=".App"
+        android:icon="@mipmap/ic_launcher"
+        android:label="${appName}"
+        android:networkSecurityConfig="@xml/network_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+         tools:ignore="AllowBackup,GoogleAppIndexingWarning"
+        tools:replace="android:label">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme"
+            android:exported="true"
+            tools:node="merge"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="tatayab.page.link"
+                    android:scheme="https" />
+                <data
+                    android:host="tatayab.page.link"
+                    android:scheme="http" />
+                <data android:scheme="tatayabdlink" />
+
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+
+        <activity android:name=".webview.WebviewActivity"
+            android:exported="false"
+            tools:node="merge"
+            />
+        <activity android:name=".refer.ReferFriendSuccessActivity"
+            android:exported="false"
+            tools:node="merge"
+            />
+        <activity
+            android:name=".addresses.ChooseCityActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:node="merge"
+            />
+        <activity
+            android:name=".productdetails.ChooseOptionActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:node="merge"
+            />
+        <activity
+            android:name=".main.cart.SharedCartActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:node="merge"
+            />
+        <activity
+            android:name=".errorHandling.ErrorHandlingAct"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:exported="false"
+            tools:node="merge"
+            />
+        <activity
+            android:name=".developerSettings.DeveoperSettingsActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:node="merge"
+            />
+        <activity
+            android:name=".deeplink.DeepLinkActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme"
+            android:exported="true"
+            tools:node="merge"
+            >
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="7fg8.adj.st"
+                    android:scheme="http" />
+                <data
+                    android:host="7fg8.adj.st"
+                    android:scheme="https" />
+                <data android:host="tatayab.com" />
+                <data
+                    android:host="tatayab.com"
+                    android:scheme="http" />
+                <data
+                    android:host="tatayab.com"
+                    android:scheme="https" />
+                <!--                <data-->
+                <!--                    android:host="tatayab.page.link"-->
+                <!--                    android:scheme="https" />-->
+            </intent-filter>
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.VIEW" /> -->
+
+
+            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+
+
+            <!-- <data android:scheme="tatayabdlink" -->
+            <!-- /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".auth.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarMaterialTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:exported="false"
+            tools:node="merge"
+            />
+        <activity
+            android:name=".auth.LoginOptionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarMaterialTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:exported="false"
+            tools:node="merge"
+            />
+        <activity
+            android:name=".livechat.LiveChatActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarMaterialTheme"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false"
+            tools:node="merge"
+            />
+
+        <service
+            android:name=".firebase.NotificationMessagingService"
+            android:exported="false"
+            tools:node="merge">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+ Set custom default icon. This is used when no icon is set for incoming notification messages.
+        See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_notification" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <receiver
+            android:name="com.adjust.sdk.AdjustReferrerReceiver"
+            android:exported="true"
+            tools:node="merge"
+            android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.login.dev"
+            android:value="398227463517-jcbrnik7v11r22j44if025trapk8lu5o.apps.googleusercontent.com" />
+        <meta-data
+            android:name="com.google.android.login.release"
+            android:value="398227463517-iaeud37nmtn5ictoreu0eb6tkmfh1a1m.apps.googleusercontent.com" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:exported="true"
+            tools:node="merge"
+            />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true"
+            tools:node="merge"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="fb2459794954232593" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

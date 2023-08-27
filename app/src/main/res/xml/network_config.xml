@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config xmlns:tools="http://schemas.android.com/tools">
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+<!--    <debug-overrides>-->
+<!--        <trust-anchors>-->
+<!--            &lt;!&ndash; Trust user added CAs while debuggable only &ndash;&gt;-->
+<!--            <certificates src="user" />-->
+<!--        </trust-anchors>-->
+<!--    </debug-overrides>-->
+
+<!--    <domain-config>-->
+<!--        <domain includeSubdomains="true">tatayab.com</domain>-->
+<!--    </domain-config>-->
+<!--    <domain-config cleartextTrafficPermitted="true">-->
+<!--      <domain includeSubdomains="true">magento-dev.tatayab.com</domain>-->
+<!-- &lt;!&ndash;     <domain includeSubdomains="true">tatayab.com</domain>&ndash;&gt;-->
+<!--    </domain-config>-->
+
+</network-security-config>

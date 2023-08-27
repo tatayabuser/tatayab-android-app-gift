@@ -1,0 +1,9 @@
+package com.tatayab.model.account
+
+enum class ViewTypeLayout {
+USERINFO,USERSETTING,APPINFO
+}
+
+enum class ViewTypeAction {
+   PROFILE, ADDRESS,ORDERS,LOGIN,LOGOUT,LANG,COUNTRIES,ABOUTUS,CONTACTUS,RATEAPP,SHARE,WALLET,REFER
+}

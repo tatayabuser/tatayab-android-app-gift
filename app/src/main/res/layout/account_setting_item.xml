@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_product_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/account_cell_hight"
+        android:layout_marginStart="@dimen/account_value_padding"
+        android:background="@color/white"
+        tools:drawableStart="@drawable/ic_language"
+        android:drawablePadding="18dp"
+        android:gravity="start|center_vertical"
+        android:text="@string/language"
+        android:textColor="@color/dark_blue"
+        style="@style/textFontbookStyle"
+        android:textSize="@dimen/mini_larg_text"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_value"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawableEnd="@drawable/arrow_right_icon_layer"
+        android:gravity="end|center"
+        android:drawablePadding="7dp"
+        android:layout_marginEnd="20dp"
+        style="@style/textFontbookStyle"
+        android:textAlignment="viewEnd"
+        android:textSize="@dimen/mini_larg_text"
+        tools:text="Arabic"
+        app:layout_constraintBottom_toBottomOf="@id/tv_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_title"
+        app:layout_constraintTop_toTopOf="@id/tv_title"
+         />
+
+    <View
+        android:id="@+id/view_after_language"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginEnd="3dp"
+        android:background="@color/gray"
+        app:layout_constraintEnd_toEndOf="@+id/tv_value"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_value"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

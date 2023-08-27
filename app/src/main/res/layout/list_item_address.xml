@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_2sdp"
+    android:paddingStart="@dimen/_8sdp"
+    android:paddingEnd="@dimen/_8sdp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_name"
+        style="@style/textFontMeduimStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:padding="@dimen/_2sdp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/mini_larg_text"
+        android:theme="@style/textDirectionStyle"
+        app:layout_constraintEnd_toStartOf="@+id/isprimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Taha Fakhroudin" />
+
+
+    <ImageView
+        android:id="@+id/isprimary"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:checked="true"
+        android:clickable="false"
+        android:src="@drawable/not_primary_img"
+        android:theme="@style/addressRadioButton"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_phone"
+        style="@style/textFontbookStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:padding="@dimen/_2sdp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/normal_text"
+        android:theme="@style/textDirectionStyle"
+        app:layout_constraintEnd_toStartOf="@+id/isprimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        tools:text="+01201089811 " />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_city_block"
+        style="@style/textFontbookStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:padding="@dimen/_2sdp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/normal_text"
+        android:theme="@style/textDirectionStyle"
+        app:layout_constraintEnd_toStartOf="@+id/isprimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_phone"
+        tools:text="Kuwait city,Block 6  " />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_area"
+        style="@style/textFontbookStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:padding="@dimen/_2sdp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/normal_text"
+        android:theme="@style/textDirectionStyle"
+        app:layout_constraintEnd_toStartOf="@+id/isprimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_city_block"
+        tools:text="Area 51  " />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_edit"
+        style="@style/textFontMeduimStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="@string/edit"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/normal_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_area" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_delete"
+        style="@style/textFontMeduimStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="@string/delete"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/normal_text"
+        app:layout_constraintStart_toEndOf="@+id/tv_edit"
+        app:layout_constraintTop_toTopOf="@+id/tv_edit" />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/gray_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_delete"
+        app:layout_constraintWidth_percent="0.95" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

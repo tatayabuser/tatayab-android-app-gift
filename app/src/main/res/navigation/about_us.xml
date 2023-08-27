@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/about_us"
+    app:startDestination="@+id/destination_about_us">
+
+    <fragment
+        android:id="@+id/destination_about_us"
+        android:name="com.tatayab.tatayab.aboutus.AboutUsFragment"
+        android:label="@string/aboutus"
+        tools:layout="@layout/fragment_about_us">
+
+        <action
+            android:id="@+id/next_action_privacy"
+            app:destination="@id/privacy"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+
+            <argument
+                android:name="url"
+                app:argType="string" />
+
+            <argument
+                android:name="title"
+                app:argType="string" />
+
+        </action>
+
+    </fragment>
+
+    <include app:graph="@navigation/privacy" />
+
+</navigation>

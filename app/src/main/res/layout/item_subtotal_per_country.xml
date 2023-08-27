@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/original_gray"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/original_gray"
+        android:padding="@dimen/_7sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:civ_border_overlay="true"
+            android:src="@drawable/flag_bh"
+            android:id="@+id/item_country_logo"
+            android:layout_marginStart="@dimen/_5sdp"
+             />
+        <TextView
+            android:id="@+id/tv_country_name"
+            style="@style/customFont"
+            android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+            android:iconifiedByDefault="true"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:theme="@style/textDirectionStyle"
+            android:layout_marginStart="@dimen/_10sdp"
+            tools:text="@string/shipping_from" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/subTotalRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/original_gray"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+         tools:itemCount="3"
+        tools:listitem="@layout/item_label" />
+
+
+</LinearLayout>

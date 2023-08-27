@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/toolbar_main_splash_country" />
+
+    <LinearLayout
+        android:id="@+id/shareCartMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar"
+        android:background="@color/dark_pinkish"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_share_cart_receiver" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/sender_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="@string/share_cart_receiver_message"
+            android:textColor="@color/black"
+            android:textDirection="locale"
+            android:textSize="@dimen/_11sdp"
+            android:theme="@style/customFont_gotham_medium" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/sharedItemCountTextView"
+        style="@style/textFontBoldStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shareCartMessage"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:gravity="center|start"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_12sdp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sharedCartRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/sharedItemCountTextView"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_65sdp"
+        tools:itemCount="3"
+        tools:listitem="@layout/list_item_shared_cart" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/continueButton"
+        style="@style/SubmitButton"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:text="@string/move_items_to_cart"
+        android:textSize="@dimen/_11sdp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/closeButton"
+        style="@style/SubmitButton"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:text="@string/navigate_to_cart"
+        android:textSize="@dimen/_11sdp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/cartMergeActionsSheetView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9EDDD9DD"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@drawable/cart_actions_sheet_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/closeActionSheetImage"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:padding="3dp"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentStart="true"
+                    app:srcCompat="@drawable/ic_close" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/share_cart"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_centerInParent="true"
+                    android:theme="@style/textFontMeduimStyle" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/gray"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/action_sheet_title"
+                style="@style/textFontBoldStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="@string/you_already_have_an_items_in_your_cart"
+                android:textColor="@color/sheet_options_color"
+                android:textSize="@dimen/_12sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/action_sheet_options"
+                style="@style/textFontMeduimStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:text="@string/you_have_two_options"
+                android:textColor="@color/sheet_options_color"
+                android:textSize="@dimen/_12sdp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/clearCurrentCartButton"
+                style="@style/SubmitButton"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:text="@string/clear_the_cart_first"
+                android:textSize="@dimen/_11sdp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/mergeCartButton"
+                style="@style/whiteButtonWithBorder"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/marge_the_cart"
+                android:textSize="@dimen/_11sdp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/base_loading"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:padding="@dimen/_8sdp"
+        android:visibility="visible"
+        app:indicatorColor="@color/dark_blue"
+        app:indicatorName="BallClipRotateMultipleIndicator" />
+</RelativeLayout>

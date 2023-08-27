@@ -1,0 +1,167 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/rounded_top_bg"
+    android:padding="@dimen/_8sdp">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_sub_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:text="@string/subtotal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Subtotal" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_sub_total_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8sdp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_sub_total"
+        app:layout_constraintBottom_toBottomOf="@id/tv_sub_total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_sub_total"
+        tools:text="100,00KWD" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_shipping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="@string/shipping"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub_total"
+        tools:text="Shipping" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_shipping_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8sdp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_shipping"
+        app:layout_constraintBottom_toBottomOf="@id/tv_shipping"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_shipping"
+        tools:text="100,00KWD" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_vat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="@string/vat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_shipping" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_vat_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8sdp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_vat"
+        app:layout_constraintBottom_toBottomOf="@id/tv_vat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_vat"
+        tools:text="100,00KWD" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_custom_duties"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="@string/custom_duties"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_vat" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_custom_duties_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8sdp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_custom_duties"
+        app:layout_constraintBottom_toBottomOf="@id/tv_custom_duties"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_custom_duties"
+        tools:text="100,00KWD" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="@string/discount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_custom_duties"
+        tools:text="Discount" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_discount_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8sdp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_discount"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="100,00KWD" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="@string/total"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_discount"
+        tools:text="total" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_total_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8sdp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_total"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="100,00KWD" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="tv_discount,tv_discount_value" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="@dimen/_12sdp"
+        tools:text="You got free delivery"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_total"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:id="@+id/tv_automatic_coupon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,2 @@
+include ':app', ':model', ':domain', ':data', ':cache', ':presentation', ':remote', ':securedpreferencestore'
+rootProject.name='Tatayab'

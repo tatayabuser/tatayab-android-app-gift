@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/original_gray"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_7sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_country_logo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:src="@drawable/flag_bh"
+            app:civ_border_overlay="true" />
+
+        <TextView
+            android:id="@+id/tv_country_name"
+            style="@style/customFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:iconifiedByDefault="true"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:theme="@style/textDirectionStyle"
+            tools:text="Ship from Kuwait" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_foushya"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_7sdp">
+
+        <ImageView
+            android:id="@+id/deliveryImageView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:src="@drawable/ic_fast_delivery_truck" />
+
+        <TextView
+            android:id="@+id/deliveryTextView"
+            style="@style/customFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:iconifiedByDefault="true"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/_9sdp"
+            android:theme="@style/textDirectionStyle"
+            tools:text="@string/shipping_from" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/white"
+        app:layout_constraintVertical_chainStyle="spread"
+        tools:itemCount="1"
+        tools:listitem="@layout/item_product" />
+
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Status bar stuff. -->
+        <item name="android:fontFamily">@font/cairo_regular</item>
+    </style>
+
+    <style name="customFont" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:fontFamily"> @font/cairo_regular</item>
+    </style>
+
+
+    <style name="SerachEditTextStyleOutline" parent="Widget.AppCompat.EditText">
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+
+    <style name="PricesTextStyleOutline" parent="Widget.AppCompat.TextView">
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+
+    <style name="editDirectionStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textDirection">locale</item>
+        <item name="android:textAlignment">viewStart</item>
+
+    </style>
+
+    <style name="textDirectionStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+    <style name="Theme.Transparent" parent="android:Theme">
+         <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+
+    <style name="textFontMeduimStyle">
+        <item name="android:fontFamily">@font/cairo_semibold</item>
+    </style>
+
+    <style name="textFontBoldStyle">
+        <item name="android:fontFamily">@font/gotham_htf_bold</item>
+    </style>
+
+    <style name="textFontbookStyle">
+        <item name="android:fontFamily">@font/cairo_regular</item>
+    </style>
+</resources>

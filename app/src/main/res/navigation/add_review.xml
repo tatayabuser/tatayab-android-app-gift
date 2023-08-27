@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_review"
+    app:startDestination="@id/destination_add_review">
+
+    <fragment
+        android:id="@+id/destination_add_review"
+        android:name="com.tatayab.tatayab.productreviews.addreview.AddReviewFragment"
+        android:label="@string/fragment_add_review_title"
+        tools:layout="@layout/add_review_fragment" >
+
+        <argument
+            android:name="productId"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="productName"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true"/>
+
+        <argument
+            android:name="productImage"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true"/>
+    </fragment>
+
+
+
+</navigation>

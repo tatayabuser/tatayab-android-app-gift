@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signin_options"
+    app:startDestination="@id/destination_signin_select">
+
+    <fragment
+        android:id="@+id/destination_signin_select"
+        android:name="com.tatayab.tatayab.checkout.SignInOptionsFragment"
+        android:label="@string/sign_in"
+        tools:layout="@layout/fragment_signin_options">
+
+        <argument
+            android:name="fromCheckout"
+            android:defaultValue="false"
+            app:argType="boolean" />
+
+
+        <action
+            android:id="@+id/action_add_Address"
+            app:destination="@+id/add_addresses">
+
+            <argument
+                android:name="address"
+                android:defaultValue="@null"
+                app:argType="com.tatayab.model.requests.AddressRequest"
+                app:nullable="true" />
+
+            <argument
+                android:name="isgust"
+                android:defaultValue="false"
+                app:argType="boolean" />
+
+            <argument
+                android:name="fromcheckout"
+                android:defaultValue="false"
+                app:argType="boolean" />
+
+        </action>
+
+        <action
+            android:id="@+id/update_profile_action"
+            app:destination="@+id/update_profile" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/update_profile"
+        android:name="com.tatayab.tatayab.checkout.UpdateProfileFragment"
+        android:label="@string/update_profile"
+        tools:layout="@layout/fragment_update_profile" />
+    <include app:graph="@navigation/add_addresses" />
+
+</navigation>

@@ -1,0 +1,543 @@
+ma.morsi@tatayab.com
+pass:123456789w
+---------------------------------
+bitbucket token/password
+kZTvZXmNf4ZPWWfu3DFJ
+------------------Key Password-------------
+ key store password:
+ keystore pass 123tatayab2020
+ alias tatayab2020
+ alias pass 2020tatayab123
+----------------- Release Steps---------------------------
+- Check the main server is tatayab.com
+- Change adjust environment to live.
+- Change Search url to live.
+- Change InSider to live server.
+- Change user token and wallet to live server.
+- Increase the build version.
+- Remove share cart icon if not ready
+- CategoriesFragment/ line 484 ==> RollBack this code if the backend not ready
+
+----------------------------------------------------
+Product id has options 28399
+---------------------------------------------------
+<en-US>
+Our dear Tatayab customers, here we come with User interface enhancement, apply a discount policy and bug fixes to make our app easy to use.
+</en-US>
+<ar>
+عملائنا الأعزاء في تطبيق تطيب ، نأتي هنا مع تحسين واجهة المستخدم وتطبيق سياسة الخصم و إصلاح بعض الأخطاء لجعل تطبيقنا سهل الاستخدام.
+</ar>
+------------------- Live server -----
+URL : https://tatayab.com/
+new url:  https://api.tatayab.com/
+user: android@tatayab.com
+pas: 5r53d11lJ594w0V1418z3J3JH71ow38Tٍ
+------------------ QA server ----------------
+m.elabsy@tatayab.com
+uv7v858YMi8R1A37V3977l8683fFmuY7
+URL :  https://qa.tatayab.com/
+------------------ Main Server -----------
+435xbt2GdE5909547n41603u1l4gMpY9
+d.abdulmonsif@tatayab.com
+url :  https://main.tatayab.com/
+--------------- Release notes------------
+- Issie[TA-478] Make no when click on "Review&Pay" tab.
+-------------- Zendesk sdk-------------
+Doc : https://developer.zendesk.com/embeddables/docs/chat-sdk-v-2-for-android/getting_started
+
+Auth tokens: https://tatayabcare.zendesk.com/agent/admin/mobile_sdk
+
+id: wecare@tatayab.com
+password: Tatayab12!@
+
+---------------------------Adjust-------------------------
+  var params = HashMap<String,String>()
+        params.put(AdjustTracker.product_ID,productId)
+        AdjustTracker.trackEvent(AdjustTracker.VIEW_PRODUCT_EVENT,params)
+
+
+those are the events that we have to add them on the app,
+
+1- View Product:
+ Token: e4y91j
+ Parameters: product ID
+
+2- Add to cart:
+Token: 3k0s6l
+
+3- View Cart:
+Token: dg1tw4
+
+4- Checkout:
+ Token: wiouwu
+
+5- Purchase:
+ Token: zey0to
+Parameter: Total Paid Amount
+
+4- First time order:
+Token: aj10gi
+Parameter: Total Paid Amount.
+Note: same Purchase event but we will add it just for the first order for each user
+
+4- Sign up:
+Token: vgmz0a
+------------------track event----------
+let adjustEvent = new AdjustEvent('abc123');
+adjustEvent.addCallbackParameter('key', 'value');
+adjustEvent.addCallbackParameter('foo', 'bar');
+Adjust.trackEvent(adjustEvent);
+---------- callbacks for adjust---------
+The parameters description:
+1- dispatch ==> Required and don't change it
+2- device_type ==> Required the value should be one of (android - ios)
+3- device_id ==> Required (The device unique ID)
+4- campaign_code ==> Required (The campaign code)
+5- user_id ==> Optional
+6- user_email ==> Required
+7- ad_group ==> Required
+8- ad_id ==> Required
+9- click_label ==> Required
+10- creative ==> Required
+11- network ==> Required
+12- tracker_name ==> Required
+13- tracker_token ==> Required
+14- first_order_total ==> Required
+15- store_access_key ==> Required and don't change it (But this field required only on test server, once we go live it will removed)
+    --------
+
+First-time order event
+ https://main.tatayab.com/?dispatch=ttmobadjust.first_order&device_type=&device_id=&campaign_code=&user_id=&user_email=&ad_group=&ad_id=&click_label=&creative=&network=&tracker_name=&tracker_token=&first_order_total=&store_access_key=private.
+
+ sign up event:
+ https://main.tatayab.com/?dispatch=ttmobadjust.sign_up&device_type=ios&device_id=925886A6-CB6B-4A42-99B2-893B5A312C08&campaign_code=ssssssss&user_id=50961&user_email=sss@aaa.ccc&ad_group=aaaaa&ad_id=3456766665t&click_label=placeorder&creative=yes&network=Vodafone&tracker_name=aaaaaaaaa&tracker_token=MyToken$seddf&store_access_key=private
+
+please note that we will use https://main.tatayab.com/api/5.0/TtmOrderActions/?action=place_order API to get number of orders for this user :
+{"order_id":3940808,"redirect_url":"","total_user_orders":1}.
+
+
+
+"total_user_orders":1  this means that this order is the first order for this user so we have to call first-time event, otherwise no need to call it
+--------------------------------------
+Adjust sdk
+
+
+Sure no problem. Before the call I would ask the tech team to follow some steps and provide me some logs.
+
+Android integration requires below. Please double check if they are in place.
+https://github.com/adjust/android_sdk#add-google-play-services
+https://github.com/adjust/android_sdk#google-play-referrer-api
+https://github.com/adjust/android_sdk#session-tracking
+Android - code example
+https://github.com/adjust/android_sdk/blob/master/Adjust/example-app-java/src/main/java/com/adjust/examples/GlobalApplication.java
+
+---------------------------
+{"in_app_message":true,"title":"22233","desc":"testss","image":"https:\/\/qa.tatayab.com\/images\/promotion\/23\/Image_from_iOS2_mv7v-vt.png","action":{"title":"Cart","actionName":"cart"}}
+-----------
+
+/fxeqwYZYxSUq690Tc0V5yyiWAs=
+qWK9ZrRaBMMTVo26my5OnTmFjE=
+----------------------
+Update user country and language
+..../token
+GET
+"country=<country_code> (R)
+lang=<lang_code> (R)
+
+"	-------	"{
+""status"": 1,
+""data"": [],
+}"
+
+
+-----------------
+بشكل مبدأ دا شكل ال url  اللي حضرتك ضغط عليه
+https://tatayab.com/bh-ar/mousuf-100-ml.html
+واللي احنا متفقين عليه اننا بنضيف نوع الشاشه اللي المفروض نفتحها بمعني اننا بنقول والله دا منتج ولا فئه ولا محفظه ولا ايه
+كمثال
+http://tatayab.com/products/1890/jasmine-disney-for-kids-50-ml
+http://tatayab.com/Categories/50/Mubkhars
+https://tatayab.com/supplier/72/French Perfumes
+https://tatayab.com/myorder/72
+https://tatayab.com/myWallet
+https://tatayab.com/cart
+
+
+http://tatayab.com/products/5349/hags
+http://tatayab.com/Categories/50/Mubkhars
+https://tatayab.com/supplier/72/French Perfumes
+
+
+--------------- new site urls---------------------
+new : https://tatayab.com/EG-ar/category/50?type=category
+old : http://tatayab.com/Categories/50/Mubkhars
+
+new: https://tatayab.com/EG-ar/product-details/13818
+old: http://tatayab.com/products/1890/jasmine-disney-for-kids-50-ml
+
+
+new : https://tatayab.com/EG-ar/category/117?type=brand
+----------------------------------
+{"sections":[{"block_id":"269","type":"banners","name":"Slider Mob","template":"carousel","ob_ids":"165,377,200","catId":0,"ob_details":[]},{"block_id":"343","type":"banners","name":"Fast & Free Delivery for orders  above 29KD use code “free”","template":"original","ob_ids":"219","catId":0,"ob_details":[]},{"block_id":"473","type":"banners","name":"Two banners","template":"abab_combined","ob_ids":"40,855","catId":0,"ob_details":[]},{"block_id":"332","type":"categories","name":"Shop by category\/\/\/Checkout our amazing collection ","template":"categories_multicolumn_list","ob_ids":"","catId":0,"ob_details":[]},{"block_id":"268","type":"products","name":"FEATURED","template":"products_scroller_advanced","ob_ids":"2744,2498,2702,17184,17256,6575,6583,6585,17308,5176,797,5987,13499,5168,5935,883,1623,4410,5167,5992,6205,10051,1440,6046,6299,5671,2680,6072,6073,934,2261,5773,5980,5988,5993,6009,7864,12961,18161,11336","catId":"4","ob_details":[]},{"block_id":"474","type":"banners","name":"one banners","template":"abab_combined","ob_ids":"509","catId":0,"ob_details":[]},{"block_id":"27","type":"our_brands","name":"Brands you may like\/\/\/More than 200 brands to choose from","template":"our_brands","ob_ids":"","catId":0,"ob_details":[]},{"block_id":"475","type":"banners","name":"Three banners","template":"abab_combined","ob_ids":"530,40,831","catId":0,"ob_details":[]},{"block_id":"401","type":"products","name":"International perfumes\/\/\/ Timeless perfumes that are quintessentially french","template":"short_list","ob_ids":"2567,2569,2702,2843,2821,4517,2842,3039,2699,10479,2536,2565,2818,2953,2997,3616,5584,10470,3451,2704,2572,2750,2943,3017,2979,2544,1488,3947,2727,5066","catId":"214","ob_details":[]},{"block_id":"476","type":"categories","name":"Shop by sub-categories\/\/\/Checkout our amazing collection","template":"categories_multicolumn_list","ob_ids":"","catId":0,"ob_details":[]},{"block_id":"477","type":"banners","name":"Four banners","template":"abab_combined","ob_ids":"558,603,324,668","catId":0,"ob_details":[]},{"block_id":"367","type":"products","name":"Body care\/\/\/Let your body care routine start with our products ","template":"short_list","ob_ids":"6035,11222,13499,10975,4873,5978,10051,11961,12988,9344,9338,9392,9335,6046,6197,6211,6212,6215,6299,7002,7047,7112,7121,12358,5994,6202,5952,6043,6057,6067,6069,4346,6217,6255,6296,6306,6351,6488,6491,6500,6512,6517,11186,11192,11216,9374","catId":"168","ob_details":[]},{"block_id":"478","type":"ttm_promotions","name":"Promotions","template":"ttm_promotions_scroller","ob_ids":"4415,303,304","catId":0,"ob_details":{"4415":{"id":"4415","name":"TT79","image":"https:\/\/qa.tatayab.com\/images\/promotion\/54\/71H7SmTSyvL._SY550_.jpg","idtitle_line_1":"Get 15% discount","idtitle_line_2":"Discounts every where","description":"Buy any product in the list and get 30% discount by using code  TT79"}}}]}
+
+-------------
+inApp message
+[{"camp_id":7,"camp_type":"Conversion Push","created_at":"2021-02-22T00:47:09Z","deep_links":{},"message":"Complete your order while stock lasts 😵 ","title":"Your basket is calling you 🛒 ","variant_id":142},{"camp_id":22,"camp_type":"Single Push","created_at":"2021-01-01T12:01:27Z","deep_links":{"url":"https:\/\/tatayab.com\/kw-en\/retrouvailles-paris\/"},"message":"عطور مميزة تم اختيارها بعناية لتناسب كل الأذواق","title":"ريتروفاي ⭐ ","variant_id":46},{"camp_id":14,"camp_type":"Single Push","created_at":"2020-12-27T16:16:27Z","deep_links":{"url":"https:\/\/tatayab.com\/kw-ar\/skin-and-body-care\/face-care\/face-tools\/intelligent-visual-blackhead-remover\/"},"message":"أقوى جهاز تنظيف بشرة بأقوى سعر فقط في تطيّب✨","title":"مزيل الرؤوس السوداء الذكي من إليكترا 📲","variant_id":30},{"camp_id":12,"camp_type":"Single Push","created_at":"2020-12-27T14:35:30Z","deep_links":{"url":"https:\/\/tatayab.com\/kw-en\/prestige-perfumes\/"},"message":"التجمع بين الفخامة والتميَز ✨ ","title":"مجموعة عطورات برستيج 😍 ","variant_id":26},{"camp_id":11,"camp_type":"Single Push","created_at":"2020-12-27T08:00:57Z","deep_links":{"url":"https:\/\/tatayab.com\/kw-en\/long-4-lashes\/"},"message":"رموش أقوى وأكثر مرونة وأكثر إشراقًا ✨ ","title":"لونج فور لاشيز 👁️ ","variant_id":24},{"camp_id":10,"camp_type":"Single Push","created_at":"2020-12-26T12:00:14Z","deep_links":{"url":"https:\/\/tatayab.com\/kw-en\/tatayab-gifts\/oud-collection\/"},"message":"خصم 50% على دهن عود كوليكشن من كنوز الطيب 😮 ","title":"صندوق هدية راقي 🎁 ","variant_id":22},{"camp_id":9,"camp_type":"Single Push","created_at":"2020-12-26T09:01:11Z","deep_links":{"url":"https:\/\/tatayab.com\/kw-en\/beesline\/"},"message":"منتجات بيزلين المميزة والغنية عن التعريف متوفرة على تطيَب 🤩 ","title":"Beesline 🐝 ","variant_id":20},{"camp_id":8,"camp_type":"Single Push","created_at":"2020-12-25T10:48:44Z","deep_links":{"url":"https:\/\/tatayab.com\/kw-ar\/perfumes\/unisex\/oud-and-roses-50-ml\/"},"message":"عطر يدوم معك طوال اليوم","title":"عود & روز","variant_id":18},{"camp_id":7,"camp_type":"Single Push","created_at":"2020-12-24T19:00:17Z","deep_links":{"url":"https:\/\/tatayab.com\/kw-ar\/nuxe\/"},"message":"تجمع بين الجمال مع نتائج فورية ولمسة من التدليل 💆‍♀️ ","title":"منتجات نوكس للعناية بالبشرة 👩 ","variant_id":16},{"camp_id":6,"camp_type":"Single Push","created_at":"2020-12-24T17:00:31Z","deep_links":{"url":"https:\/\/tatayab.com\/kw-ar\/skin-and-body-care\/face-care\/face-tools\/intelligent-visual-blackhead-remover\/"},"message":"من الكترا احصلي على بشرة صافية ووجه منتعشاطلبي جهازك اليوم! 🛒 ","title":"مع مزيل الرؤوس السوداء الذكي ⚫ ","variant_id":14},{"camp_id":5,"camp_type":"Single Push","created_at":"2020-12-24T15:00:31Z","deep_links":{"url":"https:\/\/tatayab.com\/kw-ar\/bukhour\/bukhour\/amber-plate\/"},"message":" 💨  استمتع ببخورك لفترة اطول ⁣مع قطعة آمبر الأكثر مبيعا ","title":"تحرق بخورك ولا تسخنه؟ 🔥 ","variant_id":12},{"camp_id":13,"camp_type":"Single Push","created_at":"2020-12-24T14:05:15Z","deep_links":{"url":"https:\/\/tatayab.com\/kw-ar\/twaaq\/"},"message":"عطور توّاق صارت متوفرة عندنا في تطيّب،لحّق وأطلب! 🔥 ","title":"🛎 العطر اللي ناطرينه وصل!","variant_id":28},{"camp_id":3,"camp_type":"Single Push","created_at":"2020-12-06T19:24:47Z","deep_links":{"url":"https:\/\/tatayab.com\/kw-en\/tatayab-gifts\/white-friday-offers\/laya-collection\/"},"image_url":"https:\/\/mobileimg.useinsider.com\/rich_push\/tatayab\/1606989706-18ca37eb937ff3439b1f_1606989706.jpg","message":"لا يطوفكم الخصم على مجموعة ليا العجيية   📢   ","title":"مددنا الخصومات لعيونكم 🕺 ","variant_id":7},{"camp_id":2,"camp_type":"Single Push","created_at":"2020-12-06T14:31:34Z","image_url":"https:\/\/mobileimg.useinsider.com\/rich_push\/tatayab\/1607265076-f5a1e954dfd4937a2891_1607265076.jpg","message":"لديك    منتج في السلة ","title":"اربعة ايام على انتهاء العروض","variant_id":5},{"camp_id":1,"camp_type":"Single Push","created_at":"2020-12-03T10:01:47Z","deep_links":{"url":"https:\/\/tatayab.com\/kw-en\/tatayab-gifts\/white-friday-offers\/laya-collection\/"},"image_url":"https:\/\/mobileimg.useinsider.com\/rich_push\/tatayab\/1606989706-18ca37eb937ff3439b1f_1606989706.jpg","message":"لا يطوفكم الخصم على مجموعة ليا العجيية   📢   ","title":"مددنا الخصومات لعيونكم 🕺 ","variant_id":2}]
+-------------------
+
+
+method to get SH-1 :
+
+ fun printHashKey(pContext: Context) {
+        try {
+            val info: PackageInfo = pContext.getPackageManager()
+                .getPackageInfo(pContext.getPackageName(), PackageManager.GET_SIGNATURES)
+            for (signature in info.signatures) {
+                val md: MessageDigest = MessageDigest.getInstance("SHA")
+                md.update(signature.toByteArray())
+                Log.d("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT));
+
+                // val hashKey = String(Base64.encodeToString(md.digest(), 0))
+                //  Log.i(TAG, "printHashKey() Hash Key: $hashKey")
+            }
+        } catch (e: NoSuchAlgorithmException) {
+            Log.e(ContentValues.TAG, "printHashKey()", e)
+        } catch (e: java.lang.Exception) {
+            Log.e(ContentValues.TAG, "printHashKey()", e)
+        }
+    }
+
+    --------------------------------------------------------------
+    dynamic test
+    with dev   https://tatayab.page.link/C8pCqT29Ws488YaJA
+
+
+    Dynamic link:
+    https://tatayab.page.link/?link=https://tatayab.com/invite/123/ahmedakl&apn=com.tatayab.tatayab.dev
+    https://tatayab.page.link?apn=com.tatayab.tatayab&ibi=com.tatayab.tatayab&link=https%3A%2F%2Ftatayab.com%2Finvite%2F123%2Fahmedakl
+------------TABBY---------------
+Access to tabby API docs: docs.tabby.ai (credentials to access: tabby / dac$IDQocucbSH7YVu%J)
+WE HIGHLY RECOMMEND using the "Redirect to tabby Hosted Payment Page" method NOT the JS (Javascript) method found here: https://docs.tabby.ai/#section/Checkout-Web/Redirect-to-Hosted-Payment-Page
+Install tabby's product page snippet: https://docs.tabby.ai/#section/Promo-Messages (Very important to increase customer conversions)
+Integration guidelines document attached for your reference
+Test API keys for sandbox integration:
+Public: pk_test_67d875a8-52d8-4010-b40b-c693ee8ba4ee
+Secret: sk_test_340d696c-bcc0-46ad-9e18-88816e74f5c7
+Test User Credentials for UAT
+Email: successful.payment@tabby.ai
+Phone: 500000001
+OTP code: 8888
+UAE: 2 Emirates IDs attached for positive (authorized) and negative (rejected) flows
+KSA:
+Authorized flow: 2222222222, 01.01.1985, any name (authorized flow), Absher code: 888888
+Rejection flow: 2222222222, 01.01.2010, any name
+Please add merchant code to your requests. It should be:
+"merchant_code": "TatayebSA" for KSA.
+"merchant_code": "TatayebUAE" for UAE.
+
+--------------------------------------
+Share and Uarn
+1- Open store on App if not exists.
+2- Change the Icon. Pending Meshal
+
+
+Api-Key ==>: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMTM5MDM3IiwidXNlcl90eXBlIjoiQyIsImVtYWlsIjoiYWhtZWRha2wxOTkxQGdtYWlsLmNvbSIsInVzZXJfbG9naW4iOiJ1c2VyXzEzOTAzNyIsImV4cGlyeV90aW1lIjoiMTYzMTAxNzk1OCIsInNpZyI6IjY4MTRjYmIyMDNmYjQ0Mjk1NTQ5OTNmMGU5MzRkNTgzIn0.gXC2_zohmFmF1Y0WJcbpkSQxTYjU9R2GD_znjFhov0I
+ token ==>: TATAYAB::d5b565969b1aa3267ca12a9291bbf9f3
+devid ==>: 733209cf2c35b28c
+
+  https://wallet-dev.tatayab.com/v1.0/check_earn
+BODY:  {
+    "sender_id" : 1,
+    "devid" : "97079A98-5DF3-4CF3-BB4C-42301B5AA1CF"
+}
+        ]
+-----------------------
+error message
+{"message":"Sorry, your order is above the maximum order value for the selected payment method","status":400}
+API response error code = 200
+Response Body
+{"message":"Sorry, your order is above the maximum order value for the selected payment method","status":0}
+status is 0 if there is an error and we will display the message
+Status is 1 if there no an error and we will fetch the data and move to next journey
+
+---------------------------------------------------
+ current sprint
+
+ As discussed yesterday, this sprint will cover the following items web and mobile apps:
+ 1- Gift order enhancements and make it synced with multiple devices.  DONE
+ 2- Release Share and earn release  (Website and mobile apps). DONE
+ 3- Share cart (New feature).  DONE
+ 4- Enhance search experience and add brands to it.
+ 5- revamp brands screen in mobile apps.
+
+
+share cart model
+https://tatayab.com/share_cart?shareCart={countryCode=KW,products=[]}
+[{"productName":"","options":[{"variantId":"2175","optionId":"48"},{"variantId":"2187","optionId":"50"},{"variantId":"2196","optionId":"51"},{"variantId":"2184","optionId":"49"}],"count":1,"productId":"878","maxCount":99,"minCount":0},{"productName":"","options":[],"count":1,"productId":"3956","maxCount":99,"minCount":0},{"productName":"","options":[],"count":1,"productId":"5176","maxCount":99,"minCount":0}
+ ----------------------------------------------
+We have 2 Case.
+
+1 - If order not paid then text will be:
+
+CongratulationYou have earned 5.000 KWD cashback credit in your wallet for next order. Note you cannot use them until your order is completed.
+
+مبروكلقد حصلت على رصيد بقيمة 5.000 kd في محفظتك، يمكنك استخدامه في الطلب القادم.سيتم تفعيل الرصيد عند اكتمال الطلب الحالي.
+
+-------------------
+
+2 - if order paid then text will be:
+
+CongratulationYou have earned 5.000 KWD cashback credit in your wallet for next order. مبروك لقد حصلت على رصيد بقيمة 5.000 kd في محفظتك، يمكنك استخدامه في الطلب القادم.ptions":[{"variantId":"1726","optionId":"235"},{"variantId":"1798","optionId":"241"},{"variantId":"1918","optionId":"247"},{"variantId":"1858","optionId":"244"}]}]}
+
+-----------------------------------------
+query getSubCategories {  categories(filters: { parent_category_uid: { in: "MzM\u003d" } }) {    total_count    items {      children_count id uid   level   name   path  image   mp_promo_banners{    items{     url     type     slider_images     banner_image    }   }    children {        id        uid        level        name        path   image        children_count            }    }    page_info {      current_page      page_size      total_pages    }  }}
+
+{  products(filter: { sku: { eq: "TYB-007-X521" } }) {    items {source sku      url_key    url_suffixsource      top_notes      name      id      small_image{        url      }      image{        url      }      manufacturer      base_notes      review_count ... on BundleProduct {      items {          option_id          title}}          reviews{        items{          nickname          summary          average_rating        }      }     dynamicAttributes(fields: ["manufacturer","gender","color","size"])    description{      html    }      stock_status            price_range {        minimum_price {          discount{            amount_off            percent_off          }          final_price{            value            currency          }          regular_price {            value            currency  }          }        } ... on BundleProduct {      items {          option_id          title          sku        options{            label             id            product{              sku            image{                url              }              source              shipping_details {                shipping_title                delivery_from                delivery_to              }            }          }      }      }   shipping_details {        shipping_title        delivery_from        delivery_tosource_code      }      }    }}"}
+
+
+Gift Query==>
+mutation {  addGiftWrapToCart(    cartId: "7eCOv54erVvAUTjyuJ4tnzbGBIXhNgSZ"    wrapItems: {wrap_id: 12  sender_name:"Ahmed Akl"  receiver_name:"Ahmed Akl"      gift_message: "vvvvv"      is_receipt_hidden: 1      finish:1      action: "add"      existing_wrap_id: 0      itemsIds: [        {          id: 41710        }      ]    }  ) {    cart {      wrapping_items{      entity_id      wrap_id      gift_message receiver_name sender_name      wrap_name      quote_item_ids{        id        Qty      }    }      items {      id      product {        name        sku      }      quantity    }      prices {      grand_total {        value        currency      }    }    }  }}
+Respopnse==>
+{"data":{"addGiftWrapToCart":{"cart":{"wrapping_items":[{"entity_id":622,"wrap_id":12,"gift_message":"vvvvv","receiver_name":"Ahmed Akl","sender_name":"Ahmed Akl","wrap_name":"Blue Polka Dots Pink Box","quote_item_ids":[{"id":41710,"Qty":1}]}],"items":[{"id":"41710","product":{"name":"عطر روزز فانيلا للجنسين - 120 مل - مركز","sku":"MCR-001-R315"},"quantity":1},{"id":"50977","product":{"name":"عطر روزز فانيلا للجنسين - 120 مل - مركز","sku":"MCR-001-R315"},"quantity":1}],"prices":{"grand_total":{"value":828.3775,"currency":"SAR"}}}}}}
+
+
+query getSubCategories {  categories(filters: { parent_category_uid: { in: "MzM\u003d" } }) {    total_count    items {      children_count id uid   level   name   path  image   mp_promo_banners{    items{     url     type     slider_images     banner_image    }   }    children {        id        uid        level        name        path   image        children_count            }    }    page_info {      current_page      page_size      total_pages    }  }}"}
+
+
+mutation {createCustomerAddress(
+input: {
+country_code: SA
+telephone:  "555555555"
+postcode:  " "
+city:  "أبها الجادية "
+block:  "ggggggg "
+firstname:  "eeeeeeeeee "
+lastname:  "gggg "
+region: {region_id: 1356  region:  "Abha" } city_id:  "13017"
+  add_direction:  "ttttt"
+  street_add:  "ttttttt"
+   street: [ "address "]  default_shipping: false default_billing: false
+    addr_type :  "1285 " house_building : "ttttttt " })
+     {  id    country_code }}"}
+
+
+
+mutation {   setBillingAddressOnCart(
+ input: {       cart_id: "ijkrtQzBa7QvTfEBqqeZrQX18P3hWDRH"
+ billing_address: {
+ address: {
+ firstname: "eeeeeeeeee"
+ lastname: "gggg"
+ company: "Tatayab"
+ street: ["address"]
+ city: "Abha Aljadidah"
+ postcode: "null"
+ country_code: "SA"
+ telephone: "+966555555555"
+ save_in_address_book: false
+ house_building:"1285"
+ addr_type:"1285"
+ city_id:"13017"
+ region:  "Abha"
+ region_id:1356}       }     }   )
+ {     cart {       billing_address {         firstname         lastname         company         street         city         region{           code           label         }         postcode         telephone         country {           code           label         }       }     }   } }
+
+
+ {    cart(cart_id: "ijkrtQzBa7QvTfEBqqeZrQX18P3hWDRH") {      shipping_addresses {        available_shipping_methods {          method_code          carrier_code          source_code        }      }  }  }
+ {"data":{"cart":{"shipping_addresses":[{"available_shipping_methods":[{"method_code":"bestway","carrier_code":"tablerate","source_code":"KW-WH"}]}]}}}
+after that we execute this query:
+{"query":"mutation {  setShippingMethodsOnCart(input: {    cart_id: "ijkrtQzBa7QvTfEBqqeZrQX18P3hWDRH"    shipping_methods: [      {        carrier_code: "KW-WH:tablerate"        method_code: "KW-WH:bestway"      }    ]  }) {    cart {      shipping_addresses {        selected_shipping_method {          carrier_code          method_code          carrier_title          method_title        }      }    }  }}
+
+{"data":{"setShippingMethodsOnCart":{"cart":{"shipping_addresses":[{"selected_shipping_method":{"carrier_code":"KW-WH:tablerate","method_code":"KW-WH:bestway","carrier_title":"KW-WH:International (KSA)","method_title":"KW-WH:International (KSA)"}}]}}}}
+ mutation {createCustomerAddress(input: {   country_code: KW telephone: "55555555"   postcode: ""  city: "العبدلي"  block: "hhhhhh"  firstname: "eeeeeeeeee"  lastname: "gggg" region: {region_id: 0 region: " " } city_id: "11957"  add_direction: "jjjjjjjjj"  street_add: "gggggggg by"  street: ["ad see rss "] default_shipping: false default_billing: false addr_type : "1285" house_building :"gggggggg by" }) {  id    country_code }}
+ mutation {createCustomerAddress(input: {   country_code: SA telephone: "555555555"   postcode: ""  city: "أبها الجادية" block: "55"  firstname: "eeeeeeeeee"  lastname: "gggg" region: {region_id: 1356 region: "Abha" } city_id: "13017"  add_direction: "additional"  street_add: "details"  street: ["address"] default_shipping: false default_billing: false addr_type : "1285" house_building :"details" }) {  id    country_code }}
+
+mutation {  addSimpleProductsToCart(    input: {      cart_id: "3NTwy9N5SFm4uUEITrxXWoRYbo2ucyUS"      cart_items: [        {          data: {            quantity: 1            sku: "DGN-001-W989"            source: "SA-WH"          }        }      ]    }  ) {    cart {      items {        id        product {          name          sku        }        quantity      },prices{grand_total{currencyvalue}}    }  }}"}
+
+
+ {"data":{"cart":{"id":"2qscEhBXbBgOnISDBRZ22GaVpKGkiig8","email":"aa@zz.he","credit":{"is_applied":true,"amount":{"value":0,"currency":null}},"sources":[{"code":"KW-WH","description":"Shipping from Kuwait","logo":"https:\/\/tatayab.com\/media\/wysiwyg\/warehouse\/KW-WH.png"},{"code":"SA-WH","description":"Shipping from Saudi Arabia","logo":"https:\/\/tatayab.com\/media\/wysiwyg\/warehouse\/SA-WH.png"}],"wrapping_items":[],"billing_address":{"city":"Abdally","country":{"code":"KW","label":"KW"},"firstname":"Ahmed","lastname":"Akl","postcode":"null","region":{"code":null,"label":null},"street":["yyyyyyy"],"addr_type":"1285","telephone":"+96555555555","city_id":"11957","area":null},"shipping_addresses":[{"firstname":"Ahmed","lastname":"Akl","street":["yyyyyyy"],"city":"Abdally","street_add":"ggggg","add_direction":null,"addr_type":"1285","region":{"code":null,"label":null},"country":{"code":"KW","label":"KW"},"telephone":"+96555555555","available_shipping_methods":[{"method_code":"flatrate","carrier_code":"flatrate","source_code":"KW-WH","delivery_to":"3","delivery_from":"1"},{"method_code":"bestway","carrier_code":"tablerate","source_code":"SA-WH","delivery_to":"10","delivery_from":"7"}],"selected_shipping_method":{"amount":{"value":4.75,"currency":"KWD"},"base_amount":null,"carrier_code":"KW-WH:flatrate|SA-WH:tablerate","carrier_title":"KW-WH:Tatayab Shipments|SA-WH:International (From KSA To Kwait)","method_code":"KW-WH:flatrate|SA-WH:bestway","method_title":"KW-WH:Tatayab Shipments|SA-WH:International (From KSA To Kwait)"},"city_id":"11957"}],"items":[{"id":"129157","product":{"name":"Dior Homme Intense Eau De Parfum - 100ML - Male","source":"KW-WH","sku":"DIO-001-R975","shipping_details":[{"delivery_from":"1","delivery_to":"3","shipping_title":"Tatayab Shipments","shipping_method":"flatrate_flatrate"},{"delivery_from":"7","delivery_to":"10","shipping_title":"International (From KSA To Kwait)","shipping_method":"tablerate_bestway"}],"small_image":{"url":"https:\/\/tatayab.com\/media\/catalog\/product\/cache\/62805fc4aa5180b882f7417bdb96913f\/D\/I\/DIO-001-R975_3.jpg","label":"Dior Homme Intense Eau De Parfum - 100ML - Male"},"price_range":{"maximum_price":{"discount":{"amount_off":0},"regular_price":{"value":41,"currency":"KWD"}},"minimum_price":{"final_price":{"value":41,"currency":"KWD"},"regular_price":{"value":41,"currency":"KWD"}}}},"quantity":1,"source_code":"KW-WH"},{"id":"129163","product":{"name":"Bukhour Dakhoon Haayel - 100GM","source":"SA-WH","sku":"AJM-006-W9593","shipping_details":[{"delivery_from":"7","delivery_to":"10","shipping_title":"International (From KSA To Kwait)","shipping_method":"tablerate_bestway"}],"small_image":{"url":"https:\/\/tatayab.com\/media\/catalog\/product\/cache\/62805fc4aa5180b882f7417bdb96913f\/A\/J\/AJM-006-W9593_-_Bukhour_Dakhoon_Haayel_-_100GM_-_Ajmal_.png","label":"Bukhour Dakhoon Haayel - 100GM"},"price_range":{"maximum_price":{"discount":{"amount_off":0},"regular_price":{"value":6.99,"currency":"KWD"}},"minimum_price":{"final_price":{"value":6.99,"currency":"KWD"},"regular_price":{"value":6.99,"currency":"KWD"}}}},"quantity":1,"source_code":"SA-WH"}],"available_payment_methods":[{"code":"mpgs_hostedcheckout","title":"Visa & MasterCard","logo":"https:\/\/tatayab.com\/media\/paymentmethods\/mpgs_hostedcheckout_logo.png","subtitle":null},{"code":"cashondelivery","title":"Cash On Delivery","logo":"https:\/\/tatayab.com\/media\/paymentmethods\/cashondelivery_logo.png","subtitle":null},{"code":"knet","title":"Knet","logo":"https:\/\/tatayab.com\/media\/paymentmethods\/knet_logo.png","subtitle":null},{"code":"tabby_installments","title":"Tabby","logo":"https:\/\/tatayab.com\/media\/paymentmethods\/tabby_installments_logo.png","subtitle":null}],"selected_payment_method":{"code":"knet","title":"Knet"},"applied_coupons":null,"prices":{"subtotal_excluding_tax":{"value":47.99,"currency":"KWD"},"subtotal_including_tax":{"value":47.99,"currency":"KWD"},"applied_taxes":[],"subtotal_with_discount_excluding_tax":{"value":47.99,"currency":"KWD"},"extra_fees":[{"title":"Cash On Delivery Fee","amount":{"value":0,"currency":"KWD"}}],"discounts":null,"grand_total":{"value":52.74,"currency":"KWD"}}}}}
+ mutation { createCustomerAddress(input: {   country_code: KW  telephone: "55555555"   postcode: ""  city: "Abdally" block: "ffffffff"  firstname: "Ahmed"  lastname: "Akl" region: {region_id: 0 region: " " } city_id: "11957"    add_direction: ""    street_add: "rrdddrrr"    street: ["rrrrrrrr"]  default_shipping: false  default_billing: false addr_type : "1285"   house_building :"rrdddrrr" }) {  id    country_code }}
+mutation {  createCustomerAddress(input: {   country_code: KW   telephone:   "55555555"   postcode:   "  "  city:   "Abu Fateera  "  block:   "ffffff  "  firstname:   "Ahmed  "  lastname:   "Akl  "  region: {           " }  city_id:   "11959  "    add_direction:   "trtt  "    street_add:   "rrrrr  "    street: [  "Technology, El Sheikh Zayed  "]  default_shipping: false  default_billing: false addr_type :   "1285  "   house_building :  "rrrrr  " }) {  id    country_code }}  "}
+mutation {   createCustomerAddress(input: {   country_code: KW    telephone:   "55555555  "   postcode:   "  "  city:   "Abdally  "   block:   "rrrr  "  firstname:   "Ahmed  "  lastname:   "Akl  "   region: {           }   city_id:   "11957  "     add_direction:   "  "     street_add:   "dddd  "     street: [  "dddddedd  "]   default_shipping: false   default_billing: false addr_type :   "1285  "    house_building :  "dddd  " }) {  id    country_code }}  
+mutation {   createCustomerAddress(input: {   country_code: KW    telephone: "55555555"   postcode: ""  city: "Abu Al Hasania"   block: "vvvvv"  firstname: "Ahmed"  lastname: "Akl"       city_id: "11958"     add_direction: "ccccc"     street_add: "gggggg"     street: ["rrrrrrrrr"]   default_shipping: false   default_billing: false addr_type : "1285"    house_building :"gggggg" }) {  id    country_code }}   "}
+mutation {  createCustomerAddress(input: {   country_code: "KW"   telephone: "55555555"
+   postcode: ""  city: "Abdally"  block: "ddddddd"  firstname: "Ahmed"  lastname: "Akl"
+    region: {  region_id: 1286  region: "KW" }  city_id: "11957"    add_direction: ""
+     street_add: "hhhhh"    street: ["kjhgfd"]  default_shipping: false  default_billing: false addr_type : "1285"
+       house_building :"hhhhh" })
+{  id    country_code }}
+
+ mutation {    setShippingMethodsOnCart(input: {      cart_id: "HWwI0rVhsACQOnx0Zx2eSxuhOI9xVFDN"      shipping_methods: [        {          carrier_code: "KW-WH:flatrate|SA-WH:tablerate"          method_code: "KW-WH:flatrate|SA-WH:bestway"        }      ]    }) {      cart {        shipping_addresses {          selected_shipping_method {            carrier_code            method_code            carrier_title            method_title          }        }      }    }  }
+-----------------
+
+
+{"data":{"setShippingMethodsOnCart":{"cart":{"shipping_addresses":[{"selected_shipping_method":{"carrier_code":"KW-WH:flatrate|SA-WH:tablerate","method_code":"KW-WH:flatrate|SA-WH:bestway","carrier_title":"KW-WH:الشحن عن طريق تطيب|SA-WH: شحن دولي من السعودية الى الكويت","method_title":"KW-WH:كويت : شحن تطيب|SA-WH:International (From KSA To Kwait)"}}]}}}}
+
+-------------------
+
+ mutation {    setShippingAddressesOnCart(      input: {        cart_id: "HWwI0rVhsACQOnx0Zx2eSxuhOI9xVFDN"        shipping_addresses: [          {            address: {              firstname: "Ahmed"              lastname: "Akl"              company: "Tatayab"              city: "Abdally"                             postcode: "null"              country_code: "KW"              telephone: "+96555555555"              house_building:"Test House/Building"               addr_type:"1285"  region_id:1286               city_id:"11957"             add_direction: ""               street_add: "yyyyyyyy"               street: ["ttttttttt"]              save_in_address_book: false            }          }        ]      }    ) {       cart {        shipping_addresses {          firstname          lastname          company          street          city          region {            code            label          }          postcode          telephone          country {            code            label          }        }      }    }  }
+
+ -------------
+
+
+ {"data":{"setShippingAddressesOnCart":{"cart":{"shipping_addresses":[{"firstname":"Ahmed","lastname":"Akl","company":"Tatayab","street":["ttttttttt"],"city":"Abdally","region":{"code":"KW","label":"KW"},"postcode":"null","telephone":"+96555555555","country":{"code":"KW","label":"KW"}}]}}}}
+-----------------------
+
+
+
+
+----------------------------
+{"data":{"setBillingAddressOnCart":{"cart":{"billing_address":{"firstname":"Ahmed","lastname":"Akl","company":"Tatayab","street":["ttttttttt"],"city":"Abdally","region":{"code":"KW","label":"KW"},"postcode":"null","telephone":"+96555555555","country":{"code":"KW","label":"KW"}}}}}}
+
+-----------------------------------
+query getSubCategories {     categories(filters: { parent_category_uid: { in: "NDA\u003d" } }) { 
+      total_count  
+           items {         children_count   id   uid   level
+             name   path   image mp_promo_banners{   items{   url   type   slider_images   banner_image   }   }       children {           id           uid           level           name           path   image           children_count                  }       }       page_info {         current_page         page_size         total_pages       }     }   }
+
+
+query getSubCategories {
+  categories(filters: { parent_category_uid: { in: "MzM=" } }) {
+    total_count
+    items {
+      children_count
+      id
+      uid
+      level
+      name
+      path
+      image
+      children {
+        id
+        uid
+        level
+        name
+        path
+        image
+        children_count
+      }
+    }
+    page_info {
+      current_page
+      page_size
+      total_pages
+    }
+  }
+}
+
+checkout
+{cart(cart_id: "7eCOv54erVvAUTjyuJ4tnzbGBIXhNgSZ") {       wrapping_items{         entity_id         wrap_id         gift_message   receiver_name   sender_name         wrap_name         quote_item_ids{           id           Qty         }       }    prices {         grand_total {           value           currency         }         subtotal_excluding_tax {           value           currency         }         subtotal_including_tax {           value           currency         }       }    items {         id         uid         quantity         product {           name           sku   ... on BundleProduct{                    items { option_id title\toptions{    uid   }}   }        stock_status           dynamicAttributes(fields: ["manufacturer"])           small_image {             url             label           }           price_range {             minimum_price {               final_price {                 value                 currency               }               regular_price {                 value                 currency               }               discount {                 amount_off                 percent_off               }             }           }           ... on BundleProduct {             dynamic_price             ship_bundle_items             uid             items {               uid               title               type               options {                 uid               }             }           }         }         prices {           row_total {             value             formatted_price           }           total_item_discount {             value             currency           }         }       }     }     }   "}
+
+n
+{"data":{"categories":{"total_count":8,"items":[{"children_count":"0","id":535,"uid":"NTM1","level":3,"name":"الفرنسي","path":"1\/2\/534\/535","image":"https:\/\/tatayab.com\/media\/catalog\/category\/French_1_1.jpg","mp_promo_banners":{"items":[{"url":null,"type":"slider_images","slider_images":"[{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/a\\\/s\\\/asgharali-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/asgharali","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/f\\\/l\\\/flormr-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/flormar","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/c\\\/h\\\/chopard--688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/chopard","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/b\\\/a\\\/baitk-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/baitk\\\/","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/f\\\/r\\\/frederic-malle-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/frederic-malle","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/u\\\/n\\\/unit-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/unit\\\/","sort_order":"0"}]","banner_image":null},{"url":"http:\/\/categories\/372\/","type":"banner_image","slider_images":"[]","banner_image":"https:\/\/tatayab.com\/media\/mageplaza\/promobanner\/banner\/image\/e\/n\/end-of_year-1080x1080-en.jpg"},{"url":"http:\/\/categories\/68\/","type":"banner_image","slider_images":"[]","banner_image":"https:\/\/tatayab.com\/media\/mageplaza\/promobanner\/banner\/image\/h\/a\/hair_mist_1.jpg"},{"url":null,"type":"html","slider_images":"[]","banner_image":null}]},"children":[]},{"children_count":"0","id":541,"uid":"NTQx","level":3,"name":"العربي","path":"1\/2\/534\/541","image":"https:\/\/tatayab.com\/media\/catalog\/category\/arabic_AR_1.jpg","mp_promo_banners":{"items":[{"url":null,"type":"slider_images","slider_images":"[{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/a\\\/s\\\/asgharali-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/asgharali","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/f\\\/l\\\/flormr-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/flormar","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/c\\\/h\\\/chopard--688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/chopard","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/b\\\/a\\\/baitk-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/baitk\\\/","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/f\\\/r\\\/frederic-malle-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/frederic-malle","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/u\\\/n\\\/unit-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/unit\\\/","sort_order":"0"}]","banner_image":null},{"url":"http:\/\/categories\/372\/","type":"banner_image","slider_images":"[]","banner_image":"https:\/\/tatayab.com\/media\/mageplaza\/promobanner\/banner\/image\/e\/n\/end-of_year-1080x1080-en.jpg"},{"url":"http:\/\/categories\/68\/","type":"banner_image","slider_images":"[]","banner_image":"https:\/\/tatayab.com\/media\/mageplaza\/promobanner\/banner\/image\/h\/a\/hair_mist_1.jpg"},{"url":null,"type":"html","slider_images":"[]","banner_image":null}]},"children":[]},{"children_count":"0","id":542,"uid":"NTQy","level":3,"name":"العناية بالجسم","path":"1\/2\/534\/542","image":"https:\/\/tatayab.com\/media\/catalog\/category\/body_care_AR_1.jpg","mp_promo_banners":{"items":[{"url":null,"type":"slider_images","slider_images":"[{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/a\\\/s\\\/asgharali-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/asgharali","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/f\\\/l\\\/flormr-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/flormar","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/c\\\/h\\\/chopard--688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/chopard","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/b\\\/a\\\/baitk-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/baitk\\\/","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/f\\\/r\\\/frederic-malle-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/frederic-malle","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/u\\\/n\\\/unit-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/unit\\\/","sort_order":"0"}]","banner_image":null},{"url":"http:\/\/categories\/372\/","type":"banner_image","slider_images":"[]","banner_image":"https:\/\/tatayab.com\/media\/mageplaza\/promobanner\/banner\/image\/e\/n\/end-of_year-1080x1080-en.jpg"},{"url":"http:\/\/categories\/68\/","type":"banner_image","slider_images":"[]","banner_image":"https:\/\/tatayab.com\/media\/mageplaza\/promobanner\/banner\/image\/h\/a\/hair_mist_1.jpg"},{"url":null,"type":"html","slider_images":"[]","banner_image":null}]},"children":[]},{"children_count":"0","id":543,"uid":"NTQz","level":3,"name":"العناية بالشعر","path":"1\/2\/534\/543","image":"https:\/\/tatayab.com\/media\/catalog\/category\/Hair_Care_AR_1.jpg","mp_promo_banners":{"items":[{"url":null,"type":"slider_images","slider_images":"[{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/a\\\/s\\\/asgharali-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/asgharali","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/f\\\/l\\\/flormr-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/flormar","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/c\\\/h\\\/chopard--688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/chopard","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/b\\\/a\\\/baitk-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/baitk\\\/","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/f\\\/r\\\/frederic-malle-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/frederic-malle","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/u\\\/n\\\/unit-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/unit\\\/","sort_order":"0"}]","banner_image":null},{"url":"http:\/\/categories\/372\/","type":"banner_image","slider_images":"[]","banner_image":"https:\/\/tatayab.com\/media\/mageplaza\/promobanner\/banner\/image\/e\/n\/end-of_year-1080x1080-en.jpg"},{"url":"http:\/\/categories\/68\/","type":"banner_image","slider_images":"[]","banner_image":"https:\/\/tatayab.com\/media\/mageplaza\/promobanner\/banner\/image\/h\/a\/hair_mist_1.jpg"},{"url":null,"type":"html","slider_images":"[]","banner_image":null}]},"children":[]},{"children_count":"0","id":545,"uid":"NTQ1","level":3,"name":"العناية بالبشرة","path":"1\/2\/534\/545","image":"https:\/\/tatayab.com\/media\/catalog\/category\/Skin_care_AR_1.jpg","mp_promo_banners":{"items":[{"url":null,"type":"slider_images","slider_images":"[{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/a\\\/s\\\/asgharali-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/asgharali","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/f\\\/l\\\/flormr-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/flormar","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/c\\\/h\\\/chopard--688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/chopard","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/b\\\/a\\\/baitk-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/baitk\\\/","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/f\\\/r\\\/frederic-malle-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/frederic-malle","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/u\\\/n\\\/unit-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/unit\\\/","sort_order":"0"}]","banner_image":null},{"url":"http:\/\/categories\/372\/","type":"banner_image","slider_images":"[]","banner_image":"https:\/\/tatayab.com\/media\/mageplaza\/promobanner\/banner\/image\/e\/n\/end-of_year-1080x1080-en.jpg"},{"url":"http:\/\/categories\/68\/","type":"banner_image","slider_images":"[]","banner_image":"https:\/\/tatayab.com\/media\/mageplaza\/promobanner\/banner\/image\/h\/a\/hair_mist_1.jpg"},{"url":null,"type":"html","slider_images":"[]","banner_image":null}]},"children":[]},{"children_count":"0","id":546,"uid":"NTQ2","level":3,"name":"معطرات المنزل","path":"1\/2\/534\/546","image":"https:\/\/tatayab.com\/media\/catalog\/category\/home_ar.jpg","mp_promo_banners":{"items":[{"url":null,"type":"slider_images","slider_images":"[{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/a\\\/s\\\/asgharali-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/asgharali","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/f\\\/l\\\/flormr-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/flormar","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/c\\\/h\\\/chopard--688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/chopard","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/b\\\/a\\\/baitk-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/baitk\\\/","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/f\\\/r\\\/frederic-malle-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/frederic-malle","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/u\\\/n\\\/unit-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/unit\\\/","sort_order":"0"}]","banner_image":null},{"url":"http:\/\/categories\/372\/","type":"banner_image","slider_images":"[]","banner_image":"https:\/\/tatayab.com\/media\/mageplaza\/promobanner\/banner\/image\/e\/n\/end-of_year-1080x1080-en.jpg"},{"url":"http:\/\/categories\/68\/","type":"banner_image","slider_images":"[]","banner_image":"https:\/\/tatayab.com\/media\/mageplaza\/promobanner\/banner\/image\/h\/a\/hair_mist_1.jpg"},{"url":null,"type":"html","slider_images":"[]","banner_image":null}]},"children":[]},{"children_count":"0","id":547,"uid":"NTQ3","level":3,"name":"مكياج","path":"1\/2\/534\/547","image":"https:\/\/tatayab.com\/media\/catalog\/category\/Makeup_AR_1.jpg","mp_promo_banners":{"items":[{"url":null,"type":"slider_images","slider_images":"[{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/a\\\/s\\\/asgharali-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/asgharali","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/f\\\/l\\\/flormr-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/flormar","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/c\\\/h\\\/chopard--688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/chopard","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/b\\\/a\\\/baitk-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/baitk\\\/","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/f\\\/r\\\/frederic-malle-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/frederic-malle","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/u\\\/n\\\/unit-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/unit\\\/","sort_order":"0"}]","banner_image":null},{"url":"http:\/\/categories\/372\/","type":"banner_image","slider_images":"[]","banner_image":"https:\/\/tatayab.com\/media\/mageplaza\/promobanner\/banner\/image\/e\/n\/end-of_year-1080x1080-en.jpg"},{"url":"http:\/\/categories\/68\/","type":"banner_image","slider_images":"[]","banner_image":"https:\/\/tatayab.com\/media\/mageplaza\/promobanner\/banner\/image\/h\/a\/hair_mist_1.jpg"},{"url":null,"type":"html","slider_images":"[]","banner_image":null}]},"children":[]},{"children_count":"0","id":549,"uid":"NTQ5","level":3,"name":"هدايا تطيب","path":"1\/2\/534\/549","image":"https:\/\/tatayab.com\/media\/catalog\/category\/Tatayab_AR_1.jpg","mp_promo_banners":{"items":[{"url":null,"type":"slider_images","slider_images":"[{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/a\\\/s\\\/asgharali-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/asgharali","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/f\\\/l\\\/flormr-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/flormar","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/c\\\/h\\\/chopard--688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/chopard","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/b\\\/a\\\/baitk-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/baitk\\\/","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/f\\\/r\\\/frederic-malle-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/frederic-malle","sort_order":"0"},{"image":"https:\\\/\\\/tatayab.com\\\/media\\\/mageplaza\\\/promobanner\\\/banner\\\/image\\\/u\\\/n\\\/unit-688x422-en_1.jpg","url":"http:\\\/\\\/brand\\\/unit\\\/","sort_order":"0"}]","banner_image":null},{"url":"http:\/\/categories\/372\/","type":"banner_image","slider_images":"[]","banner_image":"https:\/\/tatayab.com\/media\/mageplaza\/promobanner\/banner\/image\/e\/n\/end-of_year-1080x1080-en.jpg"},{"url":"http:\/\/categories\/68\/","type":"banner_image","slider_images":"[]","banner_image":"https:\/\/tatayab.com\/media\/mageplaza\/promobanner\/banner\/image\/h\/a\/hair_mist_1.jpg"},{"url":null,"type":"html","slider_images":"[]","banner_image":null}]},"children":[]}],"page_info":{"current_page":1,"page_size":20,"total_pages":1}}}}
+------------------------
+query getSubCategories {    categories(filters: { parent_category_uid: { in: "Ng\u003d\u003d" } }) {      total_count      items {        children_count  \tid  \tuid  \t\t\tlevel  \t\t\tname  \t\t\tpath  \t\timage\t\t\tmp_promo_banners{  \t\t\t\titems{  \t\t\t\t\turl  \t\t\t\t\ttype  \t\t\t\t\tslider_images  \t\t\t\t\tbanner_image  \t\t\t\t}  \t\t\t}      children {          id          uid          level          name          path  \t\t\timage          children_count                }      }      page_info {        current_page        page_size        total_pages      }    }  }
+
+----------- get cities---------
+{"query":"mutation {  createCustomerAddress(input: {
+ country_code: SA   telephone: "555555555"   postcode: ""  city: "الضباب"  block: "bbbbb"  firstname: "Ahmed"
+  lastname: "Akl"  region: {  region_id: 1356  region: " " region_code: " " }  city_id: "13019"    add_direction: "yyyy"    street_add: "vvvv"    street: ["yyyyyy"]  default_shipping: false  default_billing: false addr_type : "1285"   house_building :"vvvv" }) {  id    country_code }}   "}
+
+{"query":"mutation {  createCustomerAddress(input: {   country_code: SA   telephone: "555555555"   postcode: ""  city: "أبها"  block: "yyyyyy"  firstname: "Ahmed"  lastname: "Akl"  region: {  region_id: 1356  region: "Abha" region_code: "Abha" }  city_id: "13017"    add_direction: "uujuu"    street_add: "yyyyy"    street: ["yyyyy"]  default_shipping: false  default_billing: false addr_type : "1285"   house_building :"yyyyy" }) {  id    country_code }}   "}
+ mutation {     setBillingAddressOnCart(       input: {         cart_id: "AI5tEFwFLm2kGONXAXlYsocZFwv8MUSi"         billing_address: {             address: {               firstname: "Ahmed Akl"               lastname: " user"               company: "Tatayab"               street: ["rrrrr"]               city: "أبها"              region:"Abha"               postcode: ""               country_code: "SA"               telephone: "555555555"               save_in_address_book: false                house_building:"1285"                 addr_type:"1285"                city_id:"1356"  region_id:13017              }         }       }     ) {       cart {         billing_address {           firstname           lastname           company           street           city           region{             code             label           }           postcode           telephone           country {             code             label           }         }       }     }   }   "}
+ mutation {    setBillingAddressOnCart(      input: {        cart_id: "HWwI0rVhsACQOnx0Zx2eSxuhOI9xVFDN"        billing_address: {            address: {              firstname: "Ahmed"              lastname: "Akl"              company: "Tatayab"              street: ["ttttttttt"]              city: "Abdally"                             postcode: "null"              country_code: "KW"              telephone: "+96555555555"              save_in_address_book: false               house_building:"1285"                addr_type:"1285"               city_id:"11957"  region_id:1286             }        }      }    ) {      cart {        billing_address {          firstname          lastname          company          street          city          region{            code            label          }          postcode          telephone          country {            code            label          }        }      }    }  }
+-------------------------------------
+
+mutation {
+  setBillingAddressOnCart(
+    input: {
+      cart_id: "mZVNqMZa44QQEzg6LrEd6Oh8rOYFCYYp"
+      billing_address: {
+          address: {
+            firstname: "Ahmed"
+            lastname: "Akl"
+            company: "Tatayab"
+            street: ["ggggggg"]
+            city: "أبها"
+           region:"Abha"
+            postcode: ""
+            country_code: "SA"
+            telephone: "555555555"
+            save_in_address_book: false
+             house_building:"1285"
+             addr_type:"1285"
+             city_id:"1356"
+region_id:13017
+          }
+      }
+    }
+  ) {
+    cart {
+      billing_address {
+        firstname
+        lastname
+        company
+        street
+        city
+        region{
+          code
+          label
+        }
+        postcode
+        telephone
+        country {
+          code
+          label
+        }
+      }
+    }
+  }
+}
+
+ mutation {createCustomerAddress(input: {   country_code: KW   telephone: "55555555"   postcode: ""  city: "Abu Al Hasania"  block: "block"  firstname: "rrrrrr"  lastname: "hhhhh"  region: {  region_id: 0  region: " " region_code: " " }  city_id: "11958"    add_direction: "addition"    street_add: "strret"    street: ["add name"]  default_shipping: false  default_billing: false addr_type : "1285"   house_building :"strret" }) {  id    country_code }}
+{"id":16104,"firstname":"rrrrrr","lastname":"hhhhh","street":["add name"],"city":"Abu Al Hasania","city_id":"11958","region":{"region_id":0,"region_code":" ","region":" "}
+{"errors":[{"message":"The current user cannot perform operations on cart "7udTqtlZIoXjCqg8HUUzdRKWTVWWaWqn"","extensions":{"category":"graphql-authorization"},"locations":[{"line":1,"column":2}],"path":["cart"]}],"data":{"cart":null}}
+
+
+When click on category from home
+ query {    products(filter:{category_uid : {eq : "NA\u003d\u003d"}}      sort: {position: DESC }      currentPage : 1      pageSize : 10    )    {      total_count      items {  sku        url_key      url_suffix  source        top_notes        name        id        small_image{          url        }        image{          url        }        manufacturer        base_notes        review_count   ... on BundleProduct {        items {            option_id            title  }}            reviews{          items{            nickname            summary            average_rating          }        }       dynamicAttributes(fields: ["manufacturer","gender","color","size"])        description{        html      }        stock_status              price_range {          minimum_price {            discount{              amount_off              percent_off            }            final_price{              value              currency            }            regular_price {              value              currency    }            }          }      }       page_info {        page_size         current_page      }    }      }
+When filter with anther category
+query {     products(filter:{ category_id : { in :["535",]},price: {from:"0.000",to:"300.000"}}       sort: {position: DESC }       currentPage : 1       pageSize : 10     )     {       total_count       items {   sku         url_key       url_suffix   source         top_notes         name         id         small_image{           url         }         image{           url         }         manufacturer         base_notes         review_count    ... on BundleProduct {         items {             option_id             title   }}             reviews{           items{             nickname             summary             average_rating           }         }        dynamicAttributes(fields: ["manufacturer","gender","color","size"])          description{         html       }         stock_status               price_range {           minimum_price {             discount{               amount_off               percent_off             }             final_price{               value               currency             }             regular_price {               value               currency     }             }           }       }        page_info {         page_size          current_page       }     }        }
+
+
+Guest : sN73ouLsCLel3jy33fMG7DkBo2tLLYR8
+
+
+
+Get All Gift list
+Query:
+{   GiftWrapListing(perPage:100,pageNumber:1){   giftwraps{entity_id status name    price{   value   currency   }   image}   }   }
+-------------
+
+Response:
+{"data":{"GiftWrapListing":{"giftwraps":[{"entity_id":1,"status":1,"name":"تغليف هدية جميل ","price":{"value":0,"currency":"KWD"},"image":"https:\/\/tatayab.com\/media\/amasty\/giftwrap\/cache\/9\/J\/600\/600\/9J1A2779.jpg"},{"entity_id":2,"status":1,"name":"تغليف هدية أنيق","price":{"value":0,"currency":"KWD"},"image":"https:\/\/tatayab.com\/media\/amasty\/giftwrap\/cache\/9\/J\/600\/600\/9J1A2811.jpg"},{"entity_id":3,"status":1,"name":"تغليف هدية تطيب","price":{"value":0,"currency":"KWD"},"image":"https:\/\/tatayab.com\/media\/amasty\/giftwrap\/cache\/9\/J\/600\/600\/9J1A2822.jpg"},{"entity_id":4,"status":1,"name":"تغليف هدية باللون الكحلي مع شريط أزرق ","price":{"value":0,"currency":"KWD"},"image":"https:\/\/tatayab.com\/media\/amasty\/giftwrap\/cache\/9\/J\/600\/600\/9J1A27799.jpg"},{"entity_id":5,"status":1,"name":"تغليف هدية تطيب باللون الزهري ","price":{"value":0,"currency":"KWD"},"image":"https:\/\/tatayab.com\/media\/amasty\/giftwrap\/cache\/9\/J\/600\/600\/9J1A2790_1_.jpg"},{"entity_id":6,"status":1,"name":"تغليف هدية ساحر","price":{"value":0,"currency":"KWD"},"image":"https:\/\/tatayab.com\/media\/amasty\/giftwrap\/cache\/9\/J\/600\/600\/9J1A2809.jpg"},{"entity_id":8,"status":1,"name":"صندوق تروبيكال أزرق غامق","price":{"value":0,"currency":"KWD"},"image":"https:\/\/tatayab.com\/media\/amasty\/giftwrap\/cache\/B\/.\/600\/600\/B.jpg"},{"entity_id":9,"status":1,"name":"صندوق فوشي بالورود","price":{"value":0,"currency":"KWD"},"image":"https:\/\/tatayab.com\/media\/amasty\/giftwrap\/cache\/E\/.\/600\/600\/E.jpg"},{"entity_id":10,"status":1,"name":"صندوق خطوط متعرجة أزرق","price":{"value":0,"currency":"KWD"},"image":"https:\/\/tatayab.com\/media\/amasty\/giftwrap\/cache\/F\/.\/600\/600\/F.jpg"},{"entity_id":11,"status":1,"name":"صندوق متعدد الألوان","price":{"value":0,"currency":"KWD"},"image":"https:\/\/tatayab.com\/media\/amasty\/giftwrap\/cache\/A\/.\/600\/600\/A.jpg"},{"entity_id":12,"status":1,"name":"صندوق وردي بنقاط زرقاء","price":{"value":0,"currency":"KWD"},"image":"https:\/\/tatayab.com\/media\/amasty\/giftwrap\/cache\/C\/.\/600\/600\/C.jpg"},{"entity_id":13,"status":1,"name":"صندوق بتصميم تجريدي","price":{"value":0,"currency":"KWD"},"image":"https:\/\/tatayab.com\/media\/amasty\/giftwrap\/cache\/D\/.\/600\/600\/D.jpg"}]}}}
+----------------
+
+Query
+{mutation {     applyCouponToCart(input: {       cart_id: "99RARt5N0RCmF22oG701FdICsPWSSNx4"          coupon_code: "fastfree"        })  {       cart {         applied_coupons {           code         }       }     }   }
+
+Response
+{"errors":[{"message":"The coupon code isn't valid. Verify the code and try again.","extensions":{"category":"graphql-no-such-entity"},"locations":[{"line":2,"column":3}],"path":["applyCouponToCart"]}],"data":{"applyCouponToCart":null}}
+
+-----------------
+Add Gift to Cart
+
+Query:
+
+mutation {     addGiftWrapToCart(       cartId: "QXP8Hv2DlpEXaifqUC0qYGHI9v8Ba3wG"       wrapItems: {   wrap_id: 1   sender_name:"Ahmed Akl"   receiver_name:"Ahmed Akl"         gift_message: "mess"         is_receipt_hidden: 1         finish:1         action: "add"         existing_wrap_id: 0         itemsIds: [           {             id: 212965           }         ]       }     ) {       cart {         wrapping_items{         entity_id         wrap_id         gift_message   receiver_name   sender_name         wrap_name         quote_item_ids{           id           Qty         }       }         items {         id         product {           name           sku         }         quantity       }         prices {         grand_total {           value           currency         }       }       }     }   }
+-------------------------------
+{     products(filter: { sku: { eq: "DIO-001-R358" } }) {       items {   source   sku         url_key       url_suffix   source         top_notes         name         id         small_image{           url         }         image{           url         }         manufacturer         base_notes         review_count    ... on BundleProduct {         items {             option_id             title   }}             reviews{           items{             nickname             summary             average_rating           }         }        dynamicAttributes(fields: ["manufacturer","gender","color","size"])          description{         html       }         stock_status               price_range {           minimum_price {             discount{               amount_off               percent_off             }             final_price{               value               currency             }             regular_price {               value               currency     }             }           }    ... on BundleProduct {         items {             option_id             title             sku           options{               label                id            product{                 sku               image{                   url                 }              source                 shipping_details {                   shipping_title                   delivery_from                   delivery_from_str                   delivery_to                   delivery_to_str                 }               }             }         }         }   shipping_details {           shipping_title           delivery_from           delivery_from_str           delivery_to_str   source_code      }      }       }   }
+
+----------------------------------
+Response:
+
+{"data":{"addGiftWrapToCart":{"cart":{"wrapping_items":[{"entity_id":2194,"wrap_id":1,"gift_message":"mess","receiver_name":"Ahmed Akl","sender_name":"Ahmed Akl","wrap_name":"تغليف هدية جميل ","quote_item_ids":[{"id":212965,"Qty":1}]}],"items":[{"id":"212965","product":{"name":"عطر ديلينا للنساء - 75 مل - مركز","sku":"PDM-001-R906"},"quantity":1}],"prices":{"grand_total":{"value":74,"currency":"KWD"}}}}}}
+
+-------------Countries-------------
+{"query":"query {      countries {          id          two_letter_abbreviation          three_letter_abbreviation          full_name_locale          full_name_english        phone_code        phone_length        phone_start_nums        flag        location        show_custom_message       }  }"}
+
+------checkout-------------
+{"data":{"cart":{"id":"Gttl0c8VbEX8ov4kviioMYynLLlCqyy8","email":"ff@xx.mm","credit":{"is_applied":false,"amount":{"value":0,"currency":null}},"sources":[{"code":"KW-WH","description":"Shipping from Kuwait","logo":"https:\\/\\/tatayab.com\\/media\\/wysiwyg\\/warehouse\\/KW-WH.png"},{"code":"SA-WH","description":"Shipping from Saudi Arabia","logo":"https:\\/\\/tatayab.com\\/media\\/wysiwyg\\/warehouse\\/SA-WH.png"}],"wrapping_items":[],"billing_address":{"city":"العبدلي","country":{"code":"KW","label":"KW"},"firstname":"yyyyy bbb","lastname":" user","postcode":null,"region":{"code":"KW","label":"KW"},"street":["uuuu"],"addr_type":"1285","telephone":"55555555","city_id":"1286","area":null},"shipping_addresses":[{"firstname":"yyyyy bbb","lastname":"Tatayab user","street":["uuuu"],"city":"العبدلي","street_add":"hhh","add_direction":null,"addr_type":"1285","region":{"code":"KW","label":"KW"},"country":{"code":"KW","label":"KW"},"telephone":"55555555","available_shipping_methods":[{"method_code":"flatrate","carrier_code":"flatrate","source_code":"KW-WH","delivery_to":"1","delivery_to_str":"Wed. 05 Apr.","delivery_from":"0","delivery_from_str":""}],"selected_shipping_method":{"amount":{"value":1.5,"currency":"KWD"},"base_amount":null,"carrier_code":"KW-WH:flatrate","carrier_title":"KW-WH:الشحن عن طريق تطيب","method_code":"KW-WH:flatrate","method_title":"KW-WH:كويت : شحن تطيب"},"city_id":"1286"}],"items":[{"id":"288294","product":{"name":"عطر عود فور جريتنس للجنسين - 90 مل - مركز","source":"KW-WH","sku":"INT-001-W1004","shipping_details":[{"delivery_from":"0","delivery_to":"1","shipping_title":"كويت : شحن تطيب","shipping_method":"flatrate_flatrate"}],"small_image":{"url":"https:\\/\\/tatayab.com\\/media\\/catalog\\/product\\/cache\\/62805fc4aa5180b882f7417bdb96913f\\/I\\/N\\/INT-001-W1004_3.jpg","label":"عطر عود فور جريتنس للجنسين - 90 مل - مركز"},"price_range":{"maximum_price":{"discount":{"amount_off":0},"regular_price":{"value":100,"currency":"KWD"}},"minimum_price":{"final_price":{"value":100,"currency":"KWD"},"regular_price":{"value":100,"currency":"KWD"}}}},"quantity":1,"source_code":"KW-WH"},{"id":"288295","product":{"name":"عطر ليبر للنساء - 90 مل - مركز","source":"KW-WH","sku":"YSL-001-S513","shipping_details":[{"delivery_from":"0","delivery_to":"1","shipping_title":"كويت : شحن تطيب","shipping_method":"flatrate_flatrate"},{"delivery_from":"7","delivery_to":"10","shipping_title":"International (From KSA To Kwait)","shipping_method":"tablerate_bestway"}],"small_image":{"url":"https:\\/\\/tatayab.com\\/media\\/catalog\\/product\\/cache\\/62805fc4aa5180b882f7417bdb96913f\\/Y\\/S\\/YSL-001-S513_3.jpg","label":"عطر ليبر للنساء - 90 مل - مركز"},"price_range":{"maximum_price":{"discount":{"amount_off":15.25},"regular_price":{"value":55.25,"currency":"KWD"}},"minimum_price":{"final_price":{"value":40,"currency":"KWD"},"regular_price":{"value":55.25,"currency":"KWD"}}}},"quantity":1,"source_code":"KW-WH"}],"available_payment_methods":[{"code":"mpgs_hostedcheckout","title":"بطاقة الائتمان (فيزا\\/ماستر)","logo":"https:\\/\\/tatayab.com\\/media\\/paymentmethods\\/mpgs_hostedcheckout_logo.png","subtitle":null},{"code":"cashondelivery","title":"الدفع عند الاستلام","logo":"https:\\/\\/tatayab.com\\/media\\/paymentmethods\\/cashondelivery_logo.png","subtitle":null},{"code":"tamara_pay_by_instalments","title":"تمارا (قسمها على 3 دفعات بدون فوائد)","logo":"https:\\/\\/tatayab.com\\/media\\/paymentmethods\\/tamara_pay_by_instalments_logo.png","subtitle":null},{"code":"tabby_installments","title":"تابي (قسمها على 4 دفعات بدون فوائد)","logo":"https:\\/\\/tatayab.com\\/media\\/paymentmethods\\/tabby_installments_logo.png","subtitle":null},{"code":"knet","title":"كي نت","logo":"https:\\/\\/tatayab.com\\/media\\/paymentmethods\\/knet_logo.png","subtitle":null}],"selected_payment_method":{"code":"knet","title":"كي ن  2023-04-04 02:22:12.646 23251-23471/com.tatayab.tatayab.dev D/OkHttp: luding_tax":{"value":140,"currency":"KWD"},"extra_fees":[{"title":"رسوم الدفع عند الاستلام","amount":{"value":0,"currency":"KWD"}}],"discounts":null,"grand_total":{"value":141.5,"currency":"KWD"}}}}}  "
+------------------- blocks--------------------
+{"data":{"MobileLayoutGraphql":{"blocks":[{"block_id":83,"position":1,"type":"banners","title":"Top Banner KSA AR","subtitle":"","name":"Top Banner KSA AR","template":"carousel","ob_ids":"29","catId":null},{"block_id":81,"position":2,"type":"banners","title":"توصيل مجاني للطلبات التي تصل قيمتها 500 ر.س. أو أكثر، استخدم الكود   "fastfree  "","subtitle":"","name":"Free Delivery KSA AR","template":"original","ob_ids":"10","catId":null},{"block_id":64,"position":3,"type":"categories","title":"تسوق حسب الاقسام","subtitle":"تفقد مجموعتنا الرائعة","name":"Shop by categories Global AR","template":"categories_multicolumn_list","ob_ids":"2,3,4,5,6,7,8,24,33,34,35,40","catId":null},{"block_id":99,"position":4,"type":"products","title":"عطور فرنسية","subtitle":"العطور الخالدة .. التي هي في جوهرها فرنسية التكوين","name":"International perfume KSA AR","template":"short_list","ob_ids":"MOB-001-R351,NAR-001-R702,JPG-001-S468,GVC-001-S138,GAR-001-S031,GCI-001-R945,VSC-001-R883,TOF-001-R822,CNL-001-R771,MCR-001-R215,LAL-001-R370,DGN-001-R087,DIO-001-R073,BBR-001-R586,RBC-001-R555,LAL-001-R666,NAR-001-R441,CPD-001-R452,YSL-001-W2462","catId":70},{"block_id":117,"position":5,"type":"banners","title":"معطرات المنزل","subtitle":"أضف رائحة منعشة إلى منزلك مع معطرات الجو الجميلة","name":"Home fragrances KSA AR","template":"abab_combined","ob_ids":"34","catId":3},{"block_id":109,"position":6,"type":"products","title":"المكياج","subtitle":" تميزي بمكياج مثالي دائماً","name":"Makeup KSA AR","template":"short_list","ob_ids":"FLOM-013-W5086,EYE-013-W10106,EYE-013-W10121,EYE-013-W10120,EYE-013-W10119,EYE-013-W10112,EYE-013-W10111,EYE-013-W10110,EYE-013-W10105,FLOM-013-W5095,EYE-013-W10104,EYE-013-W10103,EYE-013-W10096,EYE-013-W10080,FLOM-013-W5100,FLOM-013-W5097,EYE-013-W10129","catId":40},{"block_id":101,"position":7,"type":"products","title":"العطور العربية","subtitle":"لا شيء يعيدك لذاكرة قديمة أكثر من رائحة عطر مميزة","name":"Arabian Perfume KSA AR","template":"products_scroller_advanced","ob_ids":"ARO-001-N001,ARO-006-W11421,ABK-001-A051,FLR-001-W2202,DAO-001-E290,ARO-006-W11362,ARO-006-W11260,ADM-001-J103,ARO-001-N036,ANV-001-W2205,JND-001-I001,ARO-006-W11248,ALMO-006-W5206,FLR-001-W2203,ANV-001-W2206,FLR-001-W2200,DAO-001-E302,FBF-001-F254,JND-001-I021,ANV-001-W2208,ALMO-006-W5193,ALMO-006-W5200,ALMO-006-W5219,FLR-001-W2201,FBF-001-F257,DAO-001-E279,ADM-011-W2779,FBF-001-F258,FBF-001-F253,ALP-006-W10292,ABR-006-W9100,REF-006-W8328,ASM-001-B090,DAJ-006-W9743,MOU-006-W5153,MOU-006-W5154,ASG-001-I115,AJM-001-Q170,FBF-001-F251,AAM-001-O026,SOS-007-X576,THA-001-T096,WWO-010-G096","catId":69},{"block_id":119,"position":8,"type":"banners","title":"عروض مميزة","subtitle":"","name":"Special Offers KSA AR","template":"abab_combined","ob_ids":"36","catId":5},{"block_id":67,"position":9,"type":"brands","title":"ماركات قد تعجبك","subtitle":"علامات تجارية متنوعة اختر من بينها","name":"Brand you may like Global AR","template":"our_brands","ob_ids":"3,4,5,6,7,8,9,17,18,19,20,22,21,26","catId":null},{"block_id":69,"position":10,"type":"products","title":"هدايا لأحبائك","subtitle":" مجموعة واسعة من الهدايا الفريدة لكل انواع المناسبات","name":"Gift for your loved one Global AR","template":"short_list","ob_ids":"VCA-007-W11898,FLO-015-X12419,MOB-007-W11887,FLO-015-W12427,DRV-002-W8772,AJM-008-F139,AMO-002-W6846,VSC-007-W11899,BGR-007-W11873,FLO-015-W12431,JGR-007-R1133,FLO-015-W12430,AMO-002-W6842,FLO-015-X12418,VCS-007-W7936,FLO-015-X12420,JPG-008-S160,KIDS-008-W4905,MAY-013-W4416,RTH-011-W2399,DNH-007-S446,AJM-007-W1954,ING-013-W6838,GSS-007-S460,TSD-007-W11896,PRB-007-W11891,FLO-015-X12421,DRV-002-W10029,GLN-007-S361,CKN-007-R1054,JPG-007-W12222,TSD-008-S243,
+2023-03-19 14:35:04.894 15137-15270/com.tatayab.tatayab.dev D/OkHttp: O-015-W12426,ADP-007-S526,ADP-007-S412,ADP-007-S407,MUS-006-W11485,KIDS-008-W10051,LAL-007-S472","catId":485},{"block_id":121,"position":11,"type":"banners","title":"العناية بالبشرة","subtitle":"البشرة الصحية هي بداية لمظهر لا تشوبه شائبة","name":"Skin care KSA AR","template":"abab_combined","ob_ids":"38","catId":33},{"block_id":107,"position":12,"type":"products","title":"البخور","subtitle":"فخامة طيب المنزل العربي","name":"Bukhour KSA AR","template":"short_list","ob_ids":"ADM-004-J136,AHF-006-W6867,BAK-006-W11181,ABR-006-W9103,RSH-006-W8183,PAS-006-W8187,ABR-006-W8139,SRM-006-W7584,AMO-006-W7135,BKS-004-W1741,ADM-004-J137,AHF-004-W1581,AJM-005-Q205,ABK-005-A183,ABK-005-A093,AAM-002-O081,AAM-002-O080,ASG-004-I089,ADM-005-J125,MPP-006-W11649","catId":38},{"block_id":123,"position":13,"type":"banners","title":"خمريات الشعر","subtitle":"دعِ شعرك يتحدث","name":"Hair Mist KSA AR","template":"abab_combined","ob_ids":"40","catId":68},{"block_id":113,"position":14,"type":"products","title":"المباخر","subtitle":" تشكيلة متنوعة من المباخر التقليدية بمزيج أنيق","name":"Mubkhar KSA AR","template":"short_list","ob_ids":"SKC-006-P177,MUB-006-W10419,MBE-006-W11491,MBE-006-W11490,MBE-006-W11489,MBE-006-W11487,AMD-006-W10492,AMD-006-W10484,MUB-006-W10425,MUB-006-W10418,WWO-006-G259,AMO-006-W10044,UNT-006-W9790,ANF-006-W8062,UNT-006-W7426,FHE-006-W4545,KTS-006-W3563,PKB-006-W2764,MBE-006-W11493","catId":95},{"block_id":125,"position":15,"type":"banners","title":"ماركات لا يمكنك الإستغناء عنها","subtitle":"اركات لديها متعة تسوق خاصة لا تقاوم","name":"Brand in Focus KSA AR","template":"abab_combined","ob_ids":"42","catId":null},{"block_id":111,"position":16,"type":"products","title":"دهن العود & مسك","subtitle":"","name":"Oud & Musk KSA AR","template":"short_list","ob_ids":"JND-009-I041,DBT-001-W3535,ABR-008-W6938,ABR-008-W6936,AHF-006-W5925,ALMO-006-W5229,ALMO-006-W5210,DBT-001-W4926,ADM-002-W4771,AHF-006-W3283,AYR-008-D024,AAM-007-W2723,AMO-007-W2702,AHF-007-W1591,AAM-009-O108,ASG-001-I116,AAM-009-O060,AAM-009-O059,ABK-009-A074,SRM-006-W7583","catId":37},{"block_id":127,"position":17,"type":"banners","title":"مكياج تحت الأضواء","subtitle":"","name":"Makeup Banner KSA AR","template":"abab_combined","ob_ids":"44","catId":40},{"block_id":103,"position":18,"type":"products","title":"العناية بالجسم","subtitle":"إجعل روتين العناية بالجسم يبدأ بمنتجاتنا","name":"Body Care KSA AR","template":"short_list","ob_ids":"HIS-011-W930,KHA-011-W8611,VIZ-011-W8586,VIZ-011-W8585,VIZ-011-W8584,VIZ-011-W8582,KHA-011-W8618,KHA-011-W8616,KHA-011-W8613,KHA-011-W8606,HIS-011-W931,KHA-011-W8605,KHA-011-W8604,LIR-011-W2118,JOW-011-W2103,EUC-011-W2079,HIS-011-W937,HIS-011-W936,HIS-011-W934,VIZ-011-W8587","catId":34},{"block_id":129,"position":19,"type":"banners","title":"منتجات الاستحمام","subtitle":"","name":"Bath and Shower banner KSA AR","template":"abab_combined","ob_ids":"46","catId":null},{"block_id":105,"position":20,"type":"products","title":"الجديد في تطيّب","subtitle":" أحدث المنتجات الجديدة التي تحتاج إلى التعرف عليها","name":"What's new KSA AR","template":"short_list","ob_ids":"TYB- 007- X529,TYB-006-W8790,ADM-006-W9154,REO-013-W8824,CHA-006-W9097,CHA-006-W9095,CHA-006-W9091,CHA-006-W9089,VIZ-011-W8590,SBM-011-W8721,EVE-013-W3658,FHE-006-W8579,PAS-006-W8185,PAS-006-W8184,CUC-011-W7384,ALWF-006-W6201,NECT-011-W5944,UNT-006-W5452,FHE-006-W4182,NSH-007-W9120","catId":null},{"block_id":131,"position":21,"type":"banners","title":"عطور نيش","subtitle":"","name":"Niche Perfumes Banner KSA AR","template":"abab_combined","ob_ids":"48","catId":null},{"block_id":115,"position":22,"type":"products","title":"الأكثر مبيعاً","subtitle":"أفضل العطور التي تضمنatId":null]}}}

@@ -1,0 +1,5 @@
+package com.tatayab.model.home
+
+enum class ViewTypeLayout {
+    SLIDER, FREE_DELIVERY, CATEGORIES, SUPPLIER, SLIDE_TWO, PRODUCTS, ONE_OFFER, MORE_THAN_ONE_OFFER, FLASH_SALE , CONCIERGE;
+}

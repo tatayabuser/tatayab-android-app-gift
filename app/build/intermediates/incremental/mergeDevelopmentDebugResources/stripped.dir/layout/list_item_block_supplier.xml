@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_70sdp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:gravity="center"
+    app:layout_constraintCircleRadius="@dimen/_10sdp"
+    android:background="@drawable/round_supplier_in_home"
+    android:layout_margin="8dp">
+
+
+    <TextView
+        android:id="@+id/tv_supplier_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:maxLines="2"
+         style="@style/textFontMeduimStyle"
+        android:ellipsize="end"
+        android:lineSpacingExtra="3dp"
+        android:padding="5dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="10sp"
+        tools:text="Brands" />
+
+
+
+</FrameLayout>-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="12dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginBottom="8dp"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_supplier_img"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_gravity="center"
+        android:background="@drawable/round_supplier_in_home"
+        android:cropToPadding="true"
+        android:gravity="center"
+        android:padding="5dp"
+        app:civ_border_overlay="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription,ImageContrastCheck"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_supplier_name"
+        style="@style/textFontbookStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal|top"
+        android:lines="2"
+        android:maxLines="2"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/small_text"
+        app:layout_constraintEnd_toEndOf="@+id/iv_supplier_img"
+        app:layout_constraintStart_toStartOf="@+id/iv_supplier_img"
+        app:layout_constraintTop_toBottomOf="@+id/iv_supplier_img"
+        tools:text="category \n name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

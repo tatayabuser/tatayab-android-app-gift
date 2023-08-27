@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_3sdp"
+    android:layout_marginStart="@dimen/_5sdp">
+
+
+    <TextView
+        android:id="@+id/order_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:lineSpacingExtra="6sp"
+        android:theme="@style/textDirectionStyle"
+        style="@style/textFontbookStyle"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/normal_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="March 20,2020" />
+
+
+    <TextView
+        android:id="@+id/statues_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:lineSpacingExtra="7sp"
+        android:text="@string/order_ID"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/mini_larg_text"
+        style="@style/textFontMeduimStyle"
+        app:layout_constraintStart_toStartOf="@+id/order_date"
+        app:layout_constraintTop_toBottomOf="@+id/order_date" />
+
+    <TextView
+        android:id="@+id/order_id_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/mini_larg_text"
+        style="@style/textFontMeduimStyle"
+        app:layout_constraintStart_toEndOf="@+id/statues_description"
+        app:layout_constraintTop_toTopOf="@+id/statues_description"
+        tools:text="156486" />
+
+
+    <TextView
+        android:id="@+id/order_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/order_amount"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/mini_larg_text"
+        style="@style/textFontMeduimStyle"
+        app:layout_constraintStart_toStartOf="@+id/statues_description"
+        app:layout_constraintTop_toBottomOf="@+id/statues_description" />
+
+    <TextView
+        android:id="@+id/order_amount_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:gravity="center"
+        android:textSize="@dimen/mini_larg_text"
+        style="@style/textFontMeduimStyle"
+        android:textColor="@color/dark_blue"
+        app:layout_constraintStart_toEndOf="@+id/order_amount"
+        app:layout_constraintTop_toTopOf="@+id/order_amount"
+        tools:text="1478 KWD" />
+
+
+    <TextView
+        android:id="@+id/order_statues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="@string/order_statues"
+        android:lineSpacingExtra="7sp"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/normal_text"
+        style="@style/textFontbookStyle"
+        app:layout_constraintStart_toStartOf="@+id/order_amount"
+        app:layout_constraintTop_toBottomOf="@+id/order_amount" />
+
+    <TextView
+        android:id="@+id/order_statues_value"
+        android:layout_width="0dp"
+        android:lineSpacingExtra="7sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:lines="1"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/normal_text"
+        style="@style/textFontbookStyle"
+        app:layout_constraintStart_toEndOf="@+id/order_statues"
+        app:layout_constraintTop_toTopOf="@+id/order_statues"
+        tools:text="Deliverd " />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_order_items_images"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_statues"
+        tools:listitem="@layout/list_item_order_items_image" />
+
+    <View
+        android:id="@+id/view_delimiter"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_order_items_images" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

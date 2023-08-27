@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cart"
+    app:startDestination="@id/destination_cart">
+
+    <fragment
+        android:id="@+id/destination_cart"
+        android:name="com.tatayab.tatayab.main.cart.CartFragment"
+        android:label="@string/fragment_cart_title"
+        tools:layout="@layout/fragment_cart">
+
+
+        <argument
+            android:name="orderId"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
+        <argument
+            android:name="deliveryTime"
+            android:defaultValue="@null"
+            app:nullable="true"
+            app:argType="string" />
+
+
+        <argument
+            android:name="knetData"
+            android:defaultValue="@null"
+            app:argType="com.tatayab.model.KnetData"
+            app:nullable="true" />
+
+        <argument
+            android:name="amount"
+            android:defaultValue="@null"
+            app:nullable="true"
+            app:argType="string" />
+
+        <argument
+            android:name="totalUserOrders"
+            android:defaultValue="0"
+            app:nullable="true"
+            app:argType="string" />
+
+        <argument
+            android:name="paymentStatus"
+            android:defaultValue="false"
+            app:argType="boolean"
+            />
+
+        <action android:id="@+id/action_order_success_to_home" />
+
+        <action
+            android:id="@+id/action_to_cart"
+            app:destination="@id/cart"
+            app:popUpTo="@+id/cart"
+            app:popUpToInclusive="true" />
+
+
+        <action
+            android:id="@+id/next_product_details"
+            app:destination="@+id/product_details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            >
+            <argument
+                android:name="productId"
+                android:defaultValue="@null"
+                app:argType="string"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:nullable="true"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right" />
+
+            <argument
+                android:name="optionItems"
+                android:defaultValue="@null"
+                app:argType="com.tatayab.model.OptionsMap[]"
+                app:nullable="true" />
+            <argument
+                android:name="cartId"
+                app:argType="string"
+                android:defaultValue="@null"
+                app:nullable="true" />
+
+        </action>
+
+        <action
+            android:id="@+id/nextActionCheckout"
+            app:destination="@+id/checkout"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+            <argument
+                android:name="subTotal"
+                app:argType="float" />
+            <argument
+                android:name="cartItems"
+                app:argType="com.tatayab.model.responses.CartOrderResponse[]"
+                app:nullable="true"/>
+
+            <argument
+                android:name="loggedIn"
+                app:argType="boolean"
+                />
+
+        </action>
+
+
+        <action
+            android:id="@+id/action_option_dialog"
+            app:destination="@+id/optionDialog">
+
+        </action>
+
+        <action
+            android:id="@+id/share_cart"
+            app:destination="@+id/share_cart"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            >
+        <argument
+            android:name="cartListItems"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:nullable="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        </action>
+    </fragment>
+
+
+    <dialog
+        android:id="@+id/optionDialog"
+        android:name="com.tatayab.tatayab.main.cart.OptionsDialogFragment"
+        tools:layout="@layout/dialog_options">
+
+        <argument
+            android:name="optionItems"
+            app:argType="com.tatayab.model.MapValueXXX" />
+
+    </dialog>
+
+
+    <include app:graph="@navigation/checkout" />
+    <include app:graph="@navigation/product_details" />
+    <include app:graph="@navigation/products_list" />
+    <include app:graph="@navigation/share_cart" />
+
+
+</navigation>

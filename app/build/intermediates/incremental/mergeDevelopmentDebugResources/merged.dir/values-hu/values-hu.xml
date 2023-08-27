@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d új értesítés</item>
+    <item quantity="other">%d új értesítés</item>
+  </plurals>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Ugrás a főoldalra"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Fel"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"További lehetőségek"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Kész"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Az összes megtekintése"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Válasszon alkalmazást"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"KI"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"BE"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"Delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"Enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"Szóköz"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Keresés…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Lekérdezés törlése"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Keresési lekérdezés"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Keresés"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Lekérdezés küldése"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Hangalapú keresés"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Megosztás a következővel:"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Megosztás a következő alkalmazással: <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Összecsukás"</string>
+    <string name="belvedere_dialog_camera">Kamera</string>
+    <string name="belvedere_dialog_gallery">Galéria</string>
+    <string name="belvedere_fam_desc_collapse_fam">A lebegő műveleti menü összecsukása</string>
+    <string name="belvedere_fam_desc_expand_fam">A lebegő műveleti menü kibontása</string>
+    <string name="belvedere_fam_desc_open_gallery">Fájl importálása a galériából</string>
+    <string name="belvedere_fam_desc_open_google_photos">Kép importálása a Google Fotókból</string>
+    <string name="belvedere_image_stream_file_too_large">Túl nagy a fájl</string>
+    <string name="belvedere_image_stream_title">Fotóalbum</string>
+    <string name="belvedere_image_stream_unknown_app">Ismeretlen</string>
+    <string name="belvedere_permissions_denied">Engedélyek megtagadva</string>
+    <string name="belvedere_stream_item_camera_tile_desc">Kép importálása a kamerából</string>
+    <string name="belvedere_stream_item_select_file_desc">%s nevű fájl kiválasztása</string>
+    <string name="belvedere_stream_item_select_image_desc">%s nevű kép kiválasztása</string>
+    <string name="belvedere_stream_item_unselect_file_desc">%s nevű fájl kiválasztásának megszüntetése</string>
+    <string name="belvedere_stream_item_unselect_image_desc">%s nevű kép kiválasztásának megszüntetése</string>
+    <string name="belvedere_toolbar_desc_collapse">A képválasztó bezárása</string>
+    <string name="bottomsheet_action_expand_halfway">Kibontás félig</string>
+    <string name="character_counter_content_description">Begépelt karakterszám: %2$d/%1$d</string>
+    <string name="character_counter_overflowed_content_description">Maximális karakterszám túllépve: %2$d/%1$d</string>
+    <string name="clear_text_end_icon_content_description">Szöveg törlése</string>
+    <string gender="unknown" name="com_facebook_device_auth_instructions">Keresd fel a &lt;b>facebook.com/device&lt;/b> címet, és írd be a fent megjelenített kódot.</string>
+    <string gender="unknown" name="com_facebook_image_download_unknown_error">Váratlan hiba történt a kép letöltésekor.</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_message">A WebView-bejelentkezéshez „INTERNET” jogosultság szükséges.</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_title">AndroidManifest hiba</string>
+    <string gender="unknown" name="com_facebook_like_button_liked">Kedvelt</string>
+    <string gender="unknown" name="com_facebook_like_button_not_liked">Tetszik</string>
+    <string gender="unknown" name="com_facebook_loading">Betöltés…</string>
+    <string gender="unknown" name="com_facebook_loginview_cancel_action">Mégsem</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button">Belépés</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_continue">Folytatás a Facebookkal</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_long">Bejelentkezés Facebookkal</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_action">Kijelentkezés</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_button">Kijelentkezés</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_as">Bejelentkezve %1$s néven</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_using_facebook">Bejelentkezve a Facebook használatával</string>
+    <string gender="unknown" name="com_facebook_send_button_text">Küldés</string>
+    <string gender="unknown" name="com_facebook_share_button_text">Megosztás</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions">A fiók hozzákapcsolásához nyisd meg a mobilkészülékeden a Facebook alkalmazást, és nézd meg az értesítéseket.</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions_or">- VAGY -</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_cancel">Nem te vagy az?</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_continue_as">Folytatás mint %1$s</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_title">Bejelentkezés megerősítése</string>
+    <string gender="unknown" name="com_facebook_tooltip_default">Te irányítasz – válaszd ki, milyen adatokat szeretnél megosztani az alkalmazásokkal.</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Engedélyezés</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">A(z) %1$s alkalmazás csak akkor működik, ha  engedélyezi a Google Play-szolgáltatásokat.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Google Play-szolgáltatások engedélyezése</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Telepítés</string>
+    <string name="common_google_play_services_install_text">A(z) %1$s alkalmazás nem fut a Google Play-szolgáltatások nélkül, amelyek hiányoznak az eszközről.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">A Google Play-szolgáltatások beszerzése</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play-szolgáltatások elérhetősége</string>
+    <string name="common_google_play_services_notification_ticker">Google Play-szolgáltatások – hiba</string>
+    <string name="common_google_play_services_unknown_issue">A(z) %1$s alkalmazás problémába ütközött a Google Play-szolgáltatások használata során. Próbálkozzon újra.</string>
+    <string name="common_google_play_services_unsupported_text">A(z) %1$s alkalmazás nem fut a Google Play-szolgáltatások nélkül, amelyeket eszköze nem támogat.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Frissítés</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">A(z) %1$s alkalmazás csak akkor fog működni, ha frissíti a Google Play-szolgáltatásokat.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">A Google Play-szolgáltatások frissítése</string>
+    <string name="common_google_play_services_updating_text">A(z) %1$s alkalmazás nem fut a Google Play-szolgáltatások nélkül, amelyek frissítése folyamatban van.</string>
+    <string name="common_google_play_services_wear_update_text">A Google Play-szolgáltatások új verziójára van szükség. A szolgáltatás hamarosan frissíti önmagát.</string>
+    <string name="common_open_on_phone">Megnyitás a telefonon</string>
+    <string name="common_signin_button_text">Bejelentkezés</string>
+    <string name="common_signin_button_text_long">Bejelentkezés Google-fiókkal</string>
+    <string name="error_icon_content_description">Hiba</string>
+    <string name="exposed_dropdown_menu_content_description">Legördülő menü megjelenítése</string>
+    <string name="icon_content_description">Párbeszédpanel ikonja</string>
+    <string name="item_view_role_description">Lap</string>
+    <string name="material_clock_toggle_content_description">Válassza ki, hogy délelőtt vagy délután</string>
+    <string name="material_hour_selection">Óra kiválasztása</string>
+    <string name="material_hour_suffix">%1$s óra</string>
+    <string name="material_minute_selection">Perc kiválasztása</string>
+    <string name="material_minute_suffix">%1$s perc</string>
+    <string name="material_timepicker_am">de.</string>
+    <string name="material_timepicker_clock_mode_description">Időbevitelhez váltson óramódba.</string>
+    <string name="material_timepicker_hour">Óra</string>
+    <string name="material_timepicker_minute">Perc</string>
+    <string name="material_timepicker_pm">du.</string>
+    <string name="material_timepicker_select_time">Időpont kiválasztása</string>
+    <string name="material_timepicker_text_input_mode_description">Időbevitelhez váltson szövegbeviteli módba.</string>
+    <string name="mtrl_badge_numberless_content_description">Új értesítés</string>
+    <string name="mtrl_chip_close_icon_content_description">Eltávolítás (%1$s)</string>
+    <string name="mtrl_exceed_max_badge_number_content_description">Több mint %1$d új értesítés</string>
+    <string name="mtrl_picker_a11y_next_month">Váltás a következő hónapra</string>
+    <string name="mtrl_picker_a11y_prev_month">Váltás az előző hónapra</string>
+    <string name="mtrl_picker_announce_current_selection">Jelenleg kiválasztva: %1$s</string>
+    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Válasszon dátumot</string>
+    <string name="mtrl_picker_date_header_unselected">Kiválasztott dátum</string>
+    <string name="mtrl_picker_day_of_week_column_header">Napok oszlopa: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Érvénytelen formátum.</string>
+    <string name="mtrl_picker_invalid_format_example">Példa: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Használja ezt: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Érvénytelen tartomány.</string>
+    <string name="mtrl_picker_navigate_to_year_description">Ugrás ehhez az évhez: %1$s</string>
+    <string name="mtrl_picker_out_of_range">Tartományon kívül: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Kezdés dátuma – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – Befejezés dátuma</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Válasszon dátumtartományt</string>
+    <string name="mtrl_picker_range_header_unselected">Kezdés dátuma – Befejezés dátuma</string>
+    <string name="mtrl_picker_save">Mentés</string>
+    <string name="mtrl_picker_text_input_date_hint">Dátum</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Befejezés dátuma</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Kezdés dátuma</string>
+    <string name="mtrl_picker_text_input_day_abbr">N</string>
+    <string name="mtrl_picker_text_input_month_abbr">H</string>
+    <string name="mtrl_picker_text_input_year_abbr">É</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Váltás naptárbeviteli módra</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Koppintson a nap kiválasztásához</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Váltás szövegbeviteli módra</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Koppintson az év kiválasztásához</string>
+    <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"Navigálás felfelé"</string>
+    <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"Navigációs fiók kinyitása"</string>
+    <string name="password_toggle_content_description">Jelszó megjelenítése</string>
+    <string name="places_autocomplete_clear_button">Keresés törlése</string>
+    <string name="places_autocomplete_label">Válasszon egy helyet</string>
+    <string name="places_autocomplete_no_results_for_query">Nincsenek eredmények a következőnél: %1$s</string>
+    <string name="places_autocomplete_search_hint">Keresés</string>
+    <string name="places_cancel">Mégse</string>
+    <string name="places_powered_by_google">Üzemeltető: Google</string>
+    <string name="places_search_error">Nem lehet betölteni a keresési találatokat.</string>
+    <string name="places_try_again">Újra</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Keresés"</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="tw__login_btn_txt">Bejelentkezés Twitter-fiókkal</string>
+    <string name="zch_chat_comment_acknowledgement">Köszönjük a visszajelzését. Most visszatérhet a csevegéshez.</string>
+    <string name="zch_chat_comment_composer_hint">Írja be megjegyzését…</string>
+    <string name="zch_chat_ended">Csevegés befejezve</string>
+    <string name="zch_chat_handover_message_selection">Csevegés egy munkatárssal</string>
+    <string name="zch_chat_rating_comment_action_label">Megjegyzés hozzáadása</string>
+    <string name="zch_chat_rating_comment_prompt_message">Nagyra értékeljük visszajelzését. Ha szeretne, egy részletesebb megjegyzést is hozzáfűzhet.</string>
+    <string name="zch_chat_rating_label_bad">Rossz 👎</string>
+    <string name="zch_chat_rating_label_good">Jó 👍</string>
+    <string name="zch_chat_rating_request_prompt">Üdv! Szeretném megkérdezni, hogyan zajlott a csevegés a következővel: %s?</string>
+    <string name="zch_chat_transcript_email_prompt">Milyen e-mail-címre küldjük az átiratot?</string>
+    <string name="zch_chat_transcript_prompt">Szeretné megkapni e-mailben ennek a csevegésnek az átiratát?</string>
+    <string name="zch_chat_transcript_request_confirmation">A csevegés végén a rendszer elküldi az átiratot a(z) %1$s címre.</string>
+    <string name="zch_chat_welcome_message_handover">OK. Keresek valakit, aki segítséget tud nyújtani a kérdésével kapcsolatban.</string>
+    <string name="zch_end_chat">Csevegés befejezése</string>
+    <string name="zch_member_join">%1$s csatlakozott a csevegéshez</string>
+    <string name="zch_member_leave">%1$s elhagyta a csevegést</string>
+    <string name="zch_offline_form_completion_acknowledgement">Megkaptuk az üzenetét, és amint lehet, válaszolunk Önnek.</string>
+    <string name="zch_offline_form_introduction_message">Szükségem van néhány további információra ahhoz, hogy online állapotú munkatársunk felvehesse Önnel a kapcsolatot.</string>
+    <string name="zch_offline_form_message_field_prompt">Miben segíthetünk Önnek, ha munkatársaink ismét online állapotban lesznek?</string>
+    <string name="zch_offline_form_welcome_message">Üdv! Sajnos jelenleg senki sincs online.</string>
+    <string name="zch_offline_message">Sajnos jelenleg senki sincs online. Nézzen vissza később.</string>
+    <string name="zch_pre_chat_department_field_message">Melyik részleg lenne a legilletékesebb kérdése megválaszolásában?</string>
+    <string name="zch_pre_chat_email_field_hint">Mi az e-mail-címe?</string>
+    <string name="zch_pre_chat_email_field_invalid_message">A megadott e-mail-cím helytelen. Adjon meg egy érvényes e-mail-címet.</string>
+    <string name="zch_pre_chat_email_field_message">Mi az e-mail-címe?</string>
+    <string name="zch_pre_chat_introduction_greeting">Üdv!</string>
+    <string name="zch_pre_chat_introduction_message">Máris keresek valakit, aki segít Önnek. Először néhány információra van szükségem.</string>
+    <string name="zch_pre_chat_message_acknowledgement">Máris keresek valakit, aki segít Önnek. Először is szükségem van néhány további információra.</string>
+    <string name="zch_pre_chat_name_field_hint">Hogy hívják?</string>
+    <string name="zch_pre_chat_name_field_message">Hogy hívják?</string>
+    <string name="zch_pre_chat_phone_field_hint">Mi a telefonszáma?</string>
+    <string name="zch_pre_chat_phone_field_message">Mi a telefonszáma?</string>
+    <string name="zch_pre_chat_response_accepted_message">Köszönöm!</string>
+    <string name="zch_pre_chat_skip_button">Kihagyás</string>
+    <string name="zch_pre_chat_welcome_message">Üdv! Miben segíthetünk?</string>
+    <string name="zch_queue_position">A sorban elfoglalt hely: %1$d</string>
+    <string name="zch_request_transcript">Átirat kérése</string>
+    <string name="zui_attachment_indicator_accessibility">Csatolmány kiválasztása</string>
+    <string name="zui_attachment_indicator_n_attachments_selected_accessibility">%d csatolmány van kiválasztva</string>
+    <string name="zui_attachment_indicator_no_attachments_selected_accessibility">Nincsenek csatolmányok kiválasztva</string>
+    <string name="zui_attachment_indicator_one_attachments_selected_accessibility">Egy csatolmány van kiválasztva</string>
+    <string name="zui_bot_label">ROBOT</string>
+    <string name="zui_button_label_no">Nem</string>
+    <string name="zui_button_label_yes">Igen</string>
+    <string name="zui_cell_text_suggested_article_header">Ez a cikk segíthet:</string>
+    <string name="zui_cell_text_suggested_articles_header">Ezek a cikkek segíthetnek:</string>
+    <string name="zui_default_bot_name">Answer Bot</string>
+    <string name="zui_dialog_email_error">Érvénytelen e-mail-cím</string>
+    <string name="zui_dialog_email_hint">E-mail-cím</string>
+    <string name="zui_failed_message_copy">Másolás</string>
+    <string name="zui_failed_message_delete">Törlés</string>
+    <string name="zui_failed_message_retry">Újra</string>
+    <string name="zui_hint_type_message">Írja be üzenetét…</string>
+    <string name="zui_label_connecting">Kapcsolódás…</string>
+    <string name="zui_label_dialog_delete_btn">Üzenet törlése</string>
+    <string name="zui_label_dialog_retry_btn">Újraküldés</string>
+    <string name="zui_label_failed">Sikertelen</string>
+    <string name="zui_label_reconnecting">Újracsatlakozás…</string>
+    <string name="zui_label_reconnecting_failed">A csatlakozás nem sikerült.</string>
+    <string name="zui_label_send">Küldés</string>
+    <string name="zui_label_sent">Elküldve</string>
+    <string name="zui_label_tap_retry">Koppintson a küldés megismétléséhez</string>
+    <string name="zui_message_log_article_opened_formatter">%1$s megnyitotta a következő cikket: \„%2$s\”</string>
+    <string name="zui_message_log_article_suggestion_message">Ezeket a cikkeket találtam:</string>
+    <string name="zui_message_log_attachment_sending_failed">A mellékletet nem lehet elküldeni</string>
+    <string name="zui_message_log_default_visitor_name">Látogató</string>
+    <string name="zui_message_log_message_attachment_type_not_supported">A melléklettípus nem támogatott</string>
+    <string name="zui_message_log_message_attachments_not_supported">A mellékletek nem támogatottak</string>
+    <string name="zui_message_log_message_failed_to_send">[A küldés sikertelen]</string>
+    <string name="zui_message_log_message_file_exceeds_max_size">A fájl mérete meghaladja a megengedett méretet (%1$s)</string>
+    <string name="zui_message_log_transfer_option_selection_formatter">A(z) %1$s kijelölte ezt: %2$s</string>
+    <string name="zui_retry_button_label">Újra</string>
+    <string name="zui_toolbar_title">Kapcsolat</string>
+    <string name="zui_unable_open_file">A fájl nem nyitható meg.</string>
+</resources>

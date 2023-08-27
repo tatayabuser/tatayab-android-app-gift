@@ -1,0 +1,59 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+android {
+
+
+    compileSdkVersion Versions.androidCompileSdkVersion
+    buildToolsVersion Versions.androidBuildToolsVersion
+
+
+    defaultConfig {
+        minSdkVersion Versions.androidMinSdkVersion
+        targetSdkVersion Versions.androidTargetSdkVersion
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+    lintOptions {
+        abortOnError false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation project(':data')
+    implementation project(':model')
+    implementation project(':securedpreferencestore')
+
+
+
+    compileOnly CacheDependencies.javaxAnnotations
+    implementation CacheDependencies.dagger
+    //implementation CacheDependencies.securePref
+    implementation CacheDependencies.gson
+    implementation CacheDependencies.rxKotlin
+    implementation CacheDependencies.kotlin
+    implementation CacheDependencies.javaxAnnotations
+    implementation CacheDependencies.javaxInject
+    implementation CacheDependencies.androidAnnotations
+    implementation CacheDependencies.roomRuntime
+    implementation CacheDependencies.roomRxJva
+    implementation CacheDependencies.appCompat
+
+    kapt CacheDependencies.daggerCompiler
+    kapt CacheDependencies.roomCompiler
+
+}

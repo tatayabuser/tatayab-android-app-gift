@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="37dp"
+        android:src="@drawable/fav_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        style="@style/textFontMeduimStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/wishlist_empty"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/mini_larg_text" />
+
+    <TextView
+        style="@style/textFontbookStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:gravity="center"
+        android:text="@string/wishlist_description"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/mini_larg_text" />
+
+    <TextView
+        android:id="@+id/btn_view_products"
+        style="@style/textFontMeduimStyle"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/round_view_products"
+        android:gravity="center"
+        android:text="@string/view_products"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_text" />
+
+</LinearLayout>

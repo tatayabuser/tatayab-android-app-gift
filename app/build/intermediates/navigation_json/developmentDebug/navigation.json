@@ -1,0 +1,337 @@
+[
+  {
+    "name": "about_us",
+    "navigationXmlIds": [
+      "privacy"
+    ],
+    "deepLinks": []
+  },
+  {
+    "name": "account",
+    "navigationXmlIds": [
+      "privacy",
+      "addresses_graph",
+      "wishlist",
+      "wallet",
+      "search",
+      "orders",
+      "about_us",
+      "contact_us",
+      "signin_options",
+      "refere"
+    ],
+    "deepLinks": []
+  },
+  {
+    "name": "addresses_graph",
+    "navigationXmlIds": [
+      "add_addresses"
+    ],
+    "deepLinks": []
+  },
+  {
+    "name": "add_addresses",
+    "navigationXmlIds": [],
+    "deepLinks": []
+  },
+  {
+    "name": "add_review",
+    "navigationXmlIds": [],
+    "deepLinks": []
+  },
+  {
+    "name": "banner_see_more",
+    "navigationXmlIds": [],
+    "deepLinks": []
+  },
+  {
+    "name": "cart",
+    "navigationXmlIds": [
+      "checkout",
+      "product_details",
+      "products_list",
+      "share_cart"
+    ],
+    "deepLinks": []
+  },
+  {
+    "name": "category",
+    "navigationXmlIds": [
+      "products_list",
+      "supplier",
+      "search",
+      "banner_see_more",
+      "concierge"
+    ],
+    "deepLinks": []
+  },
+  {
+    "name": "checkout",
+    "navigationXmlIds": [
+      "addresses_graph",
+      "add_addresses",
+      "signin_options"
+    ],
+    "deepLinks": []
+  },
+  {
+    "name": "concierge",
+    "navigationXmlIds": [
+      "search"
+    ],
+    "deepLinks": []
+  },
+  {
+    "name": "contact_us",
+    "navigationXmlIds": [
+      "privacy"
+    ],
+    "deepLinks": []
+  },
+  {
+    "name": "home",
+    "navigationXmlIds": [
+      "category",
+      "cart",
+      "wishlist",
+      "account",
+      "products_list",
+      "product_details",
+      "supplier",
+      "banner_see_more",
+      "search",
+      "signin_options",
+      "contact_us",
+      "concierge"
+    ],
+    "deepLinks": []
+  },
+  {
+    "name": "home_home",
+    "navigationXmlIds": [
+      "products_list",
+      "product_details",
+      "supplier",
+      "search",
+      "signin_options",
+      "concierge"
+    ],
+    "deepLinks": []
+  },
+  {
+    "name": "livechat_graph",
+    "navigationXmlIds": [],
+    "deepLinks": []
+  },
+  {
+    "name": "login_graph",
+    "navigationXmlIds": [],
+    "deepLinks": []
+  },
+  {
+    "name": "orders",
+    "navigationXmlIds": [
+      "order_details",
+      "order_tracking"
+    ],
+    "deepLinks": []
+  },
+  {
+    "name": "order_details",
+    "navigationXmlIds": [
+      "products_list",
+      "product_details",
+      "order_tracking"
+    ],
+    "deepLinks": [
+      {
+        "schemes": [
+          "android-app"
+        ],
+        "host": "www.tatayab.com",
+        "port": -1,
+        "path": "/order_details/.*",
+        "sourceFilePosition": {
+          "mSourceFile": {
+            "mFilePath": "D:\\latest tatayab 3\\tatayab-androiddd\\app\\src\\main\\res\\navigation\\order_details.xml",
+            "mDescription": "order_details"
+          },
+          "mSourcePosition": {
+            "mStartLine": 12,
+            "mStartColumn": 8,
+            "mStartOffset": 591,
+            "mEndLine": 15,
+            "mEndColumn": 78,
+            "mEndOffset": 767
+          }
+        },
+        "isAutoVerify": false
+      }
+    ]
+  },
+  {
+    "name": "order_tracking",
+    "navigationXmlIds": [],
+    "deepLinks": []
+  },
+  {
+    "name": "privacy",
+    "navigationXmlIds": [],
+    "deepLinks": []
+  },
+  {
+    "name": "products_list",
+    "navigationXmlIds": [
+      "product_details",
+      "login_graph",
+      "product_filter"
+    ],
+    "deepLinks": [
+      {
+        "schemes": [
+          "android-app"
+        ],
+        "host": "www.tatayab.com",
+        "port": -1,
+        "path": "/product_list/.*/.*/.*/.*",
+        "sourceFilePosition": {
+          "mSourceFile": {
+            "mFilePath": "D:\\latest tatayab 3\\tatayab-androiddd\\app\\src\\main\\res\\navigation\\products_list.xml",
+            "mDescription": "products_list"
+          },
+          "mSourcePosition": {
+            "mStartLine": 13,
+            "mStartColumn": 8,
+            "mStartOffset": 588,
+            "mEndLine": 16,
+            "mEndColumn": 121,
+            "mEndOffset": 810
+          }
+        },
+        "isAutoVerify": false
+      }
+    ]
+  },
+  {
+    "name": "product_details",
+    "navigationXmlIds": [
+      "product_reviews",
+      "add_review"
+    ],
+    "deepLinks": [
+      {
+        "schemes": [
+          "android-app"
+        ],
+        "host": "www.tatayab.com",
+        "port": -1,
+        "path": "/products/.*",
+        "sourceFilePosition": {
+          "mSourceFile": {
+            "mFilePath": "D:\\latest tatayab 3\\tatayab-androiddd\\app\\src\\main\\res\\navigation\\product_details.xml",
+            "mDescription": "product_details"
+          },
+          "mSourcePosition": {
+            "mStartLine": 13,
+            "mStartColumn": 8,
+            "mStartOffset": 605,
+            "mEndLine": 16,
+            "mEndColumn": 75,
+            "mEndOffset": 778
+          }
+        },
+        "isAutoVerify": false
+      }
+    ]
+  },
+  {
+    "name": "product_filter",
+    "navigationXmlIds": [],
+    "deepLinks": []
+  },
+  {
+    "name": "product_reviews",
+    "navigationXmlIds": [
+      "add_review"
+    ],
+    "deepLinks": []
+  },
+  {
+    "name": "refere",
+    "navigationXmlIds": [],
+    "deepLinks": []
+  },
+  {
+    "name": "search",
+    "navigationXmlIds": [
+      "products_list",
+      "product_details"
+    ],
+    "deepLinks": []
+  },
+  {
+    "name": "share_cart",
+    "navigationXmlIds": [],
+    "deepLinks": []
+  },
+  {
+    "name": "signin_options",
+    "navigationXmlIds": [
+      "add_addresses"
+    ],
+    "deepLinks": []
+  },
+  {
+    "name": "supplier",
+    "navigationXmlIds": [
+      "products_list"
+    ],
+    "deepLinks": []
+  },
+  {
+    "name": "transaction",
+    "navigationXmlIds": [],
+    "deepLinks": []
+  },
+  {
+    "name": "wallet",
+    "navigationXmlIds": [
+      "transaction"
+    ],
+    "deepLinks": [
+      {
+        "schemes": [
+          "android-app"
+        ],
+        "host": "www.tatayab.com",
+        "port": -1,
+        "path": "/wallet",
+        "sourceFilePosition": {
+          "mSourceFile": {
+            "mFilePath": "D:\\latest tatayab 3\\tatayab-androiddd\\app\\src\\main\\res\\navigation\\wallet.xml",
+            "mDescription": "wallet"
+          },
+          "mSourcePosition": {
+            "mStartLine": 13,
+            "mStartColumn": 8,
+            "mStartOffset": 537,
+            "mEndLine": 16,
+            "mEndColumn": 61,
+            "mEndOffset": 699
+          }
+        },
+        "isAutoVerify": false
+      }
+    ]
+  },
+  {
+    "name": "wishlist",
+    "navigationXmlIds": [
+      "product_details",
+      "products_list",
+      "login_graph",
+      "category"
+    ],
+    "deepLinks": []
+  }
+]

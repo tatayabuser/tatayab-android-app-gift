@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemView"
+    android:layout_width="@dimen/_100sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:background="@drawable/gift_gray_bg"
+    android:padding="@dimen/_5sdp">
+
+
+    <RelativeLayout
+        android:id="@+id/productGiftImageView"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/productGiftImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/productSelectedImage"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/ic_gift_selected" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        style="@style/textFontbookStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productGiftImageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/normal_text"
+        android:theme="@style/textDirectionStyle"
+        tools:text="@string/agree_to_terms" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/price"
+        style="@style/textFontbookStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/normal_text"
+        android:theme="@style/textDirectionStyle"
+        tools:text="10 sar" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/chooseButton"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:background="@drawable/round_choose_selector"
+        android:text="@string/add_gift_button"
+         android:textAllCaps="false"
+        android:layout_below="@+id/price"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_12sdp" />
+    <RelativeLayout
+        android:id="@+id/selectedItemView"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:background="@drawable/gift_select_button_bg"
+        android:layout_below="@+id/price"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        >
+        <ImageView
+             android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/ic_check_whit" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

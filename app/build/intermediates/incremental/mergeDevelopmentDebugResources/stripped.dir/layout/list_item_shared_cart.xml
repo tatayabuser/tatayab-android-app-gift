@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tatayab.tatayab.ext.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swip_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginTop="@dimen/_5sdp"
+    app:dragFromEdge="left">
+
+
+    <FrameLayout
+        android:id="@+id/delete"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:src="@drawable/delete_layer"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:clickable="true"
+        android:visibility="visible">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2sdp"
+            android:minHeight="@dimen/cart_content_height"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_product_img"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@tools:sample/avatars" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_view_options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_circle_options"
+                android:padding="@dimen/_4sdp"
+                android:text="@string/options"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/iv_product_img"
+                app:layout_constraintEnd_toEndOf="@id/iv_product_img"
+                app:layout_constraintStart_toStartOf="@id/iv_product_img"
+                app:layout_constraintTop_toTopOf="@id/iv_product_img" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_product_img"
+                app:layout_constraintTop_toTopOf="@id/iv_product_img">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_supplier_name"
+                    style="@style/textFontbookStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/cart_item_height"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textSize="@dimen/small_text"
+                    android:theme="@style/textDirectionStyle"
+                    tools:text="budddd" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_product_name"
+                    style="@style/textDirectionStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/cart_item_height"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:singleLine="false"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="@dimen/normal_text"
+                    android:theme="@style/textFontbookStyle"
+                    tools:text="Product hfkhfgdjjjjjjjjjjjjjjjjjjjjj hjjjjjj " />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_product_actual_price"
+                    style="@style/textFontbookStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="@dimen/_10sdp"
+                    android:theme="@style/textDirectionStyle"
+                    android:visibility="gone"
+                    tools:text="55.000 KWD"
+                    tools:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_product_price"
+                        style="@style/textFontBoldStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:textColor="@color/my_push_notification_color"
+                        android:textSize="@dimen/normal_text"
+                        tools:text="52.000 KWD" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_amount"
+                        style="@style/textFontBoldStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="x2"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/normal_text" />
+
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/mergeStatusTextView"
+                    style="@style/textFontBoldStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Merged"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/normal_text"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/mergeErrorReasonTextView"
+                    style="@style/textFontMeduimStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="error"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:textColor="@color/cancelled_status"
+                    android:textSize="@dimen/_8sdp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_light"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+</com.tatayab.tatayab.ext.SwipeRevealLayout>

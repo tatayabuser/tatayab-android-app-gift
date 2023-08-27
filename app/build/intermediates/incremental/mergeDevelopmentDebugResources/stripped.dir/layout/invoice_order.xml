@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/delivery_address_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="@string/delivery_billing_address"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/_10sdp"
+        android:theme="@style/textDirectionStyle"
+        app:layout_constraintStart_toStartOf="@+id/delivery_address_title"
+        app:layout_constraintTop_toBottomOf="@+id/delivery_address_title"
+        tools:text="@string/app_name" />
+
+    <TextView
+        android:id="@+id/user_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/_10sdp"
+        android:theme="@style/textDirectionStyle"
+        app:layout_constraintStart_toStartOf="@+id/delivery_address_title"
+        app:layout_constraintTop_toBottomOf="@+id/user_name"
+        tools:text="+96822100222 " />
+
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/_10sdp"
+        android:theme="@style/textDirectionStyle"
+        app:layout_constraintStart_toStartOf="@+id/delivery_address_title"
+        app:layout_constraintTop_toBottomOf="@+id/user_phone"
+        tools:text="app_name@gmail.com" />
+
+    <TextView
+        android:id="@+id/user_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:lineSpacingExtra="7dp"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/_10sdp"
+        android:theme="@style/textDirectionStyle"
+        app:layout_constraintStart_toStartOf="@+id/delivery_address_title"
+        app:layout_constraintTop_toBottomOf="@+id/mail"
+        tools:text="Kuwait city, Block 6 , \n Area 51,7/5,1/2 " />
+
+
+    <View
+        android:id="@+id/delimeter"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:background="@color/gray_light"
+        app:layout_constraintTop_toBottomOf="@+id/user_address" />
+
+    <TextView
+        android:id="@+id/total_items"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:textColor="@color/dark_blue"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/delivery_address_title"
+        app:layout_constraintTop_toBottomOf="@+id/delimeter"
+        tools:text="20 items Ordered :" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_order_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:overScrollMode="never"
+        android:paddingTop="@dimen/_5sdp"
+        android:scrollbars="vertical"
+        android:visibility="visible"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="@+id/delivery_address_title"
+        app:layout_constraintTop_toBottomOf="@+id/total_items"
+        tools:itemCount="3"
+        tools:listitem="@layout/list_item_product_in_order" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

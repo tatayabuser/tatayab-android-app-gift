@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_home"
+    app:startDestination="@id/destination_home">
+
+    <fragment
+        android:id="@+id/destination_home"
+        android:name="com.tatayab.tatayab.main.home.HomeFragment"
+        android:label="TATAYAB"
+        tools:layout="@layout/fragment_home">
+        <argument
+            android:name="blocksList"
+            app:argType="com.tatayab.model.home.CompositeBlockItem[]" />
+
+
+        <action
+            android:id="@+id/next_product_list"
+            app:destination="@+id/products_list"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+
+            <argument
+                android:name="categoryType"
+                app:argType="string"
+                app:nullable="true" />
+            <argument
+                android:name="categoryId"
+                app:argType="string"
+                app:nullable="true" />
+            <argument
+                android:name="categoryName"
+                app:argType="string"
+                app:nullable="true" />
+
+            <argument
+                android:name="graphKey"
+                app:argType="string"
+                android:defaultValue=""
+                app:nullable="true" />
+
+        </action>
+
+        <action
+            android:id="@+id/next_product_details"
+            app:destination="@+id/product_details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+            <argument
+                android:name="productId"
+                android:defaultValue="@null"
+                app:argType="string"
+                app:nullable="true" />
+            <argument
+                android:name="productUID"
+                android:defaultValue=""
+                app:argType="string"
+                app:nullable="true" />
+            <argument
+                android:name="productObject"
+                android:defaultValue="@null"
+                app:argType="com.tatayab.model.Product"
+                app:nullable="true" />
+
+        </action>
+
+        <action
+            android:id="@+id/next_supplier"
+            app:destination="@+id/supplier"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <include app:graph="@navigation/products_list"/>
+    <include app:graph="@navigation/product_details"/>
+    <include app:graph="@navigation/supplier" />
+    <include app:graph="@navigation/search" />
+    <include app:graph="@navigation/signin_options" />
+    <include app:graph="@navigation/concierge" />
+
+</navigation>

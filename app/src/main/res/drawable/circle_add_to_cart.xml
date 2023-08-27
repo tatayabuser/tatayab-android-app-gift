@@ -1,0 +1,18 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:shape="oval">
+
+    <item>
+
+        <shape android:shape="oval">
+            <size
+                android:width="@dimen/_25sdp"
+                android:height="@dimen/_25sdp" />
+
+            <solid android:color="@color/colorPrimary" />
+
+        </shape>
+
+    </item>
+    
+</layer-list>
